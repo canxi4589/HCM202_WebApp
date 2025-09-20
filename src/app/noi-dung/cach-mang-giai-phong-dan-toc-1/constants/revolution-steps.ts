@@ -13,6 +13,7 @@ export const revolutionSteps = [
       'Từ thực tiễn và lý luận Hồ Chí Minh đi đến kết luận: "Giải phóng dân tộc gắn với giải phóng giai cấp, trong đó giải phóng dân tộc là trước hết, trên hết" và "Độc lập dân tộc gắn liền với chủ nghĩa xã hội".'
     ],
     quote: "Muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường cách mạng vô sản.",
+    author: "",
     image: "/images/giai-phong-dan-toc/cach-mang-vo-san.jpg",
     altText: "Hồ Chí Minh và con đường cách mạng",
     color: "from-red-800 to-red-600"
@@ -26,6 +27,7 @@ export const revolutionSteps = [
       "Trong hoàn cảnh Việt Nam là một nước thuộc địa - phong kiến, theo Hồ Chí Minh, Đảng Cộng sản vừa là đội tiên phong của giai cấp công nhân vừa là đội tiên phong của nhân dân lao động kiên quyết nhất, hăng hái nhất, trong sạch nhất, tận tâm tận lực phụng sự Tổ quốc. Đó còn là Đảng của cả dân tộc Việt Nam.",
     ],
     quote: "Đảng của cả dân tộc Việt Nam.",
+    author: "",
     image: "/images/giai-phong-dan-toc/dang-cong-san-viet-nam-lanh-dao.jpg",
     altText: "Biểu tượng lãnh đạo của Đảng",
     color: "from-yellow-600 to-orange-500"
@@ -40,6 +42,7 @@ export const revolutionSteps = [
       'Trong khi xác định lực lượng cách mạng là toàn dân, Hồ Chí Minh lưu ý rằng, không được quên "Công nông là chủ cách mệnh ... là gốc cách mệnh".',
     ],
     quote: "Có dân là có tất cả, trên đời này không có gì quý bằng dân, được lòng dân thì được tất cả, mất lòng dân thì mất tất cả.",
+    author: "",
     image: "/images/giai-phong-dan-toc/dai-doan-ket-dan-toc.jpg",
     altText: "Đại đoàn kết dân tộc",
     color: "from-green-700 to-green-500"
@@ -55,6 +58,7 @@ export const revolutionSteps = [
       '- Tinh thần đấu tranh cách mạng hết sức quyết liệt của các dân tộc thuộc địa, mà theo Người nó sẽ bùng lên mạnh mẽ, hình thành một "lực lượng khổng lồ" khi được tập hợp, hướng dẫn và giác ngộ cách mạng.'
     ],
     quote: "Vận mệnh của giai cấp vô sản thế giới và đặc biệt là vận mệnh của giai cấp vô sản ở các nước đi xâm lược thuộc địa gắn chặt với vận mệnh của giai cấp bị áp bức ở các thuộc địa.",
+    author: "",
     image: "/images/giai-phong-dan-toc/ly-luan-sang-tao.jpg",
     altText: "Tư duy sáng tạo và chủ động",
     color: "from-blue-700 to-blue-500"
@@ -68,6 +72,7 @@ export const revolutionSteps = [
       "Về hình thức bạo lực cách mạng, theo Hồ Chí Minh, bạo lực cách mạng ở đây là bạo lực của quần chúng được hai lực lượng chính trị và quân sự, hai hình thức đấu tranh: đấu tranh chính trị và đấu tranh vũ trang.",
     ],
     quote: "Trong cuộc đấu tranh gian khổ chống kẻ thù của giai cấp và dân tộc, cần dùng bạo lực cách mạng chống lại bạo lực phản cách mạng, giành lấy chính quyền và bảo vệ chính quyền.",
+    author: "",
     image: "/images/giai-phong-dan-toc/cach-mang-dau-tranh.jpg",
     altText: "Tinh thần đấu tranh cách mạng",
     color: "from-purple-700 to-purple-500"
