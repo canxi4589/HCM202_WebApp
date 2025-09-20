@@ -4,6 +4,11 @@ interface RevolutionStep {
   id: number;
   title: string;
   subtitle: string;
+  content: string[];
+  quote: string;
+  author: string;
+  image: string;
+  altText: string;
   color: string;
 }
 

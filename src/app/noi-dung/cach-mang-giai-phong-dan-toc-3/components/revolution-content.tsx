@@ -8,6 +8,7 @@ interface RevolutionStep {
   subtitle: string;
   content: string[];
   quote: string;
+  author: string;
   image: string;
   altText: string;
   color: string;
@@ -57,7 +58,7 @@ export default function RevolutionContent({ step, index }: RevolutionContentProp
                 <div className="absolute bottom-1 right-2 sm:bottom-2 sm:right-4 text-red-300 text-2xl sm:text-4xl leading-none 
                                transform rotate-180">"</div>
                 <cite className="block text-right mt-3 sm:mt-4 text-red-700 font-medium text-xs sm:text-sm">
-                  — Chủ tịch Hồ Chí Minh
+                  — {step.author}
                 </cite>
               </blockquote>
 

@@ -125,13 +125,13 @@ export default function CachMangGiaiPhongDanToc() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center px-3 sm:px-6 max-w-6xl w-full mt-20 sm:mt-24">
           <h1
-            className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 sm:mb-6 
-                         drop-shadow-2xl leading-tight md:pt-20"
+            className="text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-extrabold text-white mb-4 sm:mb-6 
+                         drop-shadow-2xl leading-tight md:pt-20 whitespace-nowrap"
           >
-            Vấn đề cách mạng giải phóng dân tộc
+            Thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam
           </h1>
           <p className="text-sm sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed px-2">
-            Tư tưởng Hồ Chí Minh về con đường giải phóng dân tộc Việt Nam
+            Tính chất, đặc điểm và nhiệm vụ của thời kỳ quá độ
           </p>
 
           <VideoPlayer
@@ -148,7 +148,7 @@ export default function CachMangGiaiPhongDanToc() {
       <section className="steps-container py-12 sm:py-20 px-3 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-16 px-2">
-            Năm luận điểm cơ bản
+            Hai luận điểm cơ bản
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
