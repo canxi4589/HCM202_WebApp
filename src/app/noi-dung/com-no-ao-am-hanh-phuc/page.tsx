@@ -6,7 +6,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function ThongNhatToanVen() {
+export default function ComNoAoAm() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const contentRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
@@ -102,7 +102,7 @@ export default function ThongNhatToanVen() {
       <div className="absolute inset-0 z-0 bg-black/30 backdrop-blur-sm pointer-events-none" />
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc/doc-lap-that-su-triet-de")}
+        onClick={() => router.push("/noi-dung/quyen-thien-lieng")}
         className="fixed left-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -111,7 +111,7 @@ export default function ThongNhatToanVen() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc/quyen-thien-lieng")}
+        onClick={() => router.push("/noi-dung/doc-lap-that-su-triet-de")}
         className="fixed right-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -120,7 +120,7 @@ export default function ThongNhatToanVen() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc")}
+        onClick={() => router.push("/noi-dung")}
         className="fixed left-6 top-6 z-50 
                    flex items-center gap-2 
                   text-black md:text-white font-semibold 
@@ -130,23 +130,23 @@ export default function ThongNhatToanVen() {
         <ArrowLeft className="w-7 h-7" />
       </button>
 
-      <div className="relative z-10 max-w-[1500px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-[1600px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center overflow-y-auto scrollbar-hidden">
         <div className="image-container flex justify-center">
           <div
-            className="relative p-4 bg-white rounded-md shadow-2xl transform rotate-4 
+            className="relative p-4 bg-white rounded-md shadow-2xl transform -rotate-3 
                        border-4 border-gray-300 hover:rotate-0 hover:scale-105 transition-all duration-500"
           >
-            <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
+            <div className="relative w-80 h-80 md:w-96 md:h-96">
               <Image
-                src="/images/independence-4.jpg"
-                alt="Thống nhất và toàn vẹn lãnh thổ"
+                src="/images/independence-2.jpg"
+                alt="Cơm no, áo ấm, hạnh phúc"
                 fill
                 className="object-cover"
               />
             </div>
 
             <p className="text-center text-sm text-gray-600 mt-3 italic">
-              Hồ Chí Minh: “Nước Việt Nam là một, dân tộc Việt Nam là một”.
+              Độc lập phải gắn với đời sống thiết thực của nhân dân.
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ export default function ThongNhatToanVen() {
         <div
           ref={contentRef}
           className="content-card bg-[#FBF5E8] p-8 md:p-12 rounded-lg shadow-2xl 
-                     border border-amber-800/20 transform -rotate-3"
+                     border border-amber-800/20 transform rotate-3"
         >
           <div className="title-content">
             <h2
@@ -162,40 +162,43 @@ export default function ThongNhatToanVen() {
                            relative pl-5"
             >
               <span className="absolute left-0 top-0 w-1.5 h-full bg-red-800 rounded-full"></span>
-              Độc lập dân tộc gắn liền với thống nhất và toàn vẹn lãnh thổ
+              Độc lập dân tộc phải gắn liền tự do, cơm no, áo ấm và hạnh phúc
+              của nhân dân
             </h2>
           </div>
           <ul className="space-y-6 text-base md:text-lg leading-relaxed text-gray-800">
             <li className="list-item">
-              Trong{" "}
+              Độc lập dân tộc không chỉ là tự do hình thức mà phải gắn với
               <span className="font-semibold text-red-800">
-                Thư gửi đồng bào Nam Bộ (1946)
+                {" "}
+                quyền tự do thực sự của nhân dân
               </span>
-              , Người khẳng định:{" "}
-              <span className="italic text-red-900">
-                "Đồng bào Nam Bộ là dân nước Việt Nam. Sông có thể cạn, núi có
-                thể mòn song chân lý đó không bao giờ thay đổi."
-              </span>
+              .
             </li>
             <li className="list-item">
-              Tháng 2 năm 1958, Người nhấn mạnh:{" "}
-              <span className="italic text-red-900">
-                "Dù khó khăn, gian khổ đến mấy, nhân dân ta nhất định sẽ hoàn
-                toàn thắng lợi. Đế quốc Mỹ nhất định phải cút khỏi nước ta. Tổ
-                quốc ta nhất định sẽ thống nhất. Đồng bào Nam Bắc nhất định sẽ
-                sum họp một nhà."
+              Độc lập phải đi đôi với đời sống thiết thực:
+              <span className="font-semibold">
+                {" "}
+                cơm no, áo ấm và hạnh phúc của nhân dân
               </span>
+              .
             </li>
             <li className="list-item">
-              Trong <span className="font-semibold text-red-800">Di chúc</span>,
-              Người khẳng định:{" "}
-              <span className="italic text-red-900">
-                "Nước Việt Nam là một, dân tộc Việt Nam là một."
+              Hồ Chí Minh phê phán mạnh mẽ thứ{" "}
+              <span className="font-semibold text-red-800">
+                “độc lập tự do” giả hiệu
               </span>
+              .
+            </li>
+            <li className="list-item italic text-red-900">
+              “Làm cho nước Nam được hoàn toàn độc lập, dân chúng được tự do,
+              thủ tiêu hết các thứ quốc trái, thâu hết ruộng đất của đế quốc chủ
+              nghĩa làm của công chia cho dân cày nghèo; bỏ sưu thuế cho dân cày
+              nghèo; thi hành luật ngày làm 8 giờ.”
             </li>
             <li className="list-item">
-              Đây là tư tưởng nhất quán, xuyên suốt của Hồ Chí Minh, khẳng định
-              độc lập dân tộc luôn gắn liền với thống nhất và toàn vẹn lãnh thổ.
+              Đây là tư tưởng xuyên suốt, kết hợp độc lập dân tộc với hạnh phúc,
+              quyền lợi thiết thực của nhân dân.
             </li>
           </ul>
         </div>

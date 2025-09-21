@@ -4,11 +4,11 @@ import { useLayoutEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import gsap from "gsap";
-import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 
-export default function ComNoAoAm() {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
+export default function DocLapThucSu() {
   const contentRef = useRef<HTMLDivElement | null>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
 
   useLayoutEffect(() => {
@@ -102,7 +102,7 @@ export default function ComNoAoAm() {
       <div className="absolute inset-0 z-0 bg-black/30 backdrop-blur-sm pointer-events-none" />
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc/quyen-thien-lieng")}
+        onClick={() => router.push("/noi-dung/com-no-ao-am-hanh-phuc")}
         className="fixed left-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -111,7 +111,9 @@ export default function ComNoAoAm() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc/doc-lap-that-su-triet-de")}
+        onClick={() =>
+          router.push("/noi-dung/thong-nhat-va-toan-ven-lanh-tho")
+        }
         className="fixed right-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -120,7 +122,7 @@ export default function ComNoAoAm() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc")}
+        onClick={() => router.push("/noi-dung")}
         className="fixed left-6 top-6 z-50 
                    flex items-center gap-2 
                   text-black md:text-white font-semibold 
@@ -130,23 +132,23 @@ export default function ComNoAoAm() {
         <ArrowLeft className="w-7 h-7" />
       </button>
 
-      <div className="relative z-10 max-w-[1600px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center overflow-y-auto scrollbar-hidden">
+      <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="image-container flex justify-center">
           <div
-            className="relative p-4 bg-white rounded-md shadow-2xl transform -rotate-3 
+            className="relative p-4 bg-white rounded-md shadow-2xl transform -rotate-3
                        border-4 border-gray-300 hover:rotate-0 hover:scale-105 transition-all duration-500"
           >
-            <div className="relative w-80 h-80 md:w-96 md:h-96">
+            <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
               <Image
-                src="/images/independence-2.jpg"
-                alt="Cơm no, áo ấm, hạnh phúc"
+                src="/images/independence-3.jpg"
+                alt="Độc lập thật sự, triệt để"
                 fill
                 className="object-cover"
               />
             </div>
-
-            <p className="text-center text-sm text-gray-600 mt-3 italic">
-              Độc lập phải gắn với đời sống thiết thực của nhân dân.
+            <p className="text-center text-sm text-gray-600 mt-3 italic w-80 mx-auto">
+              Độc lập thật sự là không bị áp bức chính trị, bóc lột kinh tế, nô
+              dịch văn hóa.
             </p>
           </div>
         </div>
@@ -162,43 +164,18 @@ export default function ComNoAoAm() {
                            relative pl-5"
             >
               <span className="absolute left-0 top-0 w-1.5 h-full bg-red-800 rounded-full"></span>
-              Độc lập dân tộc phải gắn liền tự do, cơm no, áo ấm và hạnh phúc
-              của nhân dân
+              Độc lập dân tộc phải là nền độc lập thật sự, hoàn toàn và triệt để
             </h2>
           </div>
           <ul className="space-y-6 text-base md:text-lg leading-relaxed text-gray-800">
             <li className="list-item">
-              Độc lập dân tộc không chỉ là tự do hình thức mà phải gắn với
-              <span className="font-semibold text-red-800">
-                {" "}
-                quyền tự do thực sự của nhân dân
-              </span>
-              .
+              Nền độc lập thật sự là khi dân tộc không còn chịu chế độ ăn cướp,
+              không có quyền tự quyết, không bị bóc lột kinh tế, áp bức chính
+              trị và nô dịch văn hóa.
             </li>
             <li className="list-item">
-              Độc lập phải đi đôi với đời sống thiết thực:
-              <span className="font-semibold">
-                {" "}
-                cơm no, áo ấm và hạnh phúc của nhân dân
-              </span>
-              .
-            </li>
-            <li className="list-item">
-              Hồ Chí Minh phê phán mạnh mẽ thứ{" "}
-              <span className="font-semibold text-red-800">
-                “độc lập tự do” giả hiệu
-              </span>
-              .
-            </li>
-            <li className="list-item italic text-red-900">
-              “Làm cho nước Nam được hoàn toàn độc lập, dân chúng được tự do,
-              thủ tiêu hết các thứ quốc trái, thâu hết ruộng đất của đế quốc chủ
-              nghĩa làm của công chia cho dân cày nghèo; bỏ sưu thuế cho dân cày
-              nghèo; thi hành luật ngày làm 8 giờ.”
-            </li>
-            <li className="list-item">
-              Đây là tư tưởng xuyên suốt, kết hợp độc lập dân tộc với hạnh phúc,
-              quyền lợi thiết thực của nhân dân.
+              Nền độc lập này phải hoàn toàn và triệt để trên tất cả các lĩnh
+              vực.
             </li>
           </ul>
         </div>

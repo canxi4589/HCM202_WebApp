@@ -4,11 +4,11 @@ import { useLayoutEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import gsap from "gsap";
-import { ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function DocLapThucSu() {
-  const contentRef = useRef<HTMLDivElement | null>(null);
+export default function ThongNhatToanVen() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
 
   useLayoutEffect(() => {
@@ -102,7 +102,7 @@ export default function DocLapThucSu() {
       <div className="absolute inset-0 z-0 bg-black/30 backdrop-blur-sm pointer-events-none" />
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc/com-no-ao-am-hanh-phuc")}
+        onClick={() => router.push("/noi-dung/doc-lap-that-su-triet-de")}
         className="fixed left-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -111,9 +111,7 @@ export default function DocLapThucSu() {
       </button>
 
       <button
-        onClick={() =>
-          router.push("/doc-lap-dan-toc/thong-nhat-va-toan-ven-lanh-tho")
-        }
+        onClick={() => router.push("/noi-dung/quyen-thien-lieng")}
         className="fixed right-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -122,7 +120,7 @@ export default function DocLapThucSu() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc")}
+        onClick={() => router.push("/noi-dung")}
         className="fixed left-6 top-6 z-50 
                    flex items-center gap-2 
                   text-black md:text-white font-semibold 
@@ -132,23 +130,23 @@ export default function DocLapThucSu() {
         <ArrowLeft className="w-7 h-7" />
       </button>
 
-      <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-[1500px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="image-container flex justify-center">
           <div
-            className="relative p-4 bg-white rounded-md shadow-2xl transform -rotate-3
+            className="relative p-4 bg-white rounded-md shadow-2xl transform rotate-4 
                        border-4 border-gray-300 hover:rotate-0 hover:scale-105 transition-all duration-500"
           >
             <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
               <Image
-                src="/images/independence-3.jpg"
-                alt="Độc lập thật sự, triệt để"
+                src="/images/independence-4.jpg"
+                alt="Thống nhất và toàn vẹn lãnh thổ"
                 fill
                 className="object-cover"
               />
             </div>
-            <p className="text-center text-sm text-gray-600 mt-3 italic w-80 mx-auto">
-              Độc lập thật sự là không bị áp bức chính trị, bóc lột kinh tế, nô
-              dịch văn hóa.
+
+            <p className="text-center text-sm text-gray-600 mt-3 italic">
+              Hồ Chí Minh: “Nước Việt Nam là một, dân tộc Việt Nam là một”.
             </p>
           </div>
         </div>
@@ -156,7 +154,7 @@ export default function DocLapThucSu() {
         <div
           ref={contentRef}
           className="content-card bg-[#FBF5E8] p-8 md:p-12 rounded-lg shadow-2xl 
-                     border border-amber-800/20 transform rotate-3"
+                     border border-amber-800/20 transform -rotate-3"
         >
           <div className="title-content">
             <h2
@@ -164,18 +162,40 @@ export default function DocLapThucSu() {
                            relative pl-5"
             >
               <span className="absolute left-0 top-0 w-1.5 h-full bg-red-800 rounded-full"></span>
-              Độc lập dân tộc phải là nền độc lập thật sự, hoàn toàn và triệt để
+              Độc lập dân tộc gắn liền với thống nhất và toàn vẹn lãnh thổ
             </h2>
           </div>
           <ul className="space-y-6 text-base md:text-lg leading-relaxed text-gray-800">
             <li className="list-item">
-              Nền độc lập thật sự là khi dân tộc không còn chịu chế độ ăn cướp,
-              không có quyền tự quyết, không bị bóc lột kinh tế, áp bức chính
-              trị và nô dịch văn hóa.
+              Trong{" "}
+              <span className="font-semibold text-red-800">
+                Thư gửi đồng bào Nam Bộ (1946)
+              </span>
+              , Người khẳng định:{" "}
+              <span className="italic text-red-900">
+                "Đồng bào Nam Bộ là dân nước Việt Nam. Sông có thể cạn, núi có
+                thể mòn song chân lý đó không bao giờ thay đổi."
+              </span>
             </li>
             <li className="list-item">
-              Nền độc lập này phải hoàn toàn và triệt để trên tất cả các lĩnh
-              vực.
+              Tháng 2 năm 1958, Người nhấn mạnh:{" "}
+              <span className="italic text-red-900">
+                "Dù khó khăn, gian khổ đến mấy, nhân dân ta nhất định sẽ hoàn
+                toàn thắng lợi. Đế quốc Mỹ nhất định phải cút khỏi nước ta. Tổ
+                quốc ta nhất định sẽ thống nhất. Đồng bào Nam Bắc nhất định sẽ
+                sum họp một nhà."
+              </span>
+            </li>
+            <li className="list-item">
+              Trong <span className="font-semibold text-red-800">Di chúc</span>,
+              Người khẳng định:{" "}
+              <span className="italic text-red-900">
+                "Nước Việt Nam là một, dân tộc Việt Nam là một."
+              </span>
+            </li>
+            <li className="list-item">
+              Đây là tư tưởng nhất quán, xuyên suốt của Hồ Chí Minh, khẳng định
+              độc lập dân tộc luôn gắn liền với thống nhất và toàn vẹn lãnh thổ.
             </li>
           </ul>
         </div>

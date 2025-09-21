@@ -34,15 +34,6 @@ export default function SocialismPage() {
 
   return (
     <>
-      {/* Skip to content link */}
-      <a 
-        href="#main-content" 
-        className="absolute top-0 left-0 -translate-y-full focus:translate-y-0 bg-blue-600 text-white px-4 py-2 z-50 transition-transform"
-        style={{ borderRadius: '0 0 8px 0' }}
-      >
-        Chuyển đến nội dung chính
-      </a>
-
       <LocalScrollProgressBar />
       
       <div className="min-h-screen bg-white">
@@ -53,11 +44,12 @@ export default function SocialismPage() {
           {/* Hero Section */}
           <section 
             className="relative flex items-center justify-center overflow-hidden"
-            style={{ paddingTop: '80px', paddingBottom: '80px' }}
+            // style={{ paddingTop: '400px', paddingBottom: '80px' }}
+            style={{height: '100vh'}}
           >
             <div className="absolute inset-0">
               <Image
-                src="/images/giai-phong-dan-toc/cach-mang-giai-phong-dan-toc.jpg"
+                src="/images/tu-tuong-hcm-bg.jpg"
                 alt=""
                 fill
                 className="object-cover"
@@ -90,17 +82,6 @@ export default function SocialismPage() {
               >
                 {socialismContent.title}
               </h1>
-              <p 
-                className="mb-8 mx-auto leading-relaxed"
-                style={{ 
-                  fontSize: 'clamp(1.25rem, 2vw, 1.5rem)',
-                  color: 'rgba(255, 255, 255, 0.9)',
-                  maxWidth: '896px'
-                }}
-              >
-                {socialismContent.subtitle}
-              </p>
-
               <div className="flex flex-wrap justify-center gap-4">
                 <a 
                   href="#a-quan-niem"
@@ -432,15 +413,6 @@ export default function SocialismPage() {
                           />
                         ))}
                       </LocalCardGrid>
-
-                      {activeFilter !== 'all' && (
-                        <p 
-                          className="text-center text-gray-500 mt-4"
-                          style={{ fontSize: '0.875rem' }}
-                        >
-                          Hiển thị {filteredFeatures.length} đặc trưng trong danh mục "{getCategoryLabel(activeFilter)}"
-                        </p>
-                      )}
                     </div>
 
                     <div className="grid lg:grid-cols-3 gap-8">
@@ -449,27 +421,6 @@ export default function SocialismPage() {
                           points={socialismContent.sections[2].summary.points}
                           variant="purple"
                         />
-                      </div>
-                      <div className="lg:col-span-1">
-                        <LocalCard className="overflow-hidden">
-                          <Image
-                            src={socialismContent.sections[2].image}
-                            alt="Đặc trưng cơ bản của xã hội chủ nghĩa"
-                            width={960}
-                            height={540}
-                            className="w-full object-cover"
-                            style={{ aspectRatio: '16/9' }}
-                            sizes="(max-width: 1024px) 100vw, 33vw"
-                          />
-                          <div className="p-4">
-                            <h3 className="font-semibold text-gray-900 mb-2">
-                              Đại đoàn kết dân tộc
-                            </h3>
-                            <p className="text-sm text-gray-600">
-                              Nền tảng xây dựng xã hội chủ nghĩa
-                            </p>
-                          </div>
-                        </LocalCard>
                       </div>
                     </div>
                   </div>
