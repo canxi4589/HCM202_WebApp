@@ -103,7 +103,7 @@ export default function QuyenThienLieng() {
 
       <button
         onClick={() =>
-          router.push("/doc-lap-dan-toc/thong-nhat-va-toan-ven-lanh-tho")
+          router.push("/noi-dung/thong-nhat-va-toan-ven-lanh-tho")
         }
         className="fixed left-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
@@ -113,7 +113,7 @@ export default function QuyenThienLieng() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc/com-no-ao-am-hanh-phuc")}
+        onClick={() => router.push("/noi-dung/com-no-ao-am-hanh-phuc")}
         className="fixed right-6 top-1/2 -translate-y-1/2 z-50 
                    bg-white/70 hover:bg-white rounded-full p-3 shadow-lg 
                    transition-transform duration-300 hover:scale-110"
@@ -122,7 +122,7 @@ export default function QuyenThienLieng() {
       </button>
 
       <button
-        onClick={() => router.push("/doc-lap-dan-toc")}
+        onClick={() => router.push("/noi-dung")}
         className="fixed left-6 top-6 z-50 
                    flex items-center gap-2 
                   text-black md:text-white font-semibold 
