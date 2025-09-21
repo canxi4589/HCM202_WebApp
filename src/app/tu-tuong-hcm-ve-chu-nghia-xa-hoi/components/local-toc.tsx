@@ -28,8 +28,8 @@ export default function LocalTOC({ variant = 'desktop', className = '' }: LocalT
         });
       },
       { 
-        threshold: 0.6,
-        rootMargin: '-20% 0px -35% 0px'
+        threshold: 0,
+        rootMargin: '-120px 0px -80% 0px'
       }
     );
 
@@ -46,7 +46,7 @@ export default function LocalTOC({ variant = 'desktop', className = '' }: LocalT
       <div className={`md:hidden ${className}`}>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex items-center justify-between p-4 bg-white border border-gray-200 shadow-sm"
+          className="w-full flex items-center justify-between p-4 bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 hover:scale-[1.01]"
           style={{ borderRadius: '14px' }}
           aria-expanded={isOpen}
           aria-controls="mobile-toc"
@@ -76,7 +76,7 @@ export default function LocalTOC({ variant = 'desktop', className = '' }: LocalT
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className={`block px-4 py-3 text-sm transition-colors duration-200 ${
+                    className={`block px-4 py-3 text-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-sm ${
                       active === item.id
                         ? 'bg-blue-50 text-blue-600 font-medium'
                         : 'text-gray-700 hover:bg-gray-50'
@@ -124,7 +124,7 @@ export default function LocalTOC({ variant = 'desktop', className = '' }: LocalT
             <li key={item.id} style={{ marginBottom: '8px' }}>
               <a
                 href={`#${item.id}`}
-                className={`block px-3 py-2 text-sm transition-all duration-200 ${
+                className={`block px-3 py-2 text-sm transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-md hover:translate-x-1 ${
                   active === item.id ? 'font-medium' : 'hover:bg-gray-50'
                 }`}
                 style={{

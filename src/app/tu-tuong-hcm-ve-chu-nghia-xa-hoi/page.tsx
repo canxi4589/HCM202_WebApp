@@ -12,7 +12,6 @@ import LocalTOC from './components/local-toc';
 import LocalQuoteCard from './components/local-quote-card';
 import LocalSummaryBox from './components/local-summary-box';
 import { LocalCard, LocalCardGrid, LocalFeatureCard } from './components/local-card';
-import LocalFooterCTA from './components/local-footer-cta';
 import FilterChips from './components/filter-chips';
 
 export default function SocialismPage() {
@@ -27,9 +26,22 @@ export default function SocialismPage() {
     const labels = {
       'kinh-te': 'Kinh tế',
       'chinh-tri': 'Chính trị', 
-      'van-hoa': 'Văn hóa'
+      'van-hoa': 'Văn hóa',
+      'chu-the-xay-dung': 'Chủ thể xây dựng' // ADD THIS LINE
     };
     return labels[category as keyof typeof labels] || '';
+  };
+
+  // ADD THIS FUNCTION for category summaries
+  const getCategorySummary = (category: string) => {
+    const summaries = {
+      'all': 'Hiển thị tất cả các đặc trưng cơ bản của xã hội chủ nghĩa theo tư tưởng Hồ Chí Minh',
+      'kinh-te': 'Xã hội chủ nghĩa là xã hội có nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và chế độ công hữu về tư liệu sản xuất chủ yếu',
+      'chinh-tri': 'Xã hội chủ nghĩa là xã hội có chế độ dân chủ.',
+      'van-hoa': 'Xã hội xã hội chủ nghĩa có trình độ phát triển cao về văn hóa và đạo đức, bảo đảm sự cân bằng, hợp lý trong các quan hệ xã hội.',
+      'chu-the-xay-dung': 'Chủ nghĩa xã hội là công trình tập thể của nhân dân dưới sự lãnh đạo của Đảng Cộng Sản'
+    };
+    return summaries[category as keyof typeof summaries] || '';
   };
 
   return (
@@ -203,6 +215,7 @@ export default function SocialismPage() {
 
                       <LocalSummaryBox 
                         points={socialismContent.sections[0].summary.points}
+                        annotations={socialismContent.sections[0].annotations}
                         variant="blue"
                       />
                     </div>
@@ -288,7 +301,7 @@ export default function SocialismPage() {
                               {socialismContent.sections[1].title}
                             </h3>
                             <p className="text-sm text-gray-600">
-                              Nguồn: Tư liệu lịch sử Đảng Cộng sản Việt Nam (1920-1945)
+                              Song, tùy theo bối cảnh cụ thể mà con đường đi lên chủ nghĩa xã hội có thể khác nhau.
                             </p>
                           </div>
                         </LocalCard>
@@ -319,6 +332,7 @@ export default function SocialismPage() {
 
                       <LocalSummaryBox 
                         points={socialismContent.sections[1].summary.points}
+                        annotations={socialismContent.sections[1].annotations}
                         variant="green"
                       />
                     </div>
@@ -394,11 +408,24 @@ export default function SocialismPage() {
                           fontWeight: '600'
                         }}
                       >
-                        Bảy đặc trưng cơ bản:
+                        Một số đặc trưng cơ bản:
                       </h3>
 
                       {/* Filter Chips */}
                       <FilterChips onFilterChange={setActiveFilter} />
+
+                      {/* Category Summary */}
+                      <div 
+                        className="mb-6 p-4 bg-purple-50 border border-purple-200 rounded-lg"
+                        style={{ borderRadius: '12px' }}
+                      >
+                        <p 
+                          className="text-purple-800 leading-relaxed"
+                          style={{ fontSize: '1rem', fontStyle: 'italic' }}
+                        >
+                          <strong>📌 Khái quát:</strong> {getCategorySummary(activeFilter)}
+                        </p>
+                      </div>
 
                       {/* Features Grid */}
                       <LocalCardGrid columns={2} gap="md">
@@ -568,8 +595,6 @@ export default function SocialismPage() {
               </aside>
             </div>
           </div>
-
-          <LocalFooterCTA />
         </main>
       </div>
     </>

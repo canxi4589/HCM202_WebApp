@@ -4,43 +4,38 @@ import { useState } from 'react';
 
 interface FilterChipsProps {
   onFilterChange: (filter: string) => void;
-  className?: string;
 }
 
-const filters = [
-  { id: 'all', label: 'Tất cả', color: 'bg-gray-100 text-gray-800 hover:bg-gray-200' },
-  { id: 'kinh-te', label: 'Kinh tế', color: 'bg-blue-100 text-blue-800 hover:bg-blue-200' },
-  { id: 'chinh-tri', label: 'Chính trị', color: 'bg-green-100 text-green-800 hover:bg-green-200' },
-  { id: 'van-hoa', label: 'Văn hóa', color: 'bg-purple-100 text-purple-800 hover:bg-purple-200' },
-];
-
-export default function FilterChips({ onFilterChange, className = '' }: FilterChipsProps) {
+export default function FilterChips({ onFilterChange }: FilterChipsProps) {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  const handleFilterClick = (filterId: string) => {
+  const categories = [
+    { id: 'all', label: 'Tất cả', icon: '📋' },
+    { id: 'kinh-te', label: 'Kinh tế', icon: '💰' },
+    { id: 'chinh-tri', label: 'Chính trị', icon: '🏛️' },
+    { id: 'van-hoa', label: 'Văn hóa', icon: '🎭' },
+    { id: 'chu-the-xay-dung', label: 'Chủ thể xây dựng', icon: '👥' }
+  ];
+
+  const handleFilterChange = (filterId: string) => {
     setActiveFilter(filterId);
     onFilterChange(filterId);
   };
 
   return (
-    <div className={`flex flex-wrap gap-2 mb-6 ${className}`}>
-      {filters.map((filter) => (
+    <div className="flex flex-wrap gap-3 mb-6">
+      {categories.map((category) => (
         <button
-          key={filter.id}
-          onClick={() => handleFilterClick(filter.id)}
-          className={`inline-flex items-center px-3 py-1.5 text-sm font-medium transition-colors duration-200 ${
-            activeFilter === filter.id
-              ? 'bg-purple-600 text-white'
-              : filter.color
+          key={category.id}
+          onClick={() => handleFilterChange(category.id)}
+          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+            activeFilter === category.id
+              ? 'bg-purple-600 text-white shadow-lg'
+              : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
           }`}
-          style={{
-            borderRadius: '9999px',
-            minHeight: '32px',
-            border: activeFilter === filter.id ? '2px solid #9333ea' : '1px solid transparent'
-          }}
-          aria-pressed={activeFilter === filter.id}
         >
-          {filter.label}
+          <span className="mr-2">{category.icon}</span>
+          {category.label}
         </button>
       ))}
     </div>

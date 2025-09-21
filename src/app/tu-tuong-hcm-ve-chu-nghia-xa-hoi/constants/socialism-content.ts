@@ -25,7 +25,11 @@ export const socialismContent = {
           "Đảng, Nhà nước và nhân dân là nhân tố quyết định; tinh thần quốc tế chủ nghĩa và hoà bình"
         ]
       },
-      quote: "Chủ nghĩa xã hội không chỉ là sở hữu công cộng về tư liệu sản xuất, mà còn là xã hội công bằng, dân chủ, văn minh.",
+      annotations: [
+        "(1) Hồ Chí Minh: Toàn tập, Sđd, t.12, tr.415; t.10, tr.390."
+      ],
+      quote: "Nói một cách tóm tắt, mộc mạc, chủ nghĩa xã hội trước hết nhằm làm cho nhân dân lao động thoát nạn bần cùng, làm cho mọi người có công ăn việc làm, được ấm no và sống một đời hạnh phúc”, là làm sao cho dân giàu, nước mạnh ? (1)",
+      quoteAuthor: "Chủ tịch Hồ Chí Minh",
       image: "/images/giai-phong-dan-toc/cach-mang-vo-san.jpg"
     },
     {
@@ -49,13 +53,17 @@ export const socialismContent = {
           "Cần các bước chuyển tiếp (xây dựng kinh tế, văn hoá, giáo dục) chứ không thể ép buộc tức thời"
         ]
       },
-      quote: "Tiến lên chủ nghĩa xã hội là quy luật lịch sử, nhưng phải có con đường phù hợp với điều kiện cụ thể.",
+      annotations: [
+        "(2) C.Mác và Ph.Ăngghen: Toàn tập, Sđd, t.4, tr.613"
+      ],
+      quote: "Sự sụp đổ của giai cấp tư sản và thắng lợi của giai cấp vô sản là tất yếu như nhau.(2)",
+      quoteAuthor: "Karl Marx",
       image: "/images/giai-phong-dan-toc/dang-cong-san-viet-nam-lanh-dao.jpg"
     },
     {
       id: "c",
       title: "Một số đặc trưng cơ bản của xã hội chủ nghĩa",
-      subtitle: "Bảy đặc trưng nổi bật theo tư tưởng HCM",
+      subtitle: "Bốn đặc trưng nổi bật",
       icon: "🏛️",
       color: "from-purple-600 to-purple-800",
       accentColor: "from-purple-100 to-purple-200",
@@ -104,6 +112,12 @@ export const socialismContent = {
           description: "Chủ nghĩa quốc tế và hoà bình: hợp tác quốc tế, ủng hộ phong trào giải phóng dân tộc, chống chủ nghĩa đế quốc.",
           icon: "🌍",
           category: "chinh-tri"
+        },
+        {
+          title: "Chủ thể xây dựng",
+          description: "Chủ nghĩa xã hội là công trình tập thể của nhân dân dưới sự lãnh đạo của Đảng Cộng sản. Nhân dân là chủ thể, là lực lượng quyết định tốc độ xây dựng và sự vững mạnh của chủ nghĩa xã hội.",
+          icon: "🏛️",
+          category: "chu-the-xay-dung"
         }
       ],
       summary: {
@@ -115,7 +129,13 @@ export const socialismContent = {
           "Đề cao văn hoá-đạo đức, phát triển toàn diện con người; hoà bình và quốc tế chủ nghĩa"
         ]
       },
+      annotations: [
+        "Các đặc trưng này được HCM đúc kết từ nghiên cứu các mô hình XHCN trên thế giới",
+        "Đặc biệt chú trọng yếu tố văn hóa dân tộc trong xây dựng XHCN",
+        "Quan điểm này được thể hiện rõ trong Cương lĩnh xây dựng đất nước thời kỳ quá độ"
+      ],
       quote: "Xã hội chủ nghĩa phải là xã hội của nhân dân, do nhân dân, vì nhân dân.",
+      quoteAuthor: "Chủ tịch Hồ Chí Minh",
       image: "/images/giai-phong-dan-toc/dai-doan-ket-dan-toc.jpg"
     }
   ]
