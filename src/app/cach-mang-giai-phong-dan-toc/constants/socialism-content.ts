@@ -49,7 +49,7 @@ export const socialismContent = {
           "Cần các bước chuyển tiếp (xây dựng kinh tế, văn hoá, giáo dục) chứ không thể ép buộc tức thời"
         ]
       },
-      quote: "Tiến lên chủ nghĩa xã hội là quy luật lịch sử, nhưng phải có con đường phù hợp với điều kiện cụ thể.",
+      quote: "Sự sụp đổ của giai cấp tư sản và thắng lợi của giai cấp vô sản là tất yếu như nhau.",
       image: "/images/giai-phong-dan-toc/dang-cong-san-viet-nam-lanh-dao.jpg"
     },
     {

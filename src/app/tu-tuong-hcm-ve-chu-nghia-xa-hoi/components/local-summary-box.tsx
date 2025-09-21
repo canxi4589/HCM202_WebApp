@@ -1,6 +1,7 @@
 interface LocalSummaryBoxProps {
   title?: string;
   points: string[];
+  annotations?: string[];
   variant?: 'blue' | 'green' | 'purple' | 'brand';
   className?: string;
 }
@@ -8,6 +9,7 @@ interface LocalSummaryBoxProps {
 export default function LocalSummaryBox({ 
   title = "Tóm tắt:", 
   points, 
+  annotations,
   variant = 'blue',
   className = ''
 }: LocalSummaryBoxProps) {
@@ -87,6 +89,59 @@ export default function LocalSummaryBox({
           </li>
         ))}
       </ul>
+
+      {/* Annotations Section */}
+      {annotations && annotations.length > 0 && (
+        <>
+          <div 
+            style={{ 
+              borderTop: `1px solid ${currentStyle.borderColor}`,
+              marginTop: '24px',
+              paddingTop: '20px'
+            }}
+          >
+            <h4 
+              className="font-semibold mb-3"
+              style={{ 
+                fontSize: '1rem',
+                color: currentStyle.titleColor
+              }}
+            >
+              Chú thích:
+            </h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {annotations.map((annotation, index) => (
+                <li 
+                  key={index} 
+                  className="flex items-start gap-3"
+                  style={{ marginBottom: index < annotations.length - 1 ? '12px' : '0' }}
+                >
+                  <div 
+                    className="rounded-full flex-shrink-0"
+                    style={{ 
+                      width: '6px',
+                      height: '6px',
+                      backgroundColor: currentStyle.dotColor,
+                      marginTop: '8px',
+                      opacity: 0.6
+                    }}
+                  />
+                  <span 
+                    style={{ 
+                      color: '#6b7280',
+                      lineHeight: '1.5',
+                      fontSize: '0.875rem',
+                      fontStyle: 'italic'
+                    }}
+                  >
+                    {annotation}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
     </div>
   );
 }

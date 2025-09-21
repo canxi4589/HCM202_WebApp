@@ -107,13 +107,8 @@ export default function Header() {
               Nội dung
             </span>
           </Link>
-          <Link href="/cach-mang-giai-phong-dan-toc">
-            <span className={linkClasses("/cach-mang-giai-phong-dan-toc")}>
-              Cách mạng giải phóng dân tộc
-            </span>
-          </Link>
-          <Link href="/on-tap">
-            <span className={linkClasses("/on-tap")}>Ôn tập</span>
+          <Link href="/quiz">
+            <span className={linkClasses("/quiz")}>Ôn tập</span>
           </Link>
         </nav>
 
@@ -140,18 +135,8 @@ export default function Header() {
                 Nội dung
               </span>
             </Link>
-            <Link
-              href="/cach-mang-giai-phong-dan-toc"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span
-                className={mobileLinkClasses("/cach-mang-giai-phong-dan-toc")}
-              >
-                Cách mạng giải phóng dân tộc
-              </span>
-            </Link>
-            <Link href="/on-tap" onClick={() => setIsMenuOpen(false)}>
-              <span className={mobileLinkClasses("/on-tap")}>Ôn tập</span>
+            <Link href="/quiz" onClick={() => setIsMenuOpen(false)}>
+              <span className={mobileLinkClasses("/quiz")}>Ôn tập</span>
             </Link>
           </nav>
         </div>
