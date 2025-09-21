@@ -102,9 +102,9 @@ export default function Header() {
           <Link href="/ve-du-an">
             <span className={linkClasses("/ve-du-an")}>Về dự án</span>
           </Link>
-          <Link href="/doc-lap-dan-toc">
-            <span className={linkClasses("/doc-lap-dan-toc")}>
-              Vấn đề độc lập dân tộc
+          <Link href="/noi-dung">
+            <span className={linkClasses("/noi-dung")}>
+              Nội dung
             </span>
           </Link>
           <Link href="/cach-mang-giai-phong-dan-toc">
@@ -112,8 +112,8 @@ export default function Header() {
               Cách mạng giải phóng dân tộc
             </span>
           </Link>
-          <Link href="/quiz">
-            <span className={linkClasses("/quiz")}>Ôn tập</span>
+          <Link href="/on-tap">
+            <span className={linkClasses("/on-tap")}>Ôn tập</span>
           </Link>
         </nav>
 
@@ -135,9 +135,9 @@ export default function Header() {
             <Link href="/ve-du-an" onClick={() => setIsMenuOpen(false)}>
               <span className={mobileLinkClasses("/ve-du-an")}>Về dự án</span>
             </Link>
-            <Link href="/doc-lap-dan-toc" onClick={() => setIsMenuOpen(false)}>
-              <span className={mobileLinkClasses("/doc-lap-dan-toc")}>
-                Vấn đề độc lập dân tộc
+            <Link href="/noi-dung" onClick={() => setIsMenuOpen(false)}>
+              <span className={mobileLinkClasses("/noi-dung")}>
+                Nội dung
               </span>
             </Link>
             <Link
@@ -150,8 +150,8 @@ export default function Header() {
                 Cách mạng giải phóng dân tộc
               </span>
             </Link>
-            <Link href="/quiz" onClick={() => setIsMenuOpen(false)}>
-              <span className={mobileLinkClasses("/quiz")}>Ôn tập</span>
+            <Link href="/on-tap" onClick={() => setIsMenuOpen(false)}>
+              <span className={mobileLinkClasses("/on-tap")}>Ôn tập</span>
             </Link>
           </nav>
         </div>

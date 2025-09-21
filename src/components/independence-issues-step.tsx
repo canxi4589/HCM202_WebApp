@@ -1,215 +1,284 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState, useMemo, useEffect } from "react";
+import { useLayoutEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import IssueCard from "./issue-card";
-
-gsap.registerPlugin(ScrollTrigger);
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const issues = [
   {
-    title: "Quyền thiêng liêng, bất khả xâm phạm",
-    desc: "Không có gì quý hơn độc lập, tự do.",
+    title: "Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội",
+    desc: "Chủ nghĩa xã hội là mục tiêu lịch sử, phát triển công bằng, dân chủ, văn minh, và toàn diện.",
     img: "/images/independence-1.jpg",
-    href: "/doc-lap-dan-toc/quyen-thien-lieng",
+    href: "/tu-tuong-hcm-ve-chu-nghia-xa-hoi",
   },
   {
-    title: "Cơm no, áo ấm, hạnh phúc",
+    title: "Tư tưởng HCM về xây dựng chủ nghĩa xã hội ở Việt Nam",
     desc: "Độc lập phải gắn với đời sống thiết thực của nhân dân.",
     img: "/images/independence-2.jpg",
-    href: "/doc-lap-dan-toc/com-no-ao-am-hanh-phuc",
+    href: "/noi-dung/com-no-ao-am-hanh-phuc",
   },
   {
-    title: "Độc lập thật sự, triệt để",
+    title: "Tư tưởng Hồ Chí Minh về thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam",
     desc: "Không bị áp bức chính trị, bóc lột kinh tế, nô dịch văn hóa.",
     img: "/images/independence-3.jpg",
-    href: "/doc-lap-dan-toc/doc-lap-that-su-triet-de",
+    href: "/noi-dung/doc-lap-that-su-triet-de",
   },
   {
-    title: "Thống nhất và toàn vẹn lãnh thổ",
+    title: "Ôn tập kiến thức",
     desc: "Nước Việt Nam là một, dân tộc Việt Nam là một.",
     img: "/images/independence-4.jpg",
-    href: "/doc-lap-dan-toc/thong-nhat-va-toan-ven-lanh-tho",
+    href: "/noi-dung/thong-nhat-va-toan-ven-lanh-tho",
   },
 ];
 
 export default function IndependenceIssues() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
-  const svgRef = useRef<SVGSVGElement | null>(null);
-  const lineRef = useRef<SVGPolylineElement | null>(null);
-  const motionDotRef = useRef<SVGCircleElement | null>(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const [pointsPx, setPointsPx] = useState<{ x: number; y: number }[]>([]);
-  const [paddingX, setPaddingX] = useState(16);
+  const nextSlide = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => (prev + 1) % issues.length);
+    setTimeout(() => setIsTransitioning(false), 600);
+  }, [isTransitioning]);
 
-  useEffect(() => {
-    const updatePadding = () => {
-      if (window.innerWidth >= 1024) setPaddingX(80); // lg
-      else if (window.innerWidth >= 768) setPaddingX(220); // md
-      else setPaddingX(220);
-    };
-    updatePadding();
-    window.addEventListener("resize", updatePadding);
-    return () => window.removeEventListener("resize", updatePadding);
-  }, []);
+  const prevSlide = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => (prev - 1 + issues.length) % issues.length);
+    setTimeout(() => setIsTransitioning(false), 600);
+  }, [isTransitioning]);
 
-  // generate polyline points theo paddingX
-  const svgPoints = useMemo(() => {
-    const numPoints = issues.length;
-    if (numPoints === 0) return "";
+  const goToSlide = useCallback(
+    (index: number) => {
+      if (isTransitioning || index === currentIndex) return;
+      setIsTransitioning(true);
+      setCurrentIndex(index);
+      setTimeout(() => setIsTransitioning(false), 600);
+    },
+    [currentIndex, isTransitioning]
+  );
 
-    const viewBoxWidth = 1000;
-    const viewBoxHeight = 300;
-
-    const stepX = (viewBoxWidth - paddingX * 2) / (numPoints - 1);
-
-    return issues
-      .map((_, i) => {
-        const x = paddingX + i * stepX;
-        const y = i % 2 === 0 ? viewBoxHeight * 0.6 : viewBoxHeight * 0.4;
-        return `${x},${y}`;
-      })
-      .join(" ");
-  }, [paddingX]);
-
+  // Auto-rotate carousel
   useLayoutEffect(() => {
-    if (!sectionRef.current || !lineRef.current || !svgRef.current) return;
-    const svg = svgRef.current;
-    const poly = lineRef.current;
-
-    const computeVertexPositions = () => {
-      const rect = svg.getBoundingClientRect();
-      const vb = svg.viewBox.baseVal;
-      const scaleX = rect.width / vb.width;
-      const scaleY = rect.height / vb.height;
-      const px: { x: number; y: number }[] = [];
-      const n = poly.points.numberOfItems;
-      for (let i = 0; i < n; i++) {
-        const p = poly.points.getItem(i);
-        px.push({ x: p.x * scaleX, y: p.y * scaleY });
+    const interval = setInterval(() => {
+      if (!isTransitioning) {
+        nextSlide();
       }
-      setPointsPx(px);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [nextSlide, isTransitioning]);
+
+  // Touch/Swipe handling
+  useLayoutEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    let startX = 0;
+    let startY = 0;
+    let isDragging = false;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      isDragging = true;
     };
 
-    computeVertexPositions();
-    const ro = new ResizeObserver(() => computeVertexPositions());
-    ro.observe(svg);
+    const handleTouchMove = (e: TouchEvent) => {
+      if (!isDragging) return;
+      e.preventDefault();
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      if (!isDragging) return;
+      isDragging = false;
+
+      const endX = e.changedTouches[0].clientX;
+      const endY = e.changedTouches[0].clientY;
+      const deltaX = endX - startX;
+      const deltaY = endY - startY;
+
+      // Only trigger if horizontal swipe is more significant than vertical
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+        if (deltaX > 0) {
+          prevSlide();
+        } else {
+          nextSlide();
+        }
+      }
+    };
+
+    carousel.addEventListener("touchstart", handleTouchStart, { passive: true });
+    carousel.addEventListener("touchmove", handleTouchMove, { passive: false });
+    carousel.addEventListener("touchend", handleTouchEnd, { passive: true });
+
+    return () => {
+      carousel.removeEventListener("touchstart", handleTouchStart);
+      carousel.removeEventListener("touchmove", handleTouchMove);
+      carousel.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [nextSlide, prevSlide]);
+
+  // GSAP animations
+  useLayoutEffect(() => {
+    if (!sectionRef.current) return;
 
     const ctx = gsap.context(() => {
-      const line = lineRef.current!;
-      const length = line.getTotalLength();
-      gsap.set(line, { strokeDashoffset: length });
-      gsap.to(line, {
-        strokeDashoffset: 0,
-        duration: 4,
-        ease: "linear",
-        repeat: -1,
-      });
+      // Animate carousel items
+      gsap.utils.toArray<HTMLElement>(".carousel-item").forEach((item, index) => {
+        const angle = (index * 360) / issues.length - (currentIndex * 360) / issues.length;
+        const isActive = index === currentIndex;
 
-      const dot = motionDotRef.current!;
-      gsap.to(dot, {
-        duration: 4,
-        repeat: -1,
-        ease: "linear",
-        onUpdate: function () {
-          const progress = this.progress();
-          const point = line.getPointAtLength(progress * length);
-          dot.setAttribute("cx", point.x.toString());
-          dot.setAttribute("cy", point.y.toString());
-        },
-      });
+        gsap.to(item, {
+          rotation: angle,
+          scale: isActive ? 1.2 : 0.8,
+          opacity: isActive ? 1 : 0.6,
+          zIndex: isActive ? 10 : 1,
+          duration: 0.6,
+          ease: "power2.out",
+        });
 
-      gsap.utils.toArray<HTMLElement>(".issue-card").forEach((card) => {
-        gsap.from(card, {
-          opacity: 0,
-          y: 60,
-          scale: 0.9,
-          duration: 0.8,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: card,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
+        // Rotate content in opposite direction to keep it upright
+        const content = item.querySelector(".carousel-content");
+        gsap.to(content, {
+          rotation: -angle,
+          duration: 0.6,
+          ease: "power2.out",
         });
       });
 
-      gsap.from(".section-label", {
-        opacity: 0,
-        scale: 0.8,
-        y: -20,
-        duration: 1,
+      // Animate navigation buttons
+      gsap.from(".nav-button", {
+        scale: 0,
+        rotation: 180,
+        duration: 0.8,
         ease: "back.out(1.7)",
+        stagger: 0.1,
+      });
+
+      // Animate dots
+      gsap.from(".carousel-dot", {
+        scale: 0,
+        y: 20,
+        opacity: 0,
+        duration: 0.6,
+        ease: "back.out(1.7)",
+        stagger: 0.05,
+        delay: 0.3,
       });
     }, sectionRef);
 
-    return () => {
-      ro.disconnect();
-      ctx.revert();
-    };
-  }, [svgPoints]);
+    return () => ctx.revert();
+  }, [currentIndex]);
 
   return (
-    <section ref={sectionRef} className="relative h-screen flex flex-col">
-      <Image
-        src="/images/background.png"
-        alt=""
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="relative z-10 lg:max-w-[900px] xl:max-w-[1200px] mx-auto w-full flex-grow flex items-center pt-10">
-        <div className="w-full overflow-x-auto lg:overflow-x-visible h-full flex items-center scrollbar-hidden">
-          {/* padding container match với paddingX */}
-          <div className="relative w-full min-w-[1000px] md:min-w-0 h-[80%] px-4 md:px-6 lg:px-[80px]">
-            <svg
-              ref={svgRef}
-              viewBox="0 0 1000 300"
-              className="absolute inset-0 w-full h-full z-0 pointer-events-none"
-            >
-              <polyline
-                ref={lineRef}
-                points={svgPoints}
-                fill="none"
-                stroke="#7d0000"
-                strokeWidth="3"
-                strokeDasharray="1,12"
-                strokeLinecap="round"
-              />
-              <circle
-                ref={motionDotRef}
-                r={8}
-                fill="#d00000"
-                stroke="white"
-                strokeWidth="2"
-              />
-            </svg>
-            {pointsPx.map((p, i) => {
-              const translateY = i % 2 === 0 ? "0px" : "-100%";
+    <section ref={sectionRef} className="relative h-screen flex flex-col overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/background.png"
+          alt=""
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-amber-900/20" />
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 flex-grow flex items-center justify-center px-4">
+        <div className="relative w-full max-w-6xl mx-auto">
+          {/* Circular Carousel */}
+          <div
+            ref={carouselRef}
+            className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mx-auto"
+          >
+            {issues.map((issue, index) => {
+              const angle = (index * 360) / issues.length;
+              const radius = 220; // Radius for positioning
+              const x = Math.cos((angle * Math.PI) / 180) * radius;
+              const y = Math.sin((angle * Math.PI) / 180) * radius;
+
               return (
                 <div
-                  key={i}
-                  className="absolute issue-card overflow-visible z-0"
+                  key={index}
+                  className="carousel-item absolute top-1/2 left-1/2 cursor-pointer group"
                   style={{
-                    left: `${p.x}px`,
-                    top: `${p.y}px`,
-                    transform: `translate(-50%, ${translateY})`,
+                    transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
                   }}
+                  onClick={() => goToSlide(index)}
                 >
-                  <IssueCard
-                    index={i}
-                    title={issues[i].title}
-                    desc={issues[i].desc}
-                    img={issues[i].img}
-                    href={issues[i].href}
-                  />
+                  <div className="carousel-content relative">
+                    <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative rounded-full overflow-hidden shadow-2xl border-4 border-white/20 group-hover:border-red-400/60 transition-all duration-300">
+                      <Image
+                        src={issue.img}
+                        alt={issue.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    </div>
+                  </div>
                 </div>
               );
             })}
+
+            {/* Central Content Area - Moved here to be in center of carousel */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-[200px] h-[200px]">
+              <div className="bg-black/60 backdrop-blur-md rounded-2xl p-3 border border-white/20 shadow-2xl box-border h-full flex flex-col justify-center">
+                <h3 className="text-sm md:text-base font-bold text-white mb-2 drop-shadow-lg leading-tight">
+                  {issues[currentIndex].title}
+                </h3>
+                <p className="text-xs text-white/90 leading-relaxed drop-shadow mb-3">
+                  {issues[currentIndex].desc}
+                </p>
+                <Link
+                  href={issues[currentIndex].href}
+                  className="inline-block px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-full text-xs font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
+                  Tìm hiểu thêm
+                </Link>
+              </div>
+            </div>
           </div>
+
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlide}
+            disabled={isTransitioning}
+            className="nav-button absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white hover:text-red-200 transition-all duration-300 backdrop-blur-sm border border-white/20 disabled:opacity-50"
+          >
+            <ChevronLeft size={24} />
+          </button>
+
+          <button
+            onClick={nextSlide}
+            disabled={isTransitioning}
+            className="nav-button absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white hover:text-red-200 transition-all duration-300 backdrop-blur-sm border border-white/20 disabled:opacity-50"
+          >
+            <ChevronRight size={24} />
+          </button>
         </div>
+      </div>
+
+      {/* Dots Indicator */}
+      <div className="relative z-10 flex justify-center space-x-3 pb-8">
+        {issues.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`carousel-dot w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentIndex
+                ? "bg-red-500 scale-125 shadow-lg"
+                : "bg-white/40 hover:bg-white/60"
+            }`}
+          />
+        ))}
       </div>
     </section>
   );
