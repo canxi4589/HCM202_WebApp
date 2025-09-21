@@ -37,21 +37,21 @@ export default function Hero() {
       <Header />
 
       <Image
-        src="/images/hero.png"
+        src="/images/thoi-ky-qua-do/cuuquoc3.png"
         alt="Hero Background"
         fill
-        className="object-cover"
+        className="object-contain scale-120"
         priority
       />
 
-      <div className="relative z-10 max-w-5xl px-6">
-        <h1
-          ref={titleRef}
-          className="text-3xl md:text-6xl font-extrabold text-red-800 drop-shadow-lg uppercase leading-relaxed"
-        >
-          Tư tưởng Hồ Chí Minh về độc lập dân tộc và chủ nghĩa xã hội
-        </h1>
-      </div>
+<div className="relative z-10 max-w-2xl px-4 -ml-60">
+  <h1
+    ref={titleRef}
+    className="text-xl md:text-3xl font-extrabold text-red-800 drop-shadow-lg uppercase leading-relaxed text-left ml-1"
+  >
+    Tư tưởng Hồ Chí Minh về thời kỳ quá độ lên Chủ Nghĩa Xã Hội
+  </h1>
+</div>
     </section>
   );
 }

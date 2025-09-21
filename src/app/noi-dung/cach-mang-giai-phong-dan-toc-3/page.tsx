@@ -26,7 +26,7 @@ export default function CachMangGiaiPhongDanToc() {
       const rect = contentSectionRef.current.getBoundingClientRect();
       const scrollTop = window.pageYOffset + rect.top + 200; // Thêm 100px để scroll xuống sâu hơn
       
-      window.scrollTo({
+      window.scrollTo({ 
         top: scrollTop,
         behavior: "smooth"
       });
