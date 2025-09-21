@@ -1,14 +1,21 @@
 "use client";
 
 import { useEffect } from "react";
-import { X, Quote, CheckCircle, ArrowRight } from "lucide-react";
+import { X, Quote, CheckCircle, ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
+
+interface ExampleLink {
+  text: string;
+  url: string;
+  title: string;
+}
 
 interface Goal {
   id: number;
   title: string;
   subtitle: string;
   content: string[];
+  exampleLinks?: ExampleLink[];
   quote: string;
   image: string;
   altText: string;
@@ -132,12 +139,15 @@ export default function GoalDetailModal({ goal, isOpen, onClose }: GoalDetailMod
                     <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
                     Nội dung chính
                   </h3>
-                  <div className="space-y-4">
-                    {getMainContent(goal.content).map((item, index) => (
-                      <div key={index} className="bg-white border border-gray-200 rounded-lg p-4">
-                        <p className="text-gray-700 leading-relaxed">{item}</p>
-                      </div>
-                    ))}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6">
+                    <ul className="space-y-3">
+                      {getMainContent(goal.content).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <div className="w-2 h-2 bg-red-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <p className="text-gray-700 leading-relaxed">{item}</p>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 
@@ -162,19 +172,32 @@ export default function GoalDetailModal({ goal, isOpen, onClose }: GoalDetailMod
               </div>
 
               {/* Examples Section */}
-              {getExamples(goal.content).length > 0 && (
+              {goal.exampleLinks && goal.exampleLinks.length > 0 && (
                 <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
                   <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center">
                     <ArrowRight className="w-5 h-5 text-blue-600 mr-2" />
                     Ví dụ thực tiễn
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {getExamples(goal.content).map((example, index) => (
-                      <div key={index} className="bg-white rounded-lg p-4 border border-blue-100">
-                        <p className="text-gray-700 text-sm leading-relaxed">
-                          {example.replace(/^[•+]\s*/, '').replace(/^Ví dụ[:\s]*/, '')}
-                        </p>
-                      </div>
+                    {goal.exampleLinks.map((example, index) => (
+                      <a
+                        key={index}
+                        href={example.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={example.title}
+                        className="group bg-white rounded-lg p-4 border border-blue-100 hover:border-blue-300 hover:shadow-md transition-all duration-300 cursor-pointer"
+                      >
+                        <div className="flex items-start justify-between">
+                          <p className="text-gray-700 text-sm leading-relaxed group-hover:text-blue-700 transition-colors duration-300">
+                            {example.text}
+                          </p>
+                          <ExternalLink className="w-4 h-4 text-blue-500 ml-2 flex-shrink-0 group-hover:text-blue-700 transition-colors duration-300" />
+                        </div>
+                        <div className="mt-2 text-xs text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Click để tìm hiểu thêm →
+                        </div>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -183,7 +206,7 @@ export default function GoalDetailModal({ goal, isOpen, onClose }: GoalDetailMod
               {/* Key Points Summary */}
               <div className="mt-8 bg-gray-50 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-4">
-                  Điểm nhấn quan trọng
+                  Trích Nguồn
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="text-center">

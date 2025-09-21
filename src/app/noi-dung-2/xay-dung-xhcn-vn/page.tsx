@@ -159,30 +159,7 @@ export default function XayDungChuNghiaXaHoiVietNam() {
             </p>
           </div>
 
-          {/* Key Principles Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="text-2xl mb-2">🏛️</div>
-              <h3 className="text-white font-semibold text-sm">Mục tiêu chính trị</h3>
-              <p className="text-white/80 text-xs mt-1">Dân chủ xã hội chủ nghĩa</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="text-2xl mb-2">📈</div>
-              <h3 className="text-white font-semibold text-sm">Mục tiêu kinh tế</h3>
-              <p className="text-white/80 text-xs mt-1">Phát triển toàn diện</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="text-2xl mb-2">�</div>
-              <h3 className="text-white font-semibold text-sm">Mục tiêu văn hóa</h3>
-              <p className="text-white/80 text-xs mt-1">Dân tộc - Khoa học - Đại chúng</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:bg-white/15 transition-all">
-              <div className="text-2xl mb-2">⚖️</div>
-              <h3 className="text-white font-semibold text-sm">Mục tiêu xã hội</h3>
-              <p className="text-white/80 text-xs mt-1">Công bằng - Văn minh</p>
-            </div>
-          </div>
-
+         
           {/* Key Quote */}
           <div className="bg-black/30 backdrop-blur-sm rounded-lg p-6 border border-yellow-400/30 max-w-4xl mx-auto">
             <blockquote className="text-lg sm:text-xl text-white italic leading-relaxed">
@@ -232,15 +209,7 @@ export default function XayDungChuNghiaXaHoiVietNam() {
               Click vào từng mục tiêu để xem chi tiết đầy đủ.
             </p>
 
-            {/* Key Quote */}
-            <div className="bg-gradient-to-r from-red-50 to-blue-50 border border-red-200 rounded-2xl p-8 max-w-4xl mx-auto mb-8">
-              <blockquote className="text-xl sm:text-2xl text-gray-800 italic leading-relaxed mb-4">
-                "Muốn xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa"
-              </blockquote>
-              <cite className="block text-red-700 font-semibold">
-                — Chủ tịch Hồ Chí Minh
-              </cite>
-            </div>
+         
             
             {/* Summary Box */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 max-w-5xl mx-auto shadow-lg">
@@ -249,22 +218,22 @@ export default function XayDungChuNghiaXaHoiVietNam() {
                 <div className="bg-red-50 rounded-lg p-4 border border-red-200">
                   <div className="text-2xl mb-2">🏛️</div>
                   <h4 className="font-bold text-red-700 mb-2">Chính trị</h4>
-                  <p className="text-gray-700">Xây dựng chế độ dân chủ, dân là chủ – dân làm chủ</p>
+                  <p className="text-gray-700">Phải xây dựng được chế độ dân chủ</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                   <div className="text-2xl mb-2">📈</div>
                   <h4 className="font-bold text-blue-700 mb-2">Kinh tế</h4>
-                  <p className="text-gray-700">Phát triển công nông nghiệp hiện đại, quốc doanh và hợp tác xã chủ đạo</p>
+                  <p className="text-gray-700">Phải xây dựng được nền kinh tế phát triển cao gắn bó mật thiết với mục tiêu chính trị</p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                   <div className="text-2xl mb-2">🌸</div>
                   <h4 className="font-bold text-green-700 mb-2">Văn hóa</h4>
-                  <p className="text-gray-700">Nền văn hóa dân tộc, khoa học, đại chúng; kế thừa truyền thống</p>
+                  <p className="text-gray-700">Phải xây dựng được nền văn hóa dân tộc, khoa học, đại chúng và tiếp thu tinh hoa văn hóa nhân loại</p>
                 </div>
                 <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
                   <div className="text-2xl mb-2">⚖️</div>
                   <h4 className="font-bold text-purple-700 mb-2">Xã hội</h4>
-                  <p className="text-gray-700">Bảo đảm dân chủ, công bằng, văn minh, hài hòa lợi ích</p>
+                  <p className="text-gray-700">Phải bảo đảm dân chủ, công bằng, văn minh, hài hòa lợi ích</p>
                 </div>
               </div>
             </div>
@@ -305,9 +274,24 @@ export default function XayDungChuNghiaXaHoiVietNam() {
               Động lực của chủ nghĩa xã hội ở Việt Nam - Chi tiết
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
               Phân tích chi tiết các động lực thúc đẩy xây dựng chủ nghĩa xã hội theo tư tưởng Hồ Chí Minh
             </p>
+            
+            {/* Interactive Button to View Goal 5 */}
+            <div className="mb-8">
+              <button
+                onClick={() => handleGoalClick(revolutionSteps[4])}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 flex items-center mx-auto gap-2"
+              >
+                <span>🎯</span>
+                Xem mục tiêu 5 với ví dụ tương tác
+                <span>→</span>
+              </button>
+              <p className="text-sm text-gray-500 mt-2">
+                Click để xem chi tiết với các liên kết thực tiễn có thể nhấp
+              </p>
+            </div>
           </div>
 
           {/* 1. Động lực quyết định */}
@@ -352,9 +336,35 @@ export default function XayDungChuNghiaXaHoiVietNam() {
               
               <div className="bg-gray-50 rounded-lg p-6">
                 <h4 className="font-bold text-gray-800 mb-3">Ví dụ thực tiễn:</h4>
-                <p className="text-sm text-gray-700">
-                  Phong trào hiến đất làm đường, đóng góp công sức xây dựng hạ tầng tại địa phương – thể hiện quyền làm chủ và tinh thần đoàn kết.
-                </p>
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-700">
+                    Phong trào hiến đất làm đường, đóng góp công sức xây dựng hạ tầng tại địa phương – thể hiện quyền làm chủ và tinh thần đoàn kết.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://kcdd.vn/chuong-trinh-muc-tieu-quoc-gia/chuong-trinh-muc-tieu-quoc-gia-xay-dung-nong-thon-moi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors duration-300"
+                    >
+                      📖 Chương trình nông thôn mới
+                      <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://mattran.org.vn/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors duration-300"
+                    >
+                      🤝 Mặt trận Tổ quốc
+                      <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -373,9 +383,20 @@ export default function XayDungChuNghiaXaHoiVietNam() {
                   <p className="text-sm text-gray-700 mb-3">
                     "Đảng như người cầm lái, người cầm lái có vững thì thuyền mới chạy" – giữ vai trò lãnh đạo quyết định.
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 mb-3">
                     <strong>Ví dụ:</strong> Đảng Cộng sản Việt Nam đề ra đường lối Đổi mới 1986, lãnh đạo đất nước vượt qua khủng hoảng, hội nhập quốc tế.
                   </p>
+                  <a
+                    href="https://dangcongsan.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-red-600 hover:text-red-800 text-sm font-medium bg-red-100 hover:bg-red-200 px-3 py-1 rounded-full transition-colors duration-300"
+                  >
+                    🏛️ Trang chủ Đảng Cộng sản Việt Nam
+                    <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
                 </div>
                 
                 <div className="bg-blue-50 rounded-lg p-6">
@@ -383,9 +404,20 @@ export default function XayDungChuNghiaXaHoiVietNam() {
                   <p className="text-sm text-gray-700 mb-3">
                     Đại diện ý chí, quyền lực nhân dân; biến chủ trương, đường lối của Đảng thành hiện thực.
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 mb-3">
                     <strong>Ví dụ:</strong> Nhà nước điện tử: cung cấp dịch vụ công trực tuyến, minh bạch hóa thủ tục, đưa đường lối, chính sách vào thực tiễn.
                   </p>
+                  <a
+                    href="https://dichvucong.gov.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium bg-blue-100 hover:bg-blue-200 px-3 py-1 rounded-full transition-colors duration-300"
+                  >
+                    💻 Cổng dịch vụ công quốc gia
+                    <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
                 </div>
                 
                 <div className="bg-green-50 rounded-lg p-6">
@@ -393,9 +425,46 @@ export default function XayDungChuNghiaXaHoiVietNam() {
                   <p className="text-sm text-gray-700 mb-3">
                     Hoạt động vì lợi ích hội viên, thống nhất với lợi ích dân tộc; phải chống phá hoại từ ngoài và chống "kẻ địch bên trong" như chủ nghĩa cá nhân, quan liêu.
                   </p>
-                  <p className="text-sm text-gray-600">
-                    <strong>Ví dụ:</strong> Các đoàn thể như Mặt trận Tổ quốc, Hội Phụ nữ, Đoàn Thanh niên vận động quần chúng tham gia các phong trào: phòng chống dịch COVID-19, bảo vệ môi trường.
-                  </p>
+                  <div className="space-y-3">
+                    <p className="text-sm text-gray-700">
+                      <strong>Ví dụ:</strong> Các đoàn thể như Mặt trận Tổ quốc, Hội Phụ nữ, Đoàn Thanh niên vận động quần chúng tham gia các phong trào: phòng chống dịch COVID-19, bảo vệ môi trường.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <a
+                        href="https://mattran.org.vn/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-green-600 hover:text-green-800 text-sm font-medium bg-green-100 hover:bg-green-200 px-3 py-1 rounded-full transition-colors duration-300"
+                      >
+                        🤝 Mặt trận Tổ quốc
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://hoiphunu.org.vn/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-green-600 hover:text-green-800 text-sm font-medium bg-green-100 hover:bg-green-200 px-3 py-1 rounded-full transition-colors duration-300"
+                      >
+                        👩 Hội Phụ nữ Việt Nam
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://doanthanhnien.vn/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-green-600 hover:text-green-800 text-sm font-medium bg-green-100 hover:bg-green-200 px-3 py-1 rounded-full transition-colors duration-300"
+                      >
+                        🌟 Đoàn Thanh niên
+                        <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -455,9 +524,35 @@ export default function XayDungChuNghiaXaHoiVietNam() {
               
               <div className="bg-yellow-50 rounded-lg p-6">
                 <h4 className="font-bold text-yellow-700 mb-3">Ví dụ thực tiễn:</h4>
-                <p className="text-sm text-gray-700">
-                  Phong trào "Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh"; cán bộ, công chức rèn luyện "cần, kiệm, liêm, chính".
-                </p>
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-700">
+                    Phong trào "Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh"; cán bộ, công chức rèn luyện "cần, kiệm, liêm, chính".
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://www.cpv.org.vn/cpv/Modules/News/NewsDetail.aspx?co_id=30287&cn_id=949880"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-yellow-600 hover:text-yellow-800 text-sm font-medium bg-yellow-100 hover:bg-yellow-200 px-3 py-1 rounded-full transition-colors duration-300"
+                    >
+                      🎓 Phong trào học tập Hồ Chí Minh
+                      <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://baochinhphu.vn/van-hoa-doanh-nghiep-xa-hoi-chu-nghia-102240924.htm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-yellow-600 hover:text-yellow-800 text-sm font-medium bg-yellow-100 hover:bg-yellow-200 px-3 py-1 rounded-full transition-colors duration-300"
+                    >
+                      🏢 Văn hóa doanh nghiệp XHCN
+                      <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -518,9 +613,35 @@ export default function XayDungChuNghiaXaHoiVietNam() {
               
               <div className="bg-purple-50 rounded-lg p-6">
                 <h4 className="font-bold text-purple-700 mb-3">Ví dụ thực tiễn:</h4>
-                <p className="text-sm text-gray-700">
-                  Bảo vệ chủ quyền biển đảo, đấu tranh phản bác các thông tin sai trái trên mạng – vừa xây dựng vừa bảo vệ thành quả cách mạng.
-                </p>
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-700">
+                    Bảo vệ chủ quyền biển đảo, đấu tranh phản bác các thông tin sai trái trên mạng – vừa xây dựng vừa bảo vệ thành quả cách mạng.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="https://www.mod.gov.vn/wps/portal/!ut/p/c4/04_SB8K8xLLM9MSSzPy8xBz9CP0os3hjdwMDJydnRwN3_wAPAyMDTwMPMwcjAwcHE_3g1Dz9gmxHRQD7rQwJ/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-purple-600 hover:text-purple-800 text-sm font-medium bg-purple-100 hover:bg-purple-200 px-3 py-1 rounded-full transition-colors duration-300"
+                    >
+                      🛡️ Bộ Quốc phòng
+                      <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://bienphong.com.vn/bao-ve-chu-quyen-bien-dao-post532158.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-purple-600 hover:text-purple-800 text-sm font-medium bg-purple-100 hover:bg-purple-200 px-3 py-1 rounded-full transition-colors duration-300"
+                    >
+                      🏝️ Bảo vệ chủ quyền biển đảo
+                      <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

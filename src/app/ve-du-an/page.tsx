@@ -238,7 +238,7 @@ const VeDuAn = () => {
       
       {/* Background */}
       <div className="absolute inset-0">
-        <Image src="/images/tu-tuong-hcm-bg.jpg" alt="" fill className="object-cover" priority />
+        <Image src="/images/background-2.jpg" alt="" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-red-900/20 via-transparent to-blue-900/20" />
         <div className="absolute inset-0 bg-black/10" />
       </div>
