@@ -357,23 +357,7 @@ export default function CachMangGiaiPhongDanToc() {
             </button>
           </div>
 
-          {/* Navigation Buttons */}
-          <div className="flex justify-center mt-8 space-x-4">
-            <button
-              onClick={prevStep}
-              disabled={currentStep === 0}
-              className="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              ← Trước
-            </button>
-            <button
-              onClick={nextStep}
-              disabled={currentStep === revolutionSteps.length - 1}
-              className="px-6 py-3 bg-red-600 text-white rounded-lg font-medium transition-all duration-300 hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Tiếp →
-            </button>
-          </div>
+          
         </div>
       </section>
 
