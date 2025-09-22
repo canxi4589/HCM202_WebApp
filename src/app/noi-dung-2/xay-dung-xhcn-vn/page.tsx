@@ -218,22 +218,22 @@ export default function XayDungChuNghiaXaHoiVietNam() {
                 <div className="bg-red-50 rounded-lg p-4 border border-red-200">
                   <div className="text-2xl mb-2">🏛️</div>
                   <h4 className="font-bold text-red-700 mb-2">Chính trị</h4>
-                  <p className="text-gray-700">Phải xây dựng được chế độ dân chủ</p>
+                  <p className="text-gray-700">Xây dựng chế độ dân chủ - "Dân là chủ, dân làm chủ"</p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                   <div className="text-2xl mb-2">📈</div>
                   <h4 className="font-bold text-blue-700 mb-2">Kinh tế</h4>
-                  <p className="text-gray-700">Phải xây dựng được nền kinh tế phát triển cao gắn bó mật thiết với mục tiêu chính trị</p>
+                  <p className="text-gray-700">Nền kinh tế phát triển cao gắn bó mật thiết với mục tiêu chính trị</p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                   <div className="text-2xl mb-2">🌸</div>
                   <h4 className="font-bold text-green-700 mb-2">Văn hóa</h4>
-                  <p className="text-gray-700">Phải xây dựng được nền văn hóa dân tộc, khoa học, đại chúng và tiếp thu tinh hoa văn hóa nhân loại</p>
+                  <p className="text-gray-700">Nền văn hóa dân tộc, khoa học, đại chúng và tiếp thu tinh hoa văn hóa nhân loại</p>
                 </div>
                 <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
                   <div className="text-2xl mb-2">⚖️</div>
-                  <h4 className="font-bold text-purple-700 mb-2">Xã hội</h4>
-                  <p className="text-gray-700">Phải bảo đảm dân chủ, công bằng, văn minh, hài hòa lợi ích</p>
+                  <h4 className="font-bold text-purple-700 mb-2">Quan hệ xã hội</h4>
+                  <p className="text-gray-700">Xã hội dân chủ, công bằng, văn minh với sự hài hòa lợi ích cá nhân - tập thể</p>
                 </div>
               </div>
             </div>
@@ -647,6 +647,58 @@ export default function XayDungChuNghiaXaHoiVietNam() {
           </div>
 
           {/* Tóm tắt */}
+        {/* References and Bibliography Section */}
+        <div className="mb-16">
+          <div className="bg-white rounded-xl shadow-lg p-8 max-w-5xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+              📚 Tài liệu tham khảo
+            </h3>
+            
+            <div className="space-y-6">
+              {/* Primary Sources */}
+              <div>
+                <h4 className="text-lg font-semibold text-red-700 mb-3">Nguồn tài liệu chính:</h4>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p>1. Hồ Chí Minh (2011). <em>Toàn tập</em>, Tập 8. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                  <p>2. Hồ Chí Minh (2011). <em>Toàn tập</em>, Tập 9. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                  <p>3. Hồ Chí Minh (2011). <em>Toàn tập</em>, Tập 10. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                  <p>4. Hồ Chí Minh (2011). <em>Toàn tập</em>, Tập 12. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                  <p>5. Hồ Chí Minh (2011). <em>Toàn tập</em>, Tập 14. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                  <p>6. Hồ Chí Minh (2011). <em>Toàn tập</em>, Tập 15. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                </div>
+              </div>
+
+              {/* Legal Documents */}
+              <div>
+                <h4 className="text-lg font-semibold text-blue-700 mb-3">Văn bản pháp lý:</h4>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p>7. Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013 (sửa đổi, bổ sung năm 2023).</p>
+                  <p>8. Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011).</p>
+                </div>
+              </div>
+
+              {/* Academic Sources */}
+              <div>
+                <h4 className="text-lg font-semibold text-green-700 mb-3">Giáo trình và nghiên cứu:</h4>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p>9. Học viện Chính trị quốc gia Hồ Chí Minh (2021). <em>Giáo trình Tư tưởng Hồ Chí Minh</em>. Nhà xuất bản Chính trị quốc gia Sự thật, Hà Nội.</p>
+                  <p>10. Bộ Giáo dục và Đào tạo (2023). <em>Tài liệu tham khảo môn Tư tưởng Hồ Chí Minh (HCM202)</em>. Chương II: Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội và xây dựng chủ nghĩa xã hội ở Việt Nam.</p>
+                </div>
+              </div>
+
+              {/* Citation Style Note */}
+              <div className="pt-4 border-t border-gray-200">
+                <p className="text-xs text-gray-500 italic text-center">
+                  * Các trích dẫn và tham khảo được lập theo chuẩn học thuật Việt Nam. 
+                  Số trang cụ thể được ghi chú trong từng phần nội dung chi tiết.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Summary Section */}
+        <div className="mb-16">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
             <h3 className="text-2xl font-bold text-center mb-6">Tóm tắt</h3>
             <p className="text-lg leading-relaxed text-center">
@@ -658,6 +710,7 @@ export default function XayDungChuNghiaXaHoiVietNam() {
               phát huy động lực và loại bỏ mọi lực cản để đưa cách mạng xã hội chủ nghĩa tiến lên vững chắc.
             </p>
           </div>
+        </div>
         </div>
       </section>
     </div>
