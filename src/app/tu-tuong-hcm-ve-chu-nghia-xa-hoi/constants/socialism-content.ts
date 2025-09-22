@@ -12,7 +12,7 @@ export const socialismContent = {
       accentColor: "from-blue-100 to-blue-200",
       content: [
         "Hồ Chí Minh tiếp nhận tinh hoa của chủ nghĩa Mác-Lênin nhưng luôn đặt trong bối cảnh cụ thể của dân tộc Việt Nam: chủ nghĩa xã hội là mục tiêu tối hậu của cách mạng dân tộc dân chủ và sau đó là cách mạng xã hội chủ nghĩa.",
-        "Ông nhấn mạnh: chủ nghĩa xã hội không chỉ là sở hữu công cộng về tư liệu sản xuất, mà còn là xã hội công bằng, dân chủ, văn minh, người dân được tự do phát triển toàn diện cả về vật chất lẫn tinh thần.",
+        "Bác nhấn mạnh: chủ nghĩa xã hội không chỉ là sở hữu công cộng về tư liệu sản xuất, mà còn là xã hội công bằng, dân chủ, văn minh, người dân được tự do phát triển toàn diện cả về vật chất lẫn tinh thần.",
         "Quá trình tiến lên xã hội chủ nghĩa phải phù hợp với trình độ phát triển kinh tế — xã hội của quốc gia (không áp đặt mô hình máy móc), kết hợp hiện đại hóa lực lượng sản xuất với nâng cao văn hoá, đạo đức, giáo dục.",
         "Vai trò lãnh đạo của Đảng Cộng sản, nhà nước của dân, do dân, vì dân; kết hợp đấu tranh giai cấp với đoàn kết dân tộc; thực hiện hoà bình, hợp tác quốc tế."
       ],
@@ -34,16 +34,16 @@ export const socialismContent = {
     },
     {
       id: "b", 
-      title: "Tiến lên chủ nghĩa xã hội là một tất yếu khách quan",
+      title: "Con đường đi lên chủ nghĩa xã hội là một tất yếu của lịch sử",
       subtitle: "Quy luật lịch sử và con đường phù hợp",
       icon: "📈",
       color: "from-green-600 to-green-800",
       accentColor: "from-green-100 to-green-200",
       content: [
         "Hồ Chí Minh tin vào quy luật lịch sử: từ xã hội có giai cấp tiến tới xã hội không còn giai cấp — chủ nghĩa xã hội là bước phát triển tất yếu mà khoa học lịch sử (theo quan điểm Mác) chỉ ra.",
-        "Ở Việt Nam, ông cho rằng sau khi giành độc lập dân tộc (tiêu diệt chủ nghĩa thực dân, phong kiến), con đường tất yếu phải là xây dựng xã hội mới — xã hội chủ nghĩa — để giải phóng dân tộc khỏi nghèo nàn, tụt hậu.",
+        "Ở Việt Nam, Người cho rằng sau khi giành độc lập dân tộc (tiêu diệt chủ nghĩa thực dân, phong kiến), con đường tất yếu phải là xây dựng xã hội mới — xã hội chủ nghĩa — để giải phóng dân tộc khỏi nghèo nàn, tụt hậu.",
         'Tuy nhiên, "tất yếu" ở đây không đồng nghĩa với "tự động" hay "ngay lập tức": HCM nhấn mạnh yếu tố chủ động - công tác lãnh đạo, tổ chức, sự giác ngộ của nhân dân, và bước đi phù hợp (giai đoạn chuyển tiếp: cách mạng dân tộc dân chủ → phát triển lực lượng sản xuất → xã hội chủ nghĩa).',
-        "Ông cũng nhấn mạnh yếu tố khách quan (quy luật lịch sử, phát triển lực lượng sản xuất) và chủ quan (lãnh đạo đúng, chính sách đúng) cùng quyết định."
+        "Bác cũng nhấn mạnh yếu tố khách quan (quy luật lịch sử, phát triển lực lượng sản xuất) và chủ quan (lãnh đạo đúng, chính sách đúng) cùng quyết định."
       ],
       summary: {
         title: "Tóm tắt:",
