@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { BookOpen, MessageCircle, ChevronLeft, ChevronRight, HelpCircle, Bot, Sparkles } from "lucide-react";
+import { BookOpen, MessageCircle, ChevronLeft, ChevronRight, HelpCircle, Bot, Sparkles, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "@/components/header";
 import ChatbotInterface from "@/components/ChatbotInterface";
 import { AnswerOption, hoChiMinhThoughtQuiz, Question } from "../quiz/constant/quiz";
 
-type TabType = "quiz" | "chatbot";
+type TabType = "quiz" | "chatbot" | "qna";
 
 const StudyRecapPage = () => {
   const [activeTab, setActiveTab] = useState<TabType>("quiz");
@@ -201,6 +201,44 @@ const StudyRecapPage = () => {
     </div>
   );
 
+  // Q&A Section Component  
+  const QnASection = () => (
+    <div className="w-full max-w-4xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl p-8 text-center"
+      >
+        <div className="mb-6">
+          <ExternalLink size={64} className="mx-auto text-blue-600 mb-4" />
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Hỏi đáp trực tuyến
+          </h2>
+          <p className="text-lg text-gray-600 mb-6">
+            Tham gia thảo luận và trao đổi kiến thức về tư tưởng Hồ Chí Minh với cộng đồng học tập
+          </p>
+        </div>
+
+      
+
+        <motion.button
+          onClick={() => window.open('https://padlet.com/trincse182497/hcm202-t-t-ng-h-ch-minh-v-ch-ngh-a-x-h-i-v-x-y-d-ng-ch-ngh-a-actxusylrbo7ao9u', '_blank')}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto"
+        >
+          <ExternalLink size={24} />
+          <span>Truy cập diễn đàn hỏi đáp</span>
+        </motion.button>
+
+        <p className="text-sm text-gray-500 mt-4">
+          * Liên kết sẽ mở trong tab mới
+        </p>
+      </motion.div>
+    </div>
+  );
+
   // Chatbot Component (Real Implementation)
   const ChatbotSection = () => (
     <div className="w-full max-w-4xl mx-auto">
@@ -243,6 +281,7 @@ const StudyRecapPage = () => {
           >
             <TabButton tab="quiz" label="Quiz Ôn tập" icon={BookOpen} />
             <TabButton tab="chatbot" label="Chatbot AI" icon={MessageCircle} />
+            <TabButton tab="qna" label="Hỏi đáp" icon={ExternalLink} />
           </motion.div>
 
           {/* Content Area */}
@@ -262,7 +301,7 @@ const StudyRecapPage = () => {
                 >
                   <QuizSection />
                 </motion.div>
-              ) : (
+              ) : activeTab === "chatbot" ? (
                 <motion.div
                   key="chatbot"
                   initial={{ opacity: 0, x: 50 }}
@@ -271,6 +310,16 @@ const StudyRecapPage = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <ChatbotSection />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="qna"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -50 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <QnASection />
                 </motion.div>
               )}
             </AnimatePresence>

@@ -15,321 +15,955 @@ export const hoChiMinhThoughtQuiz: Question[] = [
   {
     questionNumber: 1,
     question:
-      "Khi khẳng định về quyền của các dân tộc, Hồ Chí Minh đã viện dẫn những văn kiện lịch sử nào?",
+      "Theo Hồ Chí Minh, mục đích cơ bản của chủ nghĩa xã hội là gì?",
     answerOptions: [
       {
-        text: "Tuyên ngôn Độc lập của Mỹ (1776) và Tuyên ngôn Nhân quyền và Dân quyền của Pháp (1791)",
+        text: "Xây dựng một xã hội không có giai cấp và phân biệt chủng tộc",
         rationale:
-          "Đây là hai văn kiện lịch sử quan trọng được Hồ Chí Minh trích dẫn để khẳng định quyền bình đẳng, tự do của các dân tộc.",
+          "Đây là đặc điểm của chủ nghĩa xã hội nhưng chưa phải là mục đích cơ bản nhất theo quan điểm của Hồ Chí Minh.",
+        isCorrect: false,
+      },
+      {
+        text: "Làm cho nhân dân lao động thoát nạn bần cùng, có công ăn việc làm, được ấm no và sống một đời hạnh phúc",
+        rationale:
+          "Đây chính là định nghĩa mộc mạc, dễ hiểu mà Hồ Chí Minh đưa ra về mục đích của chủ nghĩa xã hội.",
         isCorrect: true,
       },
       {
-        text: "Tuyên ngôn của Đảng Cộng sản (1848) và Luận cương của Lênin (1920)",
+        text: "Phát triển lực lượng sản xuất hiện đại và công nghệ tiên tiến",
         rationale:
-          "Những văn kiện này ảnh hưởng đến con đường cách mạng vô sản mà Người đã chọn, nhưng không phải là những văn kiện Người viện dẫn để khẳng định quyền dân tộc cơ bản.",
+          "Phát triển lực lượng sản xuất là điều kiện cần thiết nhưng không phải mục đích cuối cùng của chủ nghĩa xã hội.",
         isCorrect: false,
       },
       {
-        text: "Hiến pháp Hợp chúng quốc Hoa Kỳ và Hiến pháp Cộng hòa Pháp",
+        text: "Thiết lập chế độ công hữu tuyệt đối về tư liệu sản xuất",
         rationale:
-          "Hồ Chí Minh đã viện dẫn các bản tuyên ngôn mang tính cách mạng, chứ không phải toàn bộ hiến pháp của các quốc gia này.",
-        isCorrect: false,
-      },
-      {
-        text: "Chiếu dời đô của Lý Công Uẩn và Hịch tướng sĩ của Trần Hưng Đạo",
-        rationale:
-          "Đây là những văn kiện quan trọng trong lịch sử Việt Nam, thể hiện ý chí độc lập, tự cường nhưng không được Hồ Chí Minh trực tiếp viện dẫn trong Tuyên ngôn Độc lập.",
+          "Chế độ công hữu là đặc trưng kinh tế của chủ nghĩa xã hội chứ không phải mục đích cơ bản nhất.",
         isCorrect: false,
       },
     ],
-    hint: "Hãy nhớ lại những văn kiện quốc tế nổi tiếng về quyền con người và quyền công dân mà Hồ Chí Minh đã nâng tầm thành quyền dân tộc.",
+    hint: "Hãy nghĩ về cách diễn đạt mộc mạc, dễ hiểu của Hồ Chí Minh về những gì mà chủ nghĩa xã hội mang lại cho cuộc sống của người dân.",
   },
   {
     questionNumber: 2,
     question:
-      "Theo tư tưởng Hồ Chí Minh, độc lập dân tộc thực sự phải gắn liền với điều gì?",
+      "Hồ Chí Minh phân biệt chủ nghĩa xã hội và chủ nghĩa cộng sản như thế nào?",
     answerOptions: [
       {
-        text: "Sự công nhận của các cường quốc trên thế giới",
+        text: "Chủ nghĩa xã hội là giai đoạn thấp, còn chủ nghĩa cộng sản là giai đoạn cao của cùng một chế độ",
         rationale:
-          "Sự công nhận của quốc tế là quan trọng, nhưng đối với Hồ Chí Minh, giá trị cốt lõi của độc lập nằm ở đời sống của nhân dân.",
-        isCorrect: false,
-      },
-      {
-        text: "Tự do, cơm no, áo ấm và hạnh phúc của nhân dân",
-        rationale:
-          "Hồ Chí Minh nhấn mạnh rằng độc lập phải mang lại lợi ích thiết thực cho người dân, chứ không phải là một khái niệm trừu tượng.",
+          "Đúng theo quan điểm của Hồ Chí Minh, chủ nghĩa xã hội vẫn còn chút ít vết tích xã hội cũ, còn chủ nghĩa cộng sản hoàn toàn không còn vết tích xã hội cũ.",
         isCorrect: true,
       },
       {
-        text: "Một nền kinh tế công nghiệp hóa, hiện đại hóa",
+        text: "Chủ nghĩa xã hội và chủ nghĩa cộng sản là hai chế độ hoàn toàn khác nhau",
         rationale:
-          "Công nghiệp hóa, hiện đại hóa là mục tiêu phát triển, nhưng không phải là điều kiện tiên quyết và gắn liền trực tiếp với bản chất của nền độc lập theo tư tưởng của Người.",
+          "Theo Hồ Chí Minh, đây là hai giai đoạn của cùng một chế độ, có điểm giống và khác nhau nhất định.",
         isCorrect: false,
       },
       {
-        text: "Một hệ thống chính trị đa đảng phái",
+        text: "Chủ nghĩa xã hội chỉ áp dụng cho các nước đang phát triển",
         rationale:
-          "Hồ Chí Minh nhấn mạnh vai trò lãnh đạo duy nhất của Đảng Cộng sản trong cách mạng Việt Nam, không phải là một hệ thống đa đảng.",
+          "Hồ Chí Minh không phân biệt chủ nghĩa xã hội theo mức độ phát triển của các nước.",
+        isCorrect: false,
+      },
+      {
+        text: "Chủ nghĩa cộng sản chỉ tồn tại trong lý thuyết",
+        rationale:
+          "Hồ Chí Minh coi chủ nghĩa cộng sản là mục tiêu thực tế có thể đạt được sau chủ nghĩa xã hội.",
         isCorrect: false,
       },
     ],
-    hint: "Người từng nói: 'Nếu nước độc lập mà dân không hưởng hạnh phúc, tự do thì độc lập cũng chẳng có nghĩa lý gì'.",
+    hint: "Hãy tìm hiểu về hai giai đoạn của chủ nghĩa cộng sản và sự khác nhau về vết tích xã hội cũ.",
   },
   {
     questionNumber: 3,
     question:
-      'Câu nói "Sông có thể cạn, núi có thể mòn song chân lý đó không bao giờ thay đổi" khẳng định điều gì trong tư tưởng Hồ Chí Minh?',
+      "Theo Hồ Chí Minh, tiến lên chủ nghĩa xã hội là một tất yếu khách quan vì lý do gì?",
     answerOptions: [
       {
-        text: "Độc lập dân tộc gắn liền với chủ nghĩa xã hội",
+        text: "Do sự phát triển của cách sản xuất và sức sản xuất theo quy luật khách quan",
         rationale:
-          "Câu nói này không trực tiếp đề cập đến chủ nghĩa xã hội, mà tập trung vào một khía cạnh khác của độc lập dân tộc.",
-        isCorrect: false,
-      },
-      {
-        text: "Cách mạng giải phóng dân tộc phải do Đảng Cộng sản lãnh đạo",
-        rationale:
-          "Vai trò của Đảng là quan trọng, nhưng câu nói này nhấn mạnh một chân lý về lãnh thổ và con người Việt Nam.",
-        isCorrect: false,
-      },
-      {
-        text: "Độc lập dân tộc gắn liền với thống nhất và toàn vẹn lãnh thổ",
-        rationale:
-          "Câu nói này được trích trong 'Thư gửi đồng bào Nam Bộ' (1946), khẳng định một cách đanh thép rằng Nam Bộ là một phần không thể tách rời của Việt Nam.",
+          "Đây chính là quan điểm của Hồ Chí Minh khi vận dụng học thuyết hình thái kinh tế-xã hội của Marx.",
         isCorrect: true,
       },
       {
-        text: "Không có gì quý hơn độc lập, tự do",
+        text: "Do ý chí chủ quan của giai cấp công nhân",
         rationale:
-          "Đây là một tư tưởng lớn của Người, nhưng câu nói cụ thể này dùng để khẳng định một chân lý khác, liên quan đến địa lý và dân tộc.",
+          "Hồ Chí Minh nhấn mạnh tính khách quan của quá trình này, không phải do ý chí chủ quan.",
+        isCorrect: false,
+      },
+      {
+        text: "Do sự lựa chọn chính trị của các nhà lãnh đạo",
+        rationale:
+          "Tiến lên chủ nghĩa xã hội theo Hồ Chí Minh là quy luật khách quan, không phải do lựa chọn chủ quan.",
+        isCorrect: false,
+      },
+      {
+        text: "Do áp lực từ các nước xã hội chủ nghĩa khác",
+        rationale:
+          "Yếu tố bên ngoài có thể hỗ trợ nhưng không phải là lý do cơ bản làm cho tiến trình này trở thành tất yếu.",
         isCorrect: false,
       },
     ],
-    hint: "Câu nói này được nói trong bối cảnh nào và gửi đến đồng bào ở đâu?",
+    hint: "Hãy nghĩ về quy luật phát triển của lịch sử và vai trò của lực lượng sản xuất trong sự biến đổi xã hội.",
   },
   {
     questionNumber: 4,
     question:
-      'Sự kiện nào đã giúp Hồ Chí Minh đi đến kết luận: "Muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường cách mạng vô sản"?',
+      "Hồ Chí Minh cho rằng con đường tiến lên chủ nghĩa xã hội ở các nước khác nhau như thế nào?",
     answerOptions: [
       {
-        text: "Gửi bản Yêu sách của nhân dân An Nam đến Hội nghị Vécxây (1919)",
+        text: "Tất cả các nước đều phải trải qua giai đoạn phát triển tư bản chủ nghĩa",
         rationale:
-          "Việc Yêu sách không được chấp nhận đã giúp Người hiểu rõ bản chất của đế quốc, nhưng sự kiện quyết định con đường cách mạng lại đến sau đó.",
+          "Hồ Chí Minh cho rằng có những nước có thể bỏ qua giai đoạn phát triển tư bản chủ nghĩa.",
         isCorrect: false,
       },
       {
-        text: "Đọc bản Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa của Lênin (1920)",
+        text: "Tùy hoàn cảnh mà các dân tộc phát triển theo con đường khác nhau",
         rationale:
-          "Đây chính là bước ngoặt quan trọng, giúp Người tìm thấy ánh sáng và con đường cứu nước đúng đắn cho dân tộc Việt Nam.",
+          "Đây chính là quan điểm của Hồ Chí Minh từ năm 1953, thể hiện sự linh hoạt trong việc áp dụng quy luật chung.",
         isCorrect: true,
       },
       {
-        text: "Thắng lợi của Cách mạng Tháng Mười Nga (1917)",
+        text: "Chỉ có các nước công nghiệp phát triển mới có thể xây dựng chủ nghĩa xã hội",
         rationale:
-          "Thắng lợi của Cách mạng Tháng Mười Nga đã ảnh hưởng lớn và mở ra thời đại mới, nhưng sự kiện trực tiếp giúp Người tìm ra con đường là khi Người tiếp cận lý luận của Lênin.",
+          "Hồ Chí Minh cho rằng cả những nước nông nghiệp lạc hậu như Việt Nam cũng có thể tiến lên chủ nghĩa xã hội.",
         isCorrect: false,
       },
       {
-        text: "Sự thất bại của các phong trào yêu nước đầu thế kỷ XX",
+        text: "Tất cả các nước phải đi theo mô hình của Liên Xô",
         rationale:
-          "Sự thất bại của các phong trào trước đó là tiền đề để Người ra đi tìm đường cứu nước, nhưng chưa phải là sự kiện giúp Người tìm ra con đường cụ thể.",
+          "Hồ Chí Minh khẳng định mỗi nước có thể đi con đường khác để tiến lên chủ nghĩa xã hội.",
         isCorrect: false,
       },
     ],
-    hint: "Hãy nghĩ về thời điểm Hồ Chí Minh tìm thấy lý luận cách mạng soi đường cho cuộc đấu tranh giải phóng dân tộc.",
+    hint: "Hãy suy nghĩ về sự kết hợp giữa quy luật chung và đặc điểm riêng của mỗi quốc gia, dân tộc.",
   },
   {
     questionNumber: 5,
     question:
-      "Theo Hồ Chí Minh, lực lượng của cách mạng giải phóng dân tộc là gì và lấy liên minh nào làm nền tảng?",
+      "Theo Hồ Chí Minh, đặc trưng chính trị cơ bản của xã hội xã hội chủ nghĩa là gì?",
     answerOptions: [
       {
-        text: "Lực lượng đại đoàn kết toàn dân tộc, lấy liên minh công - nông làm nền tảng.",
+        text: "Chế độ đa đảng cạnh tranh",
         rationale:
-          "Đây là quan điểm nhất quán của Hồ Chí Minh, coi cách mạng là sự nghiệp của toàn dân, trong đó công nông là gốc, là lực lượng chủ chốt.",
+          "Hồ Chí Minh không chủ trương chế độ đa đảng mà nhấn mạnh vai trò lãnh đạo của Đảng Cộng sản.",
+        isCorrect: false,
+      },
+      {
+        text: "Chế độ dân chủ do nhân dân làm chủ dưới sự lãnh đạo của Đảng Cộng sản",
+        rationale:
+          "Đây chính là quan điểm của Hồ Chí Minh về đặc trưng chính trị của xã hội xã hội chủ nghĩa.",
         isCorrect: true,
       },
       {
-        text: "Chỉ có giai cấp công nhân và nông dân.",
+        text: "Chế độ chuyên chính vô sản cứng rắn",
         rationale:
-          "Mặc dù công nông là nền tảng, nhưng Hồ Chí Minh luôn nhấn mạnh sức mạnh của khối đại đoàn kết toàn dân tộc, bao gồm cả các tầng lớp khác.",
+          "Hồ Chí Minh nhấn mạnh dân chủ nhiều hơn là chuyên chính trong xã hội xã hội chủ nghĩa.",
         isCorrect: false,
       },
       {
-        text: "Giai cấp tư sản dân tộc và tiểu tư sản.",
+        text: "Chế độ quân chủ lập hiến",
         rationale:
-          "Các giai cấp này cũng là một phần của lực lượng cách mạng, nhưng không phải là nền tảng cốt lõi theo tư tưởng của Người.",
-        isCorrect: false,
-      },
-      {
-        text: "Lực lượng quân đội nhân dân.",
-        rationale:
-          "Quân đội là lực lượng nòng cốt cho đấu tranh vũ trang, nhưng lực lượng của cách mạng nói chung rộng lớn hơn nhiều, đó là toàn thể nhân dân.",
+          "Đây không phải là hình thức chính trị mà Hồ Chí Minh chủ trương cho xã hội xã hội chủ nghĩa.",
         isCorrect: false,
       },
     ],
-    hint: "Người quan niệm: 'Có dân là có tất cả' và coi trọng vai trò của hai giai cấp đông đảo nhất trong xã hội.",
+    hint: "Hãy tìm hiểu về quan điểm 'dân là chủ' và vai trò lãnh đạo của Đảng trong tư tưởng Hồ Chí Minh.",
   },
   {
     questionNumber: 6,
     question:
-      "Điểm sáng tạo nào của Hồ Chí Minh đã bổ sung vào chủ nghĩa Mác - Lênin về mối quan hệ giữa cách mạng ở thuộc địa và chính quốc?",
+      "Về kinh tế, Hồ Chí Minh cho rằng xã hội xã hội chủ nghĩa có đặc trưng gì?",
     answerOptions: [
       {
-        text: "Cách mạng giải phóng dân tộc phải phụ thuộc và chờ đợi thắng lợi của cách mạng vô sản ở chính quốc.",
+        text: "Nền kinh tế thị trường tự do hoàn toàn",
         rationale:
-          "Đây là quan điểm tồn tại trước đó, và Hồ Chí Minh đã đưa ra một luận điểm sáng tạo, trái ngược lại.",
+          "Hồ Chí Minh chủ trương chế độ công hữu về tư liệu sản xuất chủ yếu, không phải kinh tế thị trường tự do.",
         isCorrect: false,
       },
       {
-        text: "Cách mạng giải phóng dân tộc ở thuộc địa không liên quan đến cách mạng vô sản ở chính quốc.",
+        text: "Nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và chế độ công hữu về tư liệu sản xuất chủ yếu",
         rationale:
-          "Hồ Chí Minh thấy rõ mối quan hệ mật thiết giữa hai cuộc cách mạng này, coi chúng như hai cánh của một con chim.",
-        isCorrect: false,
-      },
-      {
-        text: "Cách mạng giải phóng dân tộc cần chủ động, sáng tạo, có khả năng giành thắng lợi trước cách mạng vô sản ở chính quốc.",
-        rationale:
-          "Đây chính là luận điểm sáng tạo lớn, khẳng định tính chủ động và vai trò quan trọng của cách mạng ở các nước thuộc địa.",
+          "Đây chính là quan điểm của Hồ Chí Minh về đặc trưng kinh tế của xã hội xã hội chủ nghĩa.",
         isCorrect: true,
       },
       {
-        text: "Cách mạng giải phóng dân tộc và cách mạng vô sản ở chính quốc phải nổ ra đồng thời.",
+        text: "Nền kinh tế kế hoạch hóa tập trung tuyệt đối",
         rationale:
-          "Việc nổ ra đồng thời là một khả năng lý tưởng, nhưng Người nhấn mạnh rằng cách mạng thuộc địa không cần phải chờ đợi mà có thể bùng nổ và thắng lợi trước.",
+          "Mặc dù Hồ Chí Minh chủ trương vai trò của kinh tế quốc doanh, nhưng Người cũng thừa nhận kinh tế hợp tác xã.",
+        isCorrect: false,
+      },
+      {
+        text: "Nền kinh tế dựa hoàn toàn vào nông nghiệp",
+        rationale:
+          "Hồ Chí Minh chủ trương phát triển cả công nghiệp và nông nghiệp hiện đại.",
         isCorrect: false,
       },
     ],
-    hint: "Luận điểm này thể hiện sự đánh giá cao vai trò và tinh thần đấu tranh của các dân tộc bị áp bức.",
+    hint: "Hãy tìm hiểu về sự kết hợp giữa lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ.",
   },
   {
     questionNumber: 7,
     question:
-      "Theo Hồ Chí Minh, phương pháp tiến hành cách mạng giải phóng dân tộc là gì?",
+      "Hồ Chí Minh nhấn mạnh mối quan hệ giữa lợi ích cá nhân và lợi ích tập thể trong xã hội xã hội chủ nghĩa như thế nào?",
     answerOptions: [
       {
-        text: "Đấu tranh nghị trường và cải cách ôn hòa.",
+        text: "Lợi ích cá nhân phải được ưu tiên tuyệt đối",
         rationale:
-          "Người nhận thấy rằng giai cấp thống trị không bao giờ tự từ bỏ quyền lực, do đó không thể dùng phương pháp ôn hòa.",
+          "Quan điểm này không phù hợp với tư tưởng xã hội chủ nghĩa của Hồ Chí Minh.",
         isCorrect: false,
       },
       {
-        text: "Chỉ sử dụng đấu tranh chính trị của quần chúng.",
+        text: "Lợi ích tập thể phải triệt tiêu hoàn toàn lợi ích cá nhân",
         rationale:
-          "Đấu tranh chính trị là rất quan trọng, nhưng chưa đủ để chống lại bạo lực của kẻ thù.",
+          "Hồ Chí Minh không chủ trương triệt tiêu lợi ích cá nhân mà tìm sự thống nhất giữa hai lợi ích này.",
         isCorrect: false,
       },
       {
-        text: "Chỉ dựa vào đấu tranh vũ trang và lực lượng quân sự.",
+        text: "Lợi ích cá nhân nằm trong lợi ích tập thể và là một bộ phận của lợi ích tập thể",
         rationale:
-          "Đấu tranh vũ trang là hình thức cao nhất, nhưng phải được kết hợp chặt chẽ với các hình thức đấu tranh khác.",
-        isCorrect: false,
-      },
-      {
-        text: "Bằng phương pháp bạo lực cách mạng, kết hợp đấu tranh chính trị và đấu tranh vũ trang.",
-        rationale:
-          "Đây là quan điểm toàn diện của Hồ Chí Minh, sử dụng sức mạnh tổng hợp của quần chúng trên cả hai mặt trận chính trị và quân sự.",
+          "Đây chính là quan điểm của Hồ Chí Minh về mối quan hệ hài hòa giữa lợi ích cá nhân và tập thể.",
         isCorrect: true,
       },
+      {
+        text: "Lợi ích cá nhân và tập thể luôn đối lập nhau",
+        rationale:
+          "Trong xã hội xã hội chủ nghĩa, Hồ Chí Minh cho rằng hai lợi ích này thống nhất với nhau.",
+        isCorrect: false,
+      },
     ],
-    hint: "Hãy suy nghĩ về việc dùng bạo lực cách mạng của nhân dân để chống lại bạo lực phản cách mạng của kẻ thù.",
+    hint: "Hãy suy nghĩ về sự thống nhất và gắn bó giữa lợi ích cá nhân với lợi ích chung của cộng đồng.",
   },
   {
     questionNumber: 8,
     question:
-      "Theo tư tưởng Hồ Chí Minh, trình tự giải phóng ở các nước thuộc địa như Việt Nam khác với châu Âu ở điểm nào?",
+      "Theo Hồ Chí Minh, văn hóa trong xã hội xã hội chủ nghĩa phải có những đặc trưng gì?",
     answerOptions: [
       {
-        text: "Giải phóng giai cấp - giải phóng dân tộc - giải phóng xã hội - giải phóng con người.",
+        text: "Chỉ cần có tính dân tộc",
         rationale:
-          "Đây là trình tự được Mác và Ăngghen đề cập cho bối cảnh ở châu Âu, nơi mâu thuẫn giai cấp là chủ yếu.",
+          "Hồ Chí Minh yêu cầu văn hóa phải có đầy đủ ba đặc trưng: dân tộc, khoa học và đại chúng.",
         isCorrect: false,
       },
       {
-        text: "Giải phóng dân tộc - giải phóng xã hội - giải phóng giai cấp - giải phóng con người.",
+        text: "Có tính dân tộc, khoa học và đại chúng",
         rationale:
-          "Do mâu thuẫn chủ yếu ở thuộc địa là mâu thuẫn dân tộc, Hồ Chí Minh đã đặt nhiệm vụ giải phóng dân tộc lên trước hết và trên hết.",
+          "Đây chính là quan điểm toàn diện của Hồ Chí Minh về đặc trưng của nền văn hóa xã hội chủ nghĩa.",
         isCorrect: true,
       },
       {
-        text: "Giải phóng con người - giải phóng xã hội - giải phóng giai cấp - giải phóng dân tộc.",
+        text: "Chỉ tiếp thu văn hóa phương Tây",
         rationale:
-          "Trình tự này đảo ngược logic của quá trình cách mạng, vì giải phóng con người là mục tiêu cuối cùng.",
+          "Hồ Chí Minh chủ trương vừa phát triển truyền thống tốt đẹp dân tộc, vừa hấp thụ tinh hoa văn hóa nhân loại.",
         isCorrect: false,
       },
       {
-        text: "Giải phóng xã hội - giải phóng dân tộc - giải phóng con người - giải phóng giai cấp.",
+        text: "Hoàn toàn từ bỏ truyền thống văn hóa dân tộc",
         rationale:
-          "Việc đặt giải phóng xã hội lên trước giải phóng dân tộc không phản ánh đúng thực tiễn của một nước thuộc địa.",
+          "Hồ Chí Minh luôn coi trọng và muốn phát triển những truyền thống tốt đẹp của văn hóa dân tộc.",
         isCorrect: false,
       },
     ],
-    hint: "Hãy xem xét mâu thuẫn cơ bản và bao trùm nhất trong xã hội thuộc địa là gì để xác định nhiệm vụ nào phải được ưu tiên hàng đầu.",
+    hint: "Hãy nhớ đến ba đặc trưng cơ bản mà Hồ Chí Minh đề ra cho nền văn hóa Việt Nam.",
   },
   {
     questionNumber: 9,
     question:
-      "Tại sao Hồ Chí Minh khẳng định cách mạng giải phóng dân tộc muốn thắng lợi phải do Đảng Cộng sản lãnh đạo?",
+      "Hồ Chí Minh xác định chủ thể xây dựng chủ nghĩa xã hội là gì?",
     answerOptions: [
       {
-        text: "Vì Đảng Cộng sản có sự giúp đỡ từ quốc tế.",
+        text: "Chỉ có giai cấp công nhân",
         rationale:
-          "Sự đoàn kết quốc tế là quan trọng, nhưng lý do cốt lõi nằm ở bản chất và vai trò của chính Đảng.",
+          "Mặc dù giai cấp công nhân đóng vai trò lãnh đạo, nhưng chủ thể xây dựng là toàn thể nhân dân.",
         isCorrect: false,
       },
       {
-        text: "Vì chỉ có Đảng Cộng sản mới có đường lối đúng đắn và tổ chức chặt chẽ để tập hợp, dẫn dắt quần chúng.",
+        text: "Chỉ có Đảng Cộng sản",
         rationale:
-          "Hồ Chí Minh nhấn mạnh vai trò của Đảng với tư cách là đội tiên phong, có lý luận soi đường và khả năng tổ chức, thuyết phục, và huấn luyện quần chúng đấu tranh.",
+          "Đảng lãnh đạo nhưng chủ thể xây dựng là toàn thể nhân dân dưới sự lãnh đạo của Đảng.",
+        isCorrect: false,
+      },
+      {
+        text: "Toàn thể nhân dân dưới sự lãnh đạo của Đảng Cộng sản",
+        rationale:
+          "Đây chính là quan điểm của Hồ Chí Minh: chủ nghĩa xã hội là công trình tập thể của nhân dân.",
         isCorrect: true,
       },
       {
-        text: "Vì các giai cấp khác không có tinh thần yêu nước.",
+        text: "Chỉ có trí thức và cán bộ",
         rationale:
-          "Hồ Chí Minh luôn đề cao tinh thần yêu nước của mọi tầng lớp nhân dân, nhưng các giai cấp khác không có hệ tư tưởng tiên tiến và khả năng tổ chức như Đảng Cộng sản.",
-        isCorrect: false,
-      },
-      {
-        text: "Vì Đảng Cộng sản có tiềm lực kinh tế mạnh nhất.",
-        rationale:
-          "Vào thời điểm ra đời, Đảng không có tiềm lực kinh tế. Sức mạnh của Đảng đến từ sự ủng hộ của nhân dân và đường lối cách mạng đúng đắn.",
+          "Trí thức và cán bộ chỉ là một bộ phận trong lực lượng xây dựng chủ nghĩa xã hội.",
         isCorrect: false,
       },
     ],
-    hint: "Hãy xem xét vai trò của Đảng như một 'đội tiên phong' của cả giai cấp công nhân và dân tộc.",
+    hint: "Hãy nghĩ về vai trò của 'toàn dân' và sự lãnh đạo của Đảng trong công cuộc xây dựng chủ nghĩa xã hội.",
   },
   {
     questionNumber: 10,
     question:
-      "Nền độc lập thật sự, hoàn toàn và triệt để theo Hồ Chí Minh có nghĩa là gì?",
+      "Mục tiêu về chế độ chính trị của chủ nghĩa xã hội ở Việt Nam theo Hồ Chí Minh là gì?",
     answerOptions: [
       {
-        text: "Độc lập về chính trị nhưng phụ thuộc về kinh tế.",
+        text: "Xây dựng chế độ quân chủ lập hiến",
         rationale:
-          "Đây là hình thức chủ nghĩa thực dân mới mà Người luôn cảnh báo. Độc lập phải toàn diện trên mọi lĩnh vực.",
+          "Hồ Chí Minh không chủ trương chế độ quân chủ mà chủ trương chế độ cộng hòa dân chủ.",
         isCorrect: false,
       },
       {
-        text: "Chỉ cần thoát khỏi ách đô hộ của nước ngoài mà không cần thay đổi chế độ xã hội.",
+        text: "Xây dựng chế độ dân chủ với nhân dân làm chủ",
         rationale:
-          "Hồ Chí Minh gắn độc lập dân tộc với chủ nghĩa xã hội, nghĩa là phải thay đổi cả chế độ xã hội cũ để có độc lập thực sự.",
-        isCorrect: false,
-      },
-      {
-        text: "Độc lập trên tất cả các lĩnh vực: chính trị, kinh tế, văn hóa và người dân có quyền tự quyết.",
-        rationale:
-          "Đây là quan điểm toàn diện của Người. Một dân tộc chỉ thực sự độc lập khi không bị bóc lột kinh tế, áp bức chính trị và nô dịch văn hóa.",
+          "Đây chính là mục tiêu chính trị cơ bản mà Hồ Chí Minh đặt ra cho chủ nghĩa xã hội ở Việt Nam.",
         isCorrect: true,
       },
       {
-        text: "Đạt được vị thế là một cường quốc quân sự trong khu vực.",
+        text: "Xây dựng chế độ đa đảng cạnh tranh",
         rationale:
-          "Sức mạnh quân sự là cần thiết để bảo vệ độc lập, nhưng nó không phải là bản chất hay định nghĩa của một nền độc lập thật sự theo tư tưởng của Người.",
+          "Hồ Chí Minh nhấn mạnh vai trò lãnh đạo duy nhất của Đảng Cộng sản trong chế độ dân chủ.",
+        isCorrect: false,
+      },
+      {
+        text: "Xây dựng chế độ liên bang",
+        rationale:
+          "Hồ Chí Minh chủ trương nhà nước thống nhất, không phải chế độ liên bang.",
         isCorrect: false,
       },
     ],
-    hint: "Hãy nghĩ về một nền độc lập toàn diện, không chỉ là danh nghĩa mà phải là thực chất trên mọi phương diện của đời sống quốc gia.",
+    hint: "Hãy nhớ câu nói nổi tiếng: 'Nước ta là nước dân chủ, địa vị cao nhất là dân, vì dân là chủ'.",
+  },
+  {
+    questionNumber: 11,
+    question:
+      "Về mục tiêu kinh tế, Hồ Chí Minh đặt ra cho chủ nghĩa xã hội ở Việt Nam điều gì?",
+    answerOptions: [
+      {
+        text: "Nền kinh tế nông nghiệp thuần túy",
+        rationale:
+          "Hồ Chí Minh chủ trương phát triển cả công nghiệp và nông nghiệp hiện đại.",
+        isCorrect: false,
+      },
+      {
+        text: "Nền kinh tế phát triển cao với công nghiệp và nông nghiệp hiện đại, dựa trên sở hữu toàn dân và tập thể",
+        rationale:
+          "Đây chính là mục tiêu kinh tế toàn diện mà Hồ Chí Minh đề ra cho Việt Nam.",
+        isCorrect: true,
+      },
+      {
+        text: "Nền kinh tế thị trường hoàn toàn tự do",
+        rationale:
+          "Hồ Chí Minh chủ trương nền kinh tế có sự lãnh đạo của khu vực quốc doanh.",
+        isCorrect: false,
+      },
+      {
+        text: "Nền kinh tế chỉ dựa vào sở hữu tư nhân",
+        rationale:
+          "Hồ Chí Minh chủ trương chế độ sở hữu xã hội chủ nghĩa, không phải sở hữu tư nhân.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy tìm hiểu về sự kết hợp giữa hiện đại hóa và chế độ sở hữu xã hội chủ nghĩa.",
+  },
+  {
+    questionNumber: 12,
+    question:
+      "Hồ Chí Minh nhấn mạnh mối quan hệ giữa chính trị, kinh tế và văn hóa như thế nào?",
+    answerOptions: [
+      {
+        text: "Ba lĩnh vực hoàn toàn độc lập với nhau",
+        rationale:
+          "Hồ Chí Minh cho rằng đây là mối quan hệ biện chứng, không độc lập với nhau.",
+        isCorrect: false,
+      },
+      {
+        text: "Chính trị và kinh tế quyết định văn hóa, văn hóa góp phần thực hiện mục tiêu chính trị và kinh tế",
+        rationale:
+          "Đây chính là quan điểm biện chứng của Hồ Chí Minh về mối quan hệ giữa ba lĩnh vực này.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ có văn hóa là quan trọng nhất",
+        rationale:
+          "Hồ Chí Minh không coi một lĩnh vực nào là tuyệt đối quan trọng nhất mà nhấn mạnh mối quan hệ biện chứng.",
+        isCorrect: false,
+      },
+      {
+        text: "Kinh tế quyết định tất cả",
+        rationale:
+          "Mặc dù kinh tế có vai trò quan trọng, nhưng Hồ Chí Minh nhấn mạnh tác động qua lại giữa các lĩnh vực.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về mối quan hệ tác động qua lại giữa ba lĩnh vực cơ bản của đời sống xã hội.",
+  },
+  {
+    questionNumber: 13,
+    question:
+      "Theo Hồ Chí Minh, động lực hàng đầu của chủ nghĩa xã hội ở Việt Nam là gì?",
+    answerOptions: [
+      {
+        text: "Sự giúp đỡ từ các nước xã hội chủ nghĩa",
+        rationale:
+          "Đây là ngoại lực quan trọng nhưng không phải động lực hàng đầu theo quan điểm của Hồ Chí Minh.",
+        isCorrect: false,
+      },
+      {
+        text: "Nội lực dân tộc: lợi ích của dân, dân chủ của dân, sức mạnh đoàn kết toàn dân",
+        rationale:
+          "Đây chính là ba động lực hàng đầu mà Hồ Chí Minh xác định cho chủ nghĩa xã hội Việt Nam.",
+        isCorrect: true,
+      },
+      {
+        text: "Tài nguyên thiên nhiên phong phú",
+        rationale:
+          "Tài nguyên là điều kiện thuận lợi nhưng không phải động lực quyết định.",
+        isCorrect: false,
+      },
+      {
+        text: "Trình độ khoa học kỹ thuật cao",
+        rationale:
+          "Khoa học kỹ thuật là phương tiện quan trọng nhưng con người mới là động lực cơ bản.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy tìm hiểu về vai trò của 'nội lực dân tộc' và ba yếu tố cốt lõi của nó.",
+  },
+  {
+    questionNumber: 14,
+    question:
+      "Hồ Chí Minh nói 'Muốn xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa'. Điều này có nghĩa gì?",
+    answerOptions: [
+      {
+        text: "Chỉ cần có số lượng người đông đảo",
+        rationale:
+          "Hồ Chí Minh không chỉ quan tâm đến số lượng mà chú trọng đến chất lượng con người.",
+        isCorrect: false,
+      },
+      {
+        text: "Cần có những con người có tư tưởng và tác phong xã hội chủ nghĩa",
+        rationale:
+          "Đây chính là ý nghĩa của câu nói, nhấn mạnh vai trò của yếu tố con người trong xây dựng chủ nghĩa xã hội.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ cần những người có trình độ học vấn cao",
+        rationale:
+          "Trình độ học vấn quan trọng nhưng không đủ, cần có cả tư tưởng và tác phong đúng đắn.",
+        isCorrect: false,
+      },
+      {
+        text: "Chỉ cần những người thuộc giai cấp công nhân",
+        rationale:
+          "Hồ Chí Minh nói về toàn thể con người Việt Nam, không chỉ riêng giai cấp công nhân.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về tầm quan trọng của việc bồi dưỡng phẩm chất con người trong công cuộc xây dựng xã hội mới.",
+  },
+  {
+    questionNumber: 15,
+    question:
+      "Tư tưởng và tác phong xã hội chủ nghĩa theo Hồ Chí Minh bao gồm những gì?",
+    answerOptions: [
+      {
+        text: "Chỉ có ý thức làm chủ nhà nước",
+        rationale:
+          "Đây chỉ là một trong nhiều yếu tố của tư tưởng và tác phong xã hội chủ nghĩa.",
+        isCorrect: false,
+      },
+      {
+        text: "Ý thức làm chủ, tinh thần tập thể, tư tưởng 'mình vì mọi người, mọi người vì mình', quan điểm 'tất cả phục vụ sản xuất'",
+        rationale:
+          "Đây chính là những yếu tố cơ bản của tư tưởng và tác phong xã hội chủ nghĩa mà Hồ Chí Minh đã khái quát.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ cần có tư tưởng cách mạng",
+        rationale:
+          "Hồ Chí Minh nói rất cụ thể về nhiều yếu tố của tư tưởng và tác phong, không chỉ tổng quát là tư tưởng cách mạng.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nhớ lại bài nói chuyện của Hồ Chí Minh tại Hội nghị bồi dưỡng cán bộ lãnh đạo các cấp toàn miền Bắc năm 1961.",
+  },
+  {
+    questionNumber: 16,
+    question:
+      "Quan điểm 'xây đi đôi với chống' trong tư tưởng Hồ Chí Minh có nghĩa gì?",
+    answerOptions: [
+      {
+        text: "Chỉ tập trung vào xây dựng, không cần chống lại gì cả",
+        rationale:
+          "Quan điểm này trái ngược với tư tưởng 'xây đi đôi với chống' của Hồ Chí Minh.",
+        isCorrect: false,
+      },
+      {
+        text: "Chỉ tập trung vào đấu tranh chống lại kẻ thù",
+        rationale:
+          "Hồ Chí Minh nhấn mạnh phải kết hợp cả xây dựng và đấu tranh, không chỉ một mặt.",
+        isCorrect: false,
+      },
+      {
+        text: "Vừa xây dựng các yếu tố mới, vừa chống lại các lực cản, tàn dư xã hội cũ",
+        rationale:
+          "Đây chính là ý nghĩa của quan điểm 'xây đi đôi với chống', thể hiện tính biện chứng trong công cuộc cách mạng.",
+        isCorrect: true,
+      },
+      {
+        text: "Xây dựng trước, chống lại sau",
+        rationale:
+          "Hồ Chí Minh nhấn mạnh sự đồng thời của hai nhiệm vụ này, không phải tuần tự.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về sự cần thiết của việc đồng thời xây dựng cái mới và chống lại cái cũ, cái xấu.",
+  },
+  {
+    questionNumber: 17,
+    question:
+      "Thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam có tính chất gì theo Hồ Chí Minh?",
+    answerOptions: [
+      {
+        text: "Là thời kỳ đơn giản, dễ dàng thực hiện",
+        rationale:
+          "Hồ Chí Minh nhấn mạnh đây là thời kỳ phức tạp, khó khăn nhất.",
+        isCorrect: false,
+      },
+      {
+        text: "Là thời kỳ cải biến sâu sắc nhất nhưng phức tạp, lâu dài, khó khăn, gian khổ",
+        rationale:
+          "Đây chính là đánh giá của Hồ Chí Minh về tính chất của thời kỳ quá độ.",
+        isCorrect: true,
+      },
+      {
+        text: "Là thời kỳ có thể hoàn thành trong thời gian ngắn",
+        rationale:
+          "Hồ Chí Minh khẳng định không thể làm mau được mà phải làm dần dần.",
+        isCorrect: false,
+      },
+      {
+        text: "Là thời kỳ chỉ cần thay đổi kinh tế",
+        rationale:
+          "Thời kỳ quá độ đòi hỏi thay đổi trên tất cả các lĩnh vực, không chỉ kinh tế.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về độ phức tạp của việc biến đổi toàn bộ một xã hội từ cũ thành mới.",
+  },
+  {
+    questionNumber: 18,
+    question:
+      "Đặc điểm lớn nhất của thời kỳ quá độ ở Việt Nam theo Hồ Chí Minh là gì?",
+    answerOptions: [
+      {
+        text: "Phải trải qua giai đoạn phát triển tư bản chủ nghĩa",
+        rationale:
+          "Đây chính là điều mà Việt Nam không phải trải qua, tạo nên đặc điểm riêng.",
+        isCorrect: false,
+      },
+      {
+        text: "Từ một nước nông nghiệp lạc hậu tiến thẳng lên chủ nghĩa xã hội, không trải qua giai đoạn phát triển tư bản chủ nghĩa",
+        rationale:
+          "Đây chính là 'đặc điểm to nhất' mà Hồ Chí Minh đã chỉ ra về thời kỳ quá độ ở Việt Nam.",
+        isCorrect: true,
+      },
+      {
+        text: "Có sự giúp đỡ từ các nước xã hội chủ nghĩa",
+        rationale:
+          "Đây là điều kiện thuận lợi nhưng không phải đặc điểm cơ bản nhất của thời kỳ quá độ.",
+        isCorrect: false,
+      },
+      {
+        text: "Có truyền thống đấu tranh lâu đời của dân tộc",
+        rationale:
+          "Đây là yếu tố tích cực nhưng không phải đặc điểm cơ bản của thời kỳ quá độ.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy tìm hiểu về con đường đặc biệt mà Việt Nam đi lên chủ nghĩa xã hội.",
+  },
+  {
+    questionNumber: 19,
+    question:
+      "Nhiệm vụ quan trọng nhất về kinh tế trong thời kỳ quá độ theo Hồ Chí Minh là gì?",
+    answerOptions: [
+      {
+        text: "Chỉ tập trung phát triển nông nghiệp",
+        rationale:
+          "Hồ Chí Minh chủ trương phát triển cả công nghiệp và nông nghiệp hiện đại.",
+        isCorrect: false,
+      },
+      {
+        text: "Cải tạo nền kinh tế cũ, xây dựng nền kinh tế mới có công nghiệp và nông nghiệp hiện đại",
+        rationale:
+          "Đây chính là nhiệm vụ quan trọng nhất về kinh tế mà Hồ Chí Minh xác định.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ phát triển thương mại và dịch vụ",
+        rationale:
+          "Hồ Chí Minh coi trọng việc xây dựng nền tảng vật chất và kỹ thuật, tức là sản xuất.",
+        isCorrect: false,
+      },
+      {
+        text: "Duy trì nguyên trạng kinh tế cũ",
+        rationale:
+          "Hồ Chí Minh nhấn mạnh phải cải tạo nền kinh tế cũ, không thể duy trì nguyên trạng.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về việc xây dựng nền tảng vật chất và kỹ thuật của chủ nghĩa xã hội.",
+  },
+  {
+    questionNumber: 20,
+    question:
+      "Nguyên tắc đầu tiên trong xây dựng chủ nghĩa xã hội theo Hồ Chí Minh là gì?",
+    answerOptions: [
+      {
+        text: "Phải dựa vào kinh nghiệm của các nước khác",
+        rationale:
+          "Học tập kinh nghiệm quan trọng nhưng không phải nguyên tắc đầu tiên và cơ bản nhất.",
+        isCorrect: false,
+      },
+      {
+        text: "Mọi tư tưởng, hành động phải được thực hiện trên nền tảng chủ nghĩa Mác - Lênin",
+        rationale:
+          "Đây chính là nguyên tắc cơ bản nhất mà Hồ Chí Minh đặt ra, coi chủ nghĩa Mác-Lênin là khoa học cách mạng.",
+        isCorrect: true,
+      },
+      {
+        text: "Phải ưu tiên phát triển kinh tế",
+        rationale:
+          "Phát triển kinh tế quan trọng nhưng trước hết phải có nền tảng lý luận đúng đắn.",
+        isCorrect: false,
+      },
+      {
+        text: "Phải đoàn kết với các nước xã hội chủ nghĩa",
+        rationale:
+          "Đoàn kết quốc tế là nguyên tắc quan trọng nhưng không phải nguyên tắc đầu tiên.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về tầm quan trọng của việc có một nền tảng lý luận khoa học để chỉ đạo thực tiễn.",
+  },
+  {
+    questionNumber: 21,
+    question:
+      "Hồ Chí Minh nhấn mạnh về mối quan hệ giữa độc lập dân tộc và chủ nghĩa xã hội như thế nào?",
+    answerOptions: [
+      {
+        text: "Hai nhiệm vụ hoàn toàn tách biệt nhau",
+        rationale:
+          "Hồ Chí Minh luôn gắn kết chặt chẽ độc lập dân tộc với chủ nghĩa xã hội.",
+        isCorrect: false,
+      },
+      {
+        text: "Độc lập dân tộc là điều kiện tiên quyết để thực hiện chủ nghĩa xã hội, chủ nghĩa xã hội bảo đảm độc lập dân tộc trường tồn",
+        rationale:
+          "Đây chính là quan điểm của Hồ Chí Minh về mối quan hệ biện chứng giữa hai nhiệm vụ này.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ cần độc lập dân tộc là đủ",
+        rationale:
+          "Hồ Chí Minh coi độc lập dân tộc gắn với chủ nghĩa xã hội mới là độc lập thực sự.",
+        isCorrect: false,
+      },
+      {
+        text: "Chỉ cần chủ nghĩa xã hội là đủ",
+        rationale:
+          "Hồ Chí Minh luôn coi trọng cả hai nhiệm vụ và mối quan hệ giữa chúng.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy tìm hiểu về sự gắn bó hữu cơ giữa giải phóng dân tộc và giải phóng xã hội.",
+  },
+  {
+    questionNumber: 22,
+    question:
+      "Về việc học tập kinh nghiệm các nước anh em, Hồ Chí Minh có quan điểm gì?",
+    answerOptions: [
+      {
+        text: "Phải áp dụng nguyên xi kinh nghiệm của các nước khác",
+        rationale:
+          "Hồ Chí Minh cảnh báo không được áp đặt kinh nghiệm một cách máy móc.",
+        isCorrect: false,
+      },
+      {
+        text: "Không cần học tập kinh nghiệm của nước nào",
+        rationale:
+          "Hồ Chí Minh luôn coi trọng việc học tập kinh nghiệm trong tinh thần đoàn kết quốc tế.",
+        isCorrect: false,
+      },
+      {
+        text: "Phải học tập nhưng vận dụng sáng tạo phù hợp với điều kiện cụ thể của từng nước",
+        rationale:
+          "Đây chính là quan điểm của Hồ Chí Minh: học tập nhưng không áp đặt máy móc.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ học tập kinh nghiệm của Liên Xô",
+        rationale:
+          "Mặc dù đánh giá cao Liên Xô, Hồ Chí Minh khẳng định Việt Nam có thể đi con đường khác.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về sự kết hợp giữa học tập quốc tế và sáng tạo dân tộc.",
+  },
+  {
+    questionNumber: 23,
+    question:
+      "Khi nói về chống 'kẻ địch bên trong', Hồ Chí Minh đề cập đến điều gì?",
+    answerOptions: [
+      {
+        text: "Chống lại gián điệp nước ngoài",
+        rationale:
+          "Đây là 'kẻ địch bên ngoài' chứ không phải 'kẻ địch bên trong' mà Hồ Chí Minh nói đến.",
+        isCorrect: false,
+      },
+      {
+        text: "Chống lại chủ nghĩa cá nhân và tư tưởng 'làm quan cách mạng'",
+        rationale:
+          "Đây chính là những 'kẻ địch bên trong' mà Hồ Chí Minh thường nhắc đến và cảnh báo.",
+        isCorrect: true,
+      },
+      {
+        text: "Chống lại những người không đồng ý với chính sách",
+        rationale:
+          "Hồ Chí Minh nói về những tư tưởng, tác phong sai lệch chứ không phải về bất đồng chính sách.",
+        isCorrect: false,
+      },
+      {
+        text: "Chống lại các thế lực phản động",
+        rationale:
+          "Các thế lực phản động thường là 'kẻ địch bên ngoài', còn 'kẻ địch bên trong' là những khuyết điểm trong nội bộ.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về những tư tưởng, tác phong tiêu cực có thể xuất hiện trong nội bộ cách mạng.",
+  },
+  {
+    questionNumber: 24,
+    question:
+      "Theo Hồ Chí Minh, tại sao nói chủ nghĩa cá nhân như 'vi trùng độc hại'?",
+    answerOptions: [
+      {
+        text: "Vì nó chỉ ảnh hưởng đến cá nhân đó",
+        rationale:
+          "Hồ Chí Minh cho rằng chủ nghĩa cá nhân không chỉ hại bản thân mà còn hại đến tập thể.",
+        isCorrect: false,
+      },
+      {
+        text: "Vì nó sinh ra nhiều bệnh như tham lam, kiêu ngạo, háo danh, làm hại cả cá nhân và tập thể",
+        rationale:
+          "Đây chính là lý do Hồ Chí Minh ví chủ nghĩa cá nhân như vi trùng độc hại, có khả năng lan truyền và gây hại.",
+        isCorrect: true,
+      },
+      {
+        text: "Vì nó là biểu hiện của giai cấp thống trị cũ",
+        rationale:
+          "Chủ nghĩa cá nhân có thể xuất hiện ở bất kỳ ai, không chỉ riêng giai cấp thống trị cũ.",
+        isCorrect: false,
+      },
+      {
+        text: "Vì nó chỉ xuất hiện trong giai đoạn đầu của cách mạng",
+        rationale:
+          "Chủ nghĩa cá nhân có thể xuất hiện ở bất kỳ giai đoạn nào, cần phải luôn đấu tranh chống lại.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về khả năng lan truyền và những tác hại đa chiều của chủ nghĩa cá nhân.",
+  },
+  {
+    questionNumber: 25,
+    question:
+      "Hồ Chí Minh đánh giá thời kỳ quá độ khó khăn hơn cả việc đánh giặc vì lý do gì?",
+    answerOptions: [
+      {
+        text: "Vì thiếu vũ khí và quân đội",
+        rationale:
+          "Đây không phải lý do mà Hồ Chí Minh đưa ra khi so sánh với cuộc chiến chống giặc.",
+        isCorrect: false,
+      },
+      {
+        text: "Vì phải thay đổi triệt để nếp sống, thói quen, ý nghĩ có gốc rễ sâu xa hàng ngàn năm",
+        rationale:
+          "Đây chính là lý do Hồ Chí Minh cho rằng xây dựng chủ nghĩa xã hội khó khăn hơn đánh giặc.",
+        isCorrect: true,
+      },
+      {
+        text: "Vì không có sự ủng hộ của nhân dân",
+        rationale:
+          "Hồ Chí Minh luôn coi trọng sự ủng hộ của nhân dân trong mọi giai đoạn cách mạng.",
+        isCorrect: false,
+      },
+      {
+        text: "Vì thiếu kinh nghiệm quốc tế",
+        rationale:
+          "Thiếu kinh nghiệm là khó khăn nhưng không phải lý do cơ bản nhất mà Người nêu ra.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về sự khác biệt giữa đánh bại kẻ thù bên ngoài và thay đổi toàn bộ nền tảng xã hội.",
+  },
+  {
+    questionNumber: 26,
+    question:
+      "Về nhiệm vụ văn hóa trong thời kỳ quá độ, Hồ Chí Minh đặt ra yêu cầu gì?",
+    answerOptions: [
+      {
+        text: "Chỉ cần bảo tồn văn hóa truyền thống",
+        rationale:
+          "Hồ Chí Minh không chỉ bảo tồn mà còn phải tẩy trừ di tích xấu và tiếp thu tinh hoa thế giới.",
+        isCorrect: false,
+      },
+      {
+        text: "Chỉ cần tiếp thu văn hóa nước ngoài",
+        rationale:
+          "Hồ Chí Minh chủ trương kết hợp, không chỉ tiếp thu mà còn phát triển bản sắc dân tộc.",
+        isCorrect: false,
+      },
+      {
+        text: "Tẩy trừ di tích thuộc địa, phát triển truyền thống tốt đẹp, hấp thụ tinh hoa văn hóa thế giới",
+        rationale:
+          "Đây chính là nhiệm vụ toàn diện về văn hóa mà Hồ Chí Minh đề ra cho thời kỳ quá độ.",
+        isCorrect: true,
+      },
+      {
+        text: "Từ bỏ hoàn toàn văn hóa cũ",
+        rationale:
+          "Hồ Chí Minh chủ trương phát triển những truyền thống tốt đẹp, không từ bỏ hoàn toàn.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về cách tiếp cận toàn diện: loại bỏ cái xấu, giữ gìn và phát triển cái tốt, tiếp thu cái hay.",
+  },
+  {
+    questionNumber: 27,
+    question:
+      "Mục tiêu về quan hệ xã hội trong chủ nghĩa xã hội Việt Nam theo Hồ Chí Minh là gì?",
+    answerOptions: [
+      {
+        text: "Duy trì các quan hệ xã hội truyền thống",
+        rationale:
+          "Hồ Chí Minh chủ trương thay đổi triệt để những quan hệ xã hội lạc hậu.",
+        isCorrect: false,
+      },
+      {
+        text: "Bảo đảm dân chủ, công bằng, văn minh, tôn trọng con người",
+        rationale:
+          "Đây chính là mục tiêu mà Hồ Chí Minh đặt ra cho quan hệ xã hội trong chủ nghĩa xã hội.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ quan tâm đến quyền lợi của giai cấp công nhân",
+        rationale:
+          "Hồ Chí Minh quan tâm đến quyền lợi của toàn thể nhân dân, không chỉ một giai cấp.",
+        isCorrect: false,
+      },
+      {
+        text: "Ưu tiên quyền lợi tập thể, triệt tiêu quyền cá nhân",
+        rationale:
+          "Hồ Chí Minh chủ trương hài hòa giữa quyền cá nhân và lợi ích tập thể.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về một xã hội lý tưởng nơi mọi người được đối xử công bằng và có cơ hội phát triển.",
+  },
+  {
+    questionNumber: 28,
+    question:
+      "Theo Hồ Chí Minh, vị trí của kinh tế quốc doanh trong nền kinh tế xã hội chủ nghĩa là gì?",
+    answerOptions: [
+      {
+        text: "Chỉ là một thành phần bình thường",
+        rationale:
+          "Hồ Chí Minh đặc biệt coi trọng vai trò lãnh đạo của kinh tế quốc doanh.",
+        isCorrect: false,
+      },
+      {
+        text: "Lãnh đạo nền kinh tế quốc dân",
+        rationale:
+          "Đây chính là vị trí mà Hồ Chí Minh xác định cho kinh tế quốc doanh trong nền kinh tế xã hội chủ nghĩa.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ đóng vai trò bổ sung",
+        rationale:
+          "Kinh tế quốc doanh có vai trò chủ đạo, không chỉ bổ sung theo quan điểm của Hồ Chí Minh.",
+        isCorrect: false,
+      },
+      {
+        text: "Cạnh tranh bình đẳng với các thành phần khác",
+        rationale:
+          "Hồ Chí Minh xác định vai trò lãnh đạo đặc biệt của kinh tế quốc doanh.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy tìm hiểu về vai trò chủ đạo của khu vực kinh tế do nhà nước làm chủ.",
+  },
+  {
+    questionNumber: 29,
+    question:
+      "Hồ Chí Minh nói 'có thực mới vực được đạo' để nhấn mạnh điều gì?",
+    answerOptions: [
+      {
+        text: "Văn hóa quan trọng hơn kinh tế",
+        rationale:
+          "Câu nói này thực ra nhấn mạnh vai trò nền tảng của kinh tế đối với văn hóa.",
+        isCorrect: false,
+      },
+      {
+        text: "Kinh tế phải đi trước trong mối quan hệ với văn hóa",
+        rationale:
+          "Đây chính là ý nghĩa của câu tục ngữ mà Hồ Chí Minh dùng để giải thích tại sao nói 'phát triển kinh tế và văn hóa'.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ cần phát triển kinh tế là đủ",
+        rationale:
+          "Hồ Chí Minh vẫn coi trọng phát triển văn hóa, chỉ là đặt kinh tế làm nền tảng.",
+        isCorrect: false,
+      },
+      {
+        text: "Kinh tế và văn hóa không liên quan đến nhau",
+        rationale:
+          "Hồ Chí Minh nhấn mạnh mối quan hệ biện chứng giữa kinh tế và văn hóa.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về vai trò của cơ sở vật chất trong việc phát triển tinh thần, văn hóa.",
+  },
+  {
+    questionNumber: 30,
+    question:
+      "Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội có ý nghĩa gì đối với Việt Nam hiện nay?",
+    answerOptions: [
+      {
+        text: "Chỉ có giá trị lịch sử, không còn phù hợp",
+        rationale:
+          "Tư tưởng Hồ Chí Minh vẫn có giá trị định hướng quan trọng cho công cuộc đổi mới và phát triển đất nước.",
+        isCorrect: false,
+      },
+      {
+        text: "Cung cấp những định hướng cơ bản về mục tiêu, con đường và động lực xây dựng chủ nghĩa xã hội phù hợp với điều kiện Việt Nam",
+        rationale:
+          "Đây chính là ý nghĩa thực tiễn sâu sắc của tư tưởng Hồ Chí Minh, tạo nền tảng lý luận cho con đường đổi mới hiện nay.",
+        isCorrect: true,
+      },
+      {
+        text: "Chỉ áp dụng được trong giai đoạn chiến tranh",
+        rationale:
+          "Tư tưởng Hồ Chí Minh không chỉ có giá trị trong thời chiến mà còn trong thời bình, đặc biệt trong xây dựng chủ nghĩa xã hội.",
+        isCorrect: false,
+      },
+      {
+        text: "Chỉ có ý nghĩa học thuật, nghiên cứu lý luận",
+        rationale:
+          "Tư tưởng Hồ Chí Minh không chỉ có giá trị học thuật mà còn có ý nghĩa thực tiễn to lớn cho việc xây dựng đất nước.",
+        isCorrect: false,
+      },
+    ],
+    hint: "Hãy nghĩ về tính kế thừa và phát triển của tư tưởng Hồ Chí Minh trong bối cảnh đổi mới hiện nay.",
   },
 ];

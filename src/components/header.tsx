@@ -93,7 +93,7 @@ export default function Header() {
             className="rounded"
           />
           <span className="font-bold text-white text-lg hidden md:block">
-            HCM202
+            HCM-Interactive
           </span>
         </Link>
 
@@ -107,8 +107,8 @@ export default function Header() {
               Nội dung
             </span>
           </Link>
-          <Link href="/quiz">
-            <span className={linkClasses("/quiz")}>Ôn tập</span>
+          <Link href="/on-tap">
+            <span className={linkClasses("/on-tap")}>Ôn tập</span>
           </Link>
         </nav>
 
@@ -135,8 +135,8 @@ export default function Header() {
                 Nội dung
               </span>
             </Link>
-            <Link href="/quiz" onClick={() => setIsMenuOpen(false)}>
-              <span className={mobileLinkClasses("/quiz")}>Ôn tập</span>
+            <Link href="/on-tap" onClick={() => setIsMenuOpen(false)}>
+              <span className={mobileLinkClasses("/on-tap")}>Ôn tập</span>
             </Link>
           </nav>
         </div>

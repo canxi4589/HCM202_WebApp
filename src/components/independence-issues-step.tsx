@@ -24,13 +24,13 @@ const issues = [
     title: "Tư tưởng Hồ Chí Minh về thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam",
     desc: "Không bị áp bức chính trị, bóc lột kinh tế, nô dịch văn hóa.",
     img: "/images/independence-3.jpg",
-    href: "/noi-dung-2/cach-mang-giai-phong-dan-toc-3",
+    href: "/noi-dung-2/thoi-ki-qua-do",
   },
   {
     title: "Ôn tập kiến thức",
     desc: "Củng cố kiến thức nắm bắt tư tưởng",
     img: "/images/lenin.jpg",
-    href: "/quiz",
+    href: "/on-tap",
   },
 ];
 
@@ -153,7 +153,7 @@ export default function IndependenceIssues() {
   return (
     <section ref={sectionRef} className="relative h-screen flex flex-col">
       <Image
-        src="/images/background.png"
+        src="/images/background-2.jpg"
         alt=""
         fill
         className="object-cover"

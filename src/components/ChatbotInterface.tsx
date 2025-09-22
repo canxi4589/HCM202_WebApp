@@ -22,7 +22,7 @@ const ChatbotInterface: React.FC<ChatbotInterfaceProps> = ({ onSendMessage }) =>
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: '## AI Bot chào bạn!\n\nAI Bot chuyên về **tư tưởng Hồ Chí Minh**. AI Bot có thể giúp bạn tìm hiểu về:\n\n### **Các chủ đề chính:**\n- Tư tưởng độc lập dân tộc\n- Đạo đức cách mạng\n- Quan điểm giáo dục\n- Chủ nghĩa xã hội Việt Nam\n\n**Bạn muốn tìm hiểu điều gì?**',
+      text: '## AI Bot chào bạn!\n\nAI Bot chuyên về **tư tưởng Hồ Chí Minh về chủ nghĩa xã hội và xây dựng chủ nghĩa xã hội ở Việt Nam**. AI Bot có thể giúp bạn tìm hiểu về:\n\n### **Các chủ đề chính:**\n- Quan niệm về chủ nghĩa xã hội\n- Tính tất yếu và đặc trưng của chủ nghĩa xã hội\n- Mục tiêu xây dựng chủ nghĩa xã hội\n- Động lực và thời kỳ quá độ lên chủ nghĩa xã hội\n\n**Bạn muốn tìm hiểu điều gì về tư tưởng Hồ Chí Minh?**',
       sender: 'bot',
       timestamp: new Date()
     }
@@ -84,19 +84,23 @@ const ChatbotInterface: React.FC<ChatbotInterfaceProps> = ({ onSendMessage }) =>
     // Phản hồi cơ bản dựa trên từ khóa
     const lowerMessage = message.toLowerCase();
     
-    if (lowerMessage.includes('độc lập')) {
-      return 'Tư tưởng về độc lập dân tộc của Hồ Chí Minh được thể hiện rõ nét trong Tuyên ngôn độc lập 1945: "Tất cả mọi người đều sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc."';
-    }
-    
     if (lowerMessage.includes('chủ nghĩa xã hội')) {
-      return 'Theo Hồ Chí Minh, chủ nghĩa xã hội ở Việt Nam phải phù hợp với điều kiện cụ thể của đất nước, với mục tiêu "dân giàu, nước mạnh, xã hội công bằng, dân chủ, văn minh".';
+      return 'Theo Hồ Chí Minh, chủ nghĩa xã hội là xã hội do nhân dân lao động làm chủ, không còn áp bức, bóc lột, hướng đến mục tiêu "dân giàu, nước mạnh, xã hội công bằng, dân chủ, văn minh". Tư tưởng này kết hợp tinh hoa Mác-Lênin với điều kiện thực tiễn Việt Nam.\n\n### AI Bot gợi ý học tập tiếp:\n- Tại sao Hồ Chí Minh nhấn mạnh mục tiêu "dân giàu, nước mạnh"?\n- Cách Hồ Chí Minh kết hợp chủ nghĩa Mác-Lênin với thực tiễn Việt Nam?';
     }
     
     if (lowerMessage.includes('dân chủ')) {
-      return 'Hồ Chí Minh nhấn mạnh: "Dân chủ phải là do dân, vì dân". Người quan niệm dân chủ thực sự là dân được làm chủ đất nước, quyết định vận mệnh của mình.';
+      return 'Hồ Chí Minh nhấn mạnh chế độ dân chủ là bản chất của chủ nghĩa xã hội, trong đó nhân dân làm chủ đất nước thông qua bầu cử và các cơ chế minh bạch. Dân chủ phải gắn với công bằng và văn minh xã hội.\n\n### AI Bot gợi ý học tập tiếp:\n- Vai trò của chế độ dân chủ trong xã hội xã hội chủ nghĩa là gì?\n- Làm sao để thực hiện dân chủ trong bối cảnh hiện nay?';
     }
     
-    return 'Cảm ơn câu hỏi của bạn! Đây là một chủ đề sâu sắc trong tư tưởng Hồ Chí Minh. Bạn có thể đặt câu hỏi cụ thể hơn về các khía cạnh như độc lập dân tộc, chủ nghĩa xã hội, dân chủ, hay các quan điểm khác của Người.';
+    if (lowerMessage.includes('thời kỳ quá độ')) {
+      return 'Thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, theo Hồ Chí Minh, là giai đoạn cải biến sâu sắc, lâu dài, từ một nước nông nghiệp lạc hậu tiến thẳng lên chủ nghĩa xã hội. Nhiệm vụ chính bao gồm xây dựng chế độ dân chủ, phát triển kinh tế hiện đại, và xây dựng nền văn hóa dân tộc, khoa học, đại chúng.\n\n### AI Bot gợi ý học tập tiếp:\n- Đặc điểm của thời kỳ quá độ ở Việt Nam là gì?\n- Bốn nguyên tắc xây dựng chủ nghĩa xã hội trong thời kỳ quá độ là gì?';
+    }
+    
+    if (lowerMessage.includes('động lực')) {
+      return 'Hồ Chí Minh xác định nội lực dân tộc, đặc biệt là vai trò của nhân dân, là động lực quyết định trong xây dựng chủ nghĩa xã hội. Lợi ích của dân, dân chủ của dân và đoàn kết toàn dân gắn bó hữu cơ, tạo nên sức mạnh to lớn cho cách mạng.\n\n### AI Bot gợi ý học tập tiếp:\n- Vì sao nội lực dân tộc được coi là động lực quyết định?\n- Những lực cản nào cần loại trừ để phát huy động lực?';
+    }
+
+    return 'Cảm ơn câu hỏi của bạn! AI Bot chuyên về tư tưởng Hồ Chí Minh về chủ nghĩa xã hội. Bạn có thể hỏi cụ thể hơn về quan niệm, đặc trưng, mục tiêu, động lực, hoặc thời kỳ quá độ lên chủ nghĩa xã hội.\n\n### AI Bot gợi ý học tập tiếp:\n- Quan niệm của Hồ Chí Minh về chủ nghĩa xã hội là gì?\n- Đặc trưng nào của chủ nghĩa xã hội nổi bật nhất?';
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -218,7 +222,7 @@ const ChatbotInterface: React.FC<ChatbotInterfaceProps> = ({ onSendMessage }) =>
           value={inputMessage}
           onChange={(e) => setInputMessage(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder="Hỏi về tư tưởng Hồ Chí Minh: độc lập, dân chủ, xã hội chủ nghĩa, đạo đức..."
+          placeholder="Hỏi về tư tưởng Hồ Chí Minh: quan niệm, đặc trưng, mục tiêu, động lực, hoặc thời kỳ quá độ lên chủ nghĩa xã hội..."
           className="flex-1 p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
           rows={2}
           disabled={isLoading}
