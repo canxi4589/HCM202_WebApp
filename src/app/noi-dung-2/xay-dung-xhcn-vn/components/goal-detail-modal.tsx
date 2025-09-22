@@ -203,30 +203,82 @@ export default function GoalDetailModal({ goal, isOpen, onClose }: GoalDetailMod
                 </div>
               )}
 
-              {/* Key Points Summary */}
+              {/* Citations and References */}
               <div className="mt-8 bg-gray-50 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-4">
-                  Trích Nguồn
+                  📚 Tài liệu tham khảo và chú thích
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-red-600 font-bold">{goal.id}</span>
-                    </div>
-                    <p className="text-sm font-medium text-gray-700">Mục tiêu thứ {goal.id}</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-blue-600 font-bold">{goal.content.length}</span>
-                    </div>
-                    <p className="text-sm font-medium text-gray-700">Nội dung chi tiết</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-green-600 font-bold">{getExamples(goal.content).length}</span>
-                    </div>
-                    <p className="text-sm font-medium text-gray-700">Ví dụ thực tiễn</p>
-                  </div>
+                
+                {/* Footnotes based on goal type */}
+                <div className="space-y-3 text-sm">
+                  {goal.id === 1 && (
+                    <>
+                      <div className="flex gap-2">
+                        <span className="text-red-600 font-bold">6.</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.9, tr.543.</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-red-600 font-bold">7.</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.12, tr.545.</span>
+                      </div>
+                    </>
+                  )}
+                  
+                  {goal.id === 2 && (
+                    <>
+                      <div className="flex gap-2">
+                        <span className="text-blue-600 font-bold">1.</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.12, tr.563.</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-blue-600 font-bold">2.</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.10, tr.291.</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-blue-600 font-bold">3.</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.15, tr.451.</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-blue-600 font-bold">4.</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.12, tr.565.</span>
+                      </div>
+                    </>
+                  )}
+                  
+                  {goal.id === 3 && (
+                    <>
+                      <div className="flex gap-2">
+                        <span className="text-green-600 font-bold">*</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.8, tr.345.</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-green-600 font-bold">**</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trì quốc gia Sự thật, Hà Nội, 2011, t.9, tr.234.</span>
+                      </div>
+                    </>
+                  )}
+                  
+                  {goal.id === 4 && (
+                    <>
+                      <div className="flex gap-2">
+                        <span className="text-purple-600 font-bold">†</span>
+                        <span>Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013 (sửa đổi, bổ sung năm 2023), Chương II.</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="text-purple-600 font-bold">‡</span>
+                        <span>Hồ Chí Minh: <em>Toàn tập</em>, Nxb Chính trị quốc gia Sự thật, Hà Nội, 2011, t.14, tr.267.</span>
+                      </div>
+                    </>
+                  )}
+                </div>
+
+                {/* Main source */}
+                <div className="mt-6 pt-4 border-t border-gray-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">Nguồn chính:</h4>
+                  <p className="text-sm text-gray-700 italic">
+                    Giáo trình "Tư tưởng Hồ Chí Minh" - Học viện Chính trị quốc gia Hồ Chí Minh, 
+                    Chương II: Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội và xây dựng chủ nghĩa xã hội ở Việt Nam.
+                  </p>
                 </div>
               </div>
             </div>

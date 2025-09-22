@@ -2,13 +2,21 @@ export const revolutionSteps = [
   {
     id: 1,
     title: "Mục tiêu về chính trị",
-    subtitle: "Xây dựng chế độ dân chủ, \"dân là chủ – dân làm chủ\"",
+    subtitle: "Xây dựng chế độ dân chủ - \"Dân là chủ, dân làm chủ\"",
     content: [
-      "Mọi quyền lực thuộc về nhân dân: mọi lợi ích vì dân, chính quyền do dân bầu, đổi mới và bảo vệ đất nước là trách nhiệm của dân.",
-      "Ví dụ thực tiễn:",
-      "• Quốc hội và HĐND các cấp được bầu trực tiếp, phổ thông đầu phiếu, thể hiện quyền làm chủ của nhân dân.",
-      "• Cải cách hành chính, chính phủ điện tử, minh bạch hóa thủ tục, nâng cao vai trò làm chủ của dân.",
-      "Đây là nền tảng của chế độ dân chủ xã hội chủ nghĩa, đảm bảo nhân dân thực sự làm chủ đất nước."
+      "**Bản chất chế độ dân chủ xã hội chủ nghĩa:**",
+      "• \"Chế độ ta là chế độ dân chủ. Tức là nhân dân làm chủ\"⁶ - Hồ Chí Minh",
+      "• \"Nước ta là nước dân chủ, địa vị cao nhất là dân, vì dân là chủ\"⁷",
+      "",
+      "**Quyền lợi và trách nhiệm của nhân dân:**",
+      "• Tất cả lợi ích đều vì dân - Nhà nước phục vụ nhân dân",
+      "• Tất cả quyền hạn đều của dân - Nhân dân là chủ thể quyền lực",
+      "• Công cuộc đổi mới là trách nhiệm của dân",
+      "• Sự nghiệp bảo vệ và xây dựng đất nước là công việc của dân",
+      "• Các cấp chính quyền do dân cử ra",
+      "• Các tổ chức đoàn thể do dân tổ chức nên",
+      "",
+      "**Kết luận:** Quyền hành và lực lượng đều ở nơi dân"
     ],
     exampleLinks: [
       {
@@ -30,14 +38,21 @@ export const revolutionSteps = [
   {
     id: 2,
     title: "Mục tiêu về kinh tế",
-    subtitle: "Nền kinh tế phát triển cao, gắn với chính trị",
+    subtitle: "Nền kinh tế phát triển cao gắn bó mật thiết với mục tiêu chính trị",
     content: [
-      "Công – nông nghiệp hiện đại, khoa học – kỹ thuật tiên tiến.",
-      "Kinh tế quốc doanh giữ vai trò chủ đạo, kinh tế hợp tác xã là sở hữu tập thể; Nhà nước ưu tiên và hỗ trợ hai khu vực này.",
-      "Ví dụ thực tiễn:",
-      "• Phát triển các tập đoàn, tổng công ty nhà nước (Petrovietnam, EVN, VNPT...) giữ vai trò chủ đạo trong những ngành then chốt: năng lượng, viễn thông.",
-      "• Đổi mới 1986: chuyển từ kinh tế bao cấp sang kinh tế thị trường định hướng xã hội chủ nghĩa.",
-      "Mục tiêu xây dựng nền kinh tế độc lập, tự chủ, phục vụ mục tiêu chính trị và xã hội."
+      "**Đặc điểm nền kinh tế xã hội chủ nghĩa ở Việt Nam:**",
+      "• Nền kinh tế phát triển cao \"với công nghiệp và nông nghiệp hiện đại, khoa học kỹ thuật tiên tiến\"¹",
+      "• \"Một nền kinh tế thuần nhất, dựa trên chế độ sở hữu toàn dân và sở hữu tập thể\"²",
+      "",
+      "**Mối quan hệ kinh tế - chính trị:**",
+      "• \"Chế độ kinh tế và xã hội của chúng ta nhằm thực hiện đầy đủ quyền dân chủ của nhân dân, trên cơ sở kinh tế xã hội chủ nghĩa ngày càng phát triển\"³",
+      "• Kinh tế phục vụ mục tiêu chính trị, đảm bảo quyền dân chủ của nhân dân",
+      "",
+      "**Cơ cấu kinh tế:**",
+      "• Kinh tế quốc doanh lãnh đạo nền kinh tế quốc dân",
+      "• Kinh tế hợp tác xã là hình thức sở hữu tập thể của nhân dân lao động",
+      "• Nhà nước bảo đảm ưu tiên cho kinh tế quốc doanh phát triển",
+      "• Đặc biệt khuyến khích, hướng dẫn, giúp đỡ kinh tế hợp tác xã⁴"
     ],
     exampleLinks: [
       {
@@ -59,14 +74,24 @@ export const revolutionSteps = [
   {
     id: 3,
     title: "Mục tiêu về văn hóa",
-    subtitle: "Xây dựng nền văn hóa dân tộc – khoa học – đại chúng",
+    subtitle: "Xây dựng nền văn hóa dân tộc, khoa học, đại chúng",
     content: [
-      "Văn hóa gắn chặt với kinh tế, chính trị: \"có thực mới vực được đạo\", kinh tế đi trước, văn hóa theo sau để nâng cao dân trí, phát triển dân chủ.",
-      "Bài trừ tàn dư thuộc địa, phát huy truyền thống tốt đẹp, tiếp thu văn hóa tiến bộ thế giới.",
-      "Ví dụ thực tiễn:",
-      "• Phong trào \"Toàn dân đoàn kết xây dựng đời sống văn hóa\"; bảo tồn và quảng bá di sản như Nhã nhạc cung đình Huế, Quan họ, Đờn ca tài tử.",
-      "• Tích cực giao lưu quốc tế: Liên hoan phim quốc tế Hà Nội, các chương trình hợp tác giáo dục – nghệ thuật, tiếp thu tinh hoa nhân loại.",
-      "Xây dựng nền văn hóa vừa mang bản sắc dân tộc, vừa có tính khoa học và phục vụ đại chúng."
+      "**Mối quan hệ biện chứng văn hóa - chính trị - kinh tế:**",
+      "• \"Xã hội thế nào, văn nghệ thế ấy\" - Chế độ chính trị, kinh tế quyết định tính chất văn hóa",
+      "• Văn hóa góp phần thực hiện mục tiêu chính trị và kinh tế",
+      "• \"Muốn tiến lên chủ nghĩa xã hội phải phát triển kinh tế và văn hóa. Vì sao không nói phát triển văn hóa và kinh tế? Tục ngữ ta có câu: có thực mới vực được đạo, vì thế kinh tế phải đi trước\"",
+      "",
+      "**Vai trò của văn hóa:**",
+      "• Trình độ văn hóa được nâng cao → góp phần phát triển dân chủ",
+      "• Góp phần xây dựng nước ta thành một nước hòa bình, thống nhất, độc lập, dân chủ và giàu mạnh",
+      "• Nền văn hóa phát triển là điều kiện cho nhân dân tiến bộ",
+      "",
+      "**Nội dung và hình thức văn hóa xã hội chủ nghĩa:**",
+      "• \"Để phục vụ sự nghiệp cách mạng xã hội chủ nghĩa thì văn hóa phải xã hội chủ nghĩa về nội dung và dân tộc về hình thức\"",
+      "• Triệt để tẩy trừ mọi di tích thuộc địa và ảnh hưởng nô dịch của văn hóa đế quốc",
+      "• Phát triển những truyền thống tốt đẹp của văn hóa dân tộc",
+      "• Hấp thụ những cái mới của văn hóa tiến bộ thế giới",
+      "• Xây dựng nền văn hóa Việt Nam có tính chất dân tộc, khoa học và đại chúng"
     ],
     exampleLinks: [
       {
@@ -90,12 +115,27 @@ export const revolutionSteps = [
     title: "Mục tiêu về quan hệ xã hội",
     subtitle: "Xã hội dân chủ, công bằng, văn minh",
     content: [
-      "Bảo đảm các quyền tự do, dân chủ cơ bản: việc làm, nghỉ ngơi, học tập, tự do ngôn luận, tín ngưỡng, bầu cử – ứng cử; mọi công dân bình đẳng trước pháp luật.",
-      "Tôn trọng và hài hòa lợi ích cá nhân – tập thể; phát huy sở trường, nâng cao đời sống nhân dân.",
-      "Ví dụ thực tiễn:",
-      "• Chính sách an sinh xã hội: Bảo hiểm y tế toàn dân, chương trình \"Xóa đói giảm nghèo\", hỗ trợ hộ nghèo vùng sâu vùng xa.",
-      "• Đảm bảo quyền con người theo các tiêu chuẩn quốc tế, phù hợp với điều kiện Việt Nam.",
-      "Xây dựng xã hội mà mọi người đều có cơ hội phát triển toàn diện về cả vật chất và tinh thần."
+      "**Bản chất xã hội xã hội chủ nghĩa:**",
+      "• Chế độ \"dân làm chủ\", \"dân là chủ\" - nhân dân với tư cách làm chủ đất nước",
+      "• Nhân dân phải làm tròn nhiệm vụ của người chủ để xây dựng chủ nghĩa xã hội",
+      "",
+      "**Các quyền cơ bản của công dân:**",
+      "• Có quyền làm việc và quyền nghỉ ngơi",
+      "• Có quyền học tập và tự do thân thể",
+      "• Có quyền tự do ngôn luận, báo chí, hội họp, lập hội, biểu tình",
+      "• Có quyền tự do tín ngưỡng, theo hoặc không theo một tôn giáo nào",
+      "• Có quyền bầu cử và ứng cử",
+      "• Mọi công dân đều bình đẳng trước pháp luật",
+      "",
+      "**Vai trò của Nhà nước:**",
+      "• Nhà nước đảm bảo quyền tự do dân chủ cho công dân",
+      "• Nghiêm cấm lợi dụng các quyền tự do dân chủ để xâm phạm đến lợi ích của Nhà nước, của nhân dân",
+      "",
+      "**Đặc điểm xã hội xã hội chủ nghĩa:**",
+      "• Xã hội dân chủ, công bằng, văn minh, tôn trọng con người",
+      "• Chú ý xem xét những lợi ích cá nhân đúng đắn và bảo đảm cho nó được thỏa mãn",
+      "• Mỗi người có điều kiện cải thiện đời sống riêng, phát huy tính cách riêng và sở trường riêng",
+      "• Sự hài hòa giữa đời sống cá nhân với đời sống chung, lợi ích cá nhân với lợi ích tập thể"
     ],
     exampleLinks: [
       {
