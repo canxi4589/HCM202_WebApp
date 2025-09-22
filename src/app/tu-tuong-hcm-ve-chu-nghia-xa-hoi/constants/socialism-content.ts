@@ -41,9 +41,9 @@ export const socialismContent = {
       accentColor: "from-green-100 to-green-200",
       content: [
         "Hồ Chí Minh tin vào quy luật lịch sử: từ xã hội có giai cấp tiến tới xã hội không còn giai cấp — chủ nghĩa xã hội là bước phát triển tất yếu mà khoa học lịch sử (theo quan điểm Mác) chỉ ra.",
-        "Ở Việt Nam, ông cho rằng sau khi giành độc lập dân tộc (tiêu diệt chủ nghĩa thực dân, phong kiến), con đường tất yếu phải là xây dựng xã hội mới — xã hội chủ nghĩa — để giải phóng dân tộc khỏi nghèo nàn, tụt hậu.",
+        "Ở Việt Nam, Người cho rằng sau khi giành độc lập dân tộc (tiêu diệt chủ nghĩa thực dân, phong kiến), con đường tất yếu phải là xây dựng xã hội mới — xã hội chủ nghĩa — để giải phóng dân tộc khỏi nghèo nàn, tụt hậu.",
         'Tuy nhiên, "tất yếu" ở đây không đồng nghĩa với "tự động" hay "ngay lập tức": HCM nhấn mạnh yếu tố chủ động - công tác lãnh đạo, tổ chức, sự giác ngộ của nhân dân, và bước đi phù hợp (giai đoạn chuyển tiếp: cách mạng dân tộc dân chủ → phát triển lực lượng sản xuất → xã hội chủ nghĩa).',
-        "Ông cũng nhấn mạnh yếu tố khách quan (quy luật lịch sử, phát triển lực lượng sản xuất) và chủ quan (lãnh đạo đúng, chính sách đúng) cùng quyết định."
+        "Bác cũng nhấn mạnh yếu tố khách quan (quy luật lịch sử, phát triển lực lượng sản xuất) và chủ quan (lãnh đạo đúng, chính sách đúng) cùng quyết định."
       ],
       summary: {
         title: "Tóm tắt:",
