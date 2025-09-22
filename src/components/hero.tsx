@@ -228,7 +228,7 @@ export default function Hero() {
     ref={titleRef}
     className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-red-800 drop-shadow-lg uppercase leading-tight text-center"
   >
-    Tư tưởng Hồ Chí Minh về thời kỳ quá độ lên Chủ Nghĩa Xã Hội
+    TƯ TƯỞNG HỒ CHÍ MINH VỀ CHỦ NGHĨA XÃ HỘI VÀ XÂY DỰNG CHỦ NGHĨA XÃ HỘI Ở VIỆT NAM
   </h1>
 </div>
     </section>
