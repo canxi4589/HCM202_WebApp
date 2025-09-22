@@ -12,35 +12,35 @@ interface ExampleQuestionsProps {
 const ExampleQuestions: React.FC<ExampleQuestionsProps> = ({ onQuestionClick }) => {
   const exampleQuestions = [
     {
-      category: "🇻🇳 Độc lập dân tộc",
+      category: "Quan niệm về chủ nghĩa xã hội",
       questions: [
-        "Tư tưởng độc lập dân tộc của Hồ Chí Minh là gì?",
-        "Ý nghĩa của câu 'Không có gì quý hơn độc lập tự do'?",
-        "Quan điểm về thống nhất và toàn vẹn lãnh thổ?"
+        "Quan niệm của Hồ Chí Minh về chủ nghĩa xã hội là gì?",
+        "Tại sao Hồ Chí Minh nhấn mạnh mục tiêu 'dân giàu, nước mạnh'?",
+        "Cách Hồ Chí Minh kết hợp chủ nghĩa Mác-Lênin với thực tiễn Việt Nam?"
       ]
     },
     {
-      category: "🏛️ Dân chủ nhân dân",
+      category: "Tính tất yếu và đặc trưng",
       questions: [
-        "Quan điểm 'do dân, vì dân' có ý nghĩa gì?",
-        "Nguyên tắc dân chủ tập trung theo Hồ Chí Minh?",
-        "Cách thực hiện dân chủ trong xã hội?"
+        "Vì sao tiến lên chủ nghĩa xã hội là tất yếu khách quan?",
+        "Đặc trưng của xã hội xã hội chủ nghĩa theo Hồ Chí Minh là gì?",
+        "Vai trò của chế độ công hữu trong chủ nghĩa xã hội?"
       ]
     },
     {
-      category: "🌟 Chủ nghĩa xã hội",
+      category: "Mục tiêu chủ nghĩa xã hội",
       questions: [
-        "Đặc điểm chủ nghĩa xã hội Việt Nam?",
-        "Thời kỳ quá độ lên chủ nghĩa xã hội là gì?",
-        "Quan điểm 'xây' đi đôi với 'chống'?"
+        "Mục tiêu xây dựng nền văn hóa dân tộc, khoa học, đại chúng là gì?",
+        "Mối quan hệ giữa các mục tiêu chính trị, kinh tế, xã hội như thế nào?",
+        "Làm sao để đạt được xã hội dân chủ, công bằng, văn minh?"
       ]
     },
     {
-      category: "⭐ Đạo đức cách mạng",
+      category: "Thời kỳ quá độ và động lực",
       questions: [
-        "Ý nghĩa của 'cần, kiệm, liêm, chính'?",
-        "Đạo đức cách mạng theo Hồ Chí Minh?",
-        "Cách tu dưỡng đạo đức của cán bộ?"
+        "Thời kỳ quá độ lên chủ nghĩa xã hội có đặc điểm gì?",
+        "Nguyên tắc xây dựng chủ nghĩa xã hội trong thời kỳ quá độ là gì?",
+        "Tại sao nội lực dân tộc là động lực quyết định?"
       ]
     }
   ];
@@ -82,7 +82,7 @@ const ExampleQuestions: React.FC<ExampleQuestionsProps> = ({ onQuestionClick }) 
       
       <div className="mt-4 text-center">
         <p className="text-xs text-gray-500">
-          💡 Click vào câu hỏi để gửi ngay, hoặc tự do đặt câu hỏi của bạn!
+          Click vào câu hỏi để gửi ngay, hoặc tự do đặt câu hỏi của bạn!
         </p>
       </div>
     </div>

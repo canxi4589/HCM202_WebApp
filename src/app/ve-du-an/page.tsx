@@ -159,60 +159,60 @@ const VeDuAn = () => {
 
   const teamMembers = [
     { 
-      name: "Huỳnh Lê Nhật Hoàng", 
+      name: "Nguyễn Cao Trí", 
       role: "Project Manager & Developer", 
       color: "from-red-500 to-red-600", 
       avatar: "🚀",
       specialty: "Leadership & Architecture",
-      quote: "Leading innovation through collaboration"
+      quote: "SE182497"
     },
     { 
-      name: "Huỳnh Đình Luyện", 
-      role: "Frontend Developer", 
+      name: "Nguyễn Đức Nguyên", 
+      role: "FullStack Developer", 
       color: "from-blue-500 to-blue-600", 
       avatar: "💻",
-      specialty: "UI/UX & React",
-      quote: "Crafting beautiful user experiences"
+      specialty: "NodeJs, Asp.net core, React",
+      quote: "SE182830"
     },
     { 
-      name: "Phạm Nhất Thống", 
+      name: "Lê Đặng Minh Trí", 
       role: "Content Writer", 
       color: "from-green-500 to-green-600", 
       avatar: "✍️",
       specialty: "Content Strategy",
-      quote: "Words that inspire and educate"
+      quote: "SE183122"
     },
     { 
-      name: "Nguyễn Lê Tiến Phát", 
+      name: "Nguyễn Quỳnh Như", 
       role: "Developer & QA", 
       color: "from-purple-500 to-purple-600", 
       avatar: "🎯",
       specialty: "Quality Assurance",
-      quote: "Ensuring excellence in every detail"
+      quote: "SE183230"
     },
     { 
-      name: "Trần Văn Nam", 
+      name: "Nguyễn Quang Giáp", 
       role: "Backend Developer", 
       color: "from-orange-500 to-orange-600", 
       avatar: "⚙️",
       specialty: "Server & Database",
-      quote: "Building robust foundations"
+      quote: "SE182477"
     },
     { 
-      name: "Lê Thị Mai", 
+      name: "Nguyễn Nhật Nam", 
       role: "UI/UX Designer", 
       color: "from-pink-500 to-pink-600", 
       avatar: "🎨",
       specialty: "Design & Prototyping",
-      quote: "Where creativity meets functionality"
+      quote: "SE182539"
     },
     { 
-      name: "Nguyễn Hoàng Khang", 
+      name: "Thái Tiểu Bảo", 
       role: "Research & Analysis", 
       color: "from-indigo-500 to-indigo-600", 
       avatar: "📊",
       specialty: "Data & Insights",
-      quote: "Turning data into meaningful stories"
+      quote: "SE183015"
     }
   ];
 
@@ -247,133 +247,8 @@ const VeDuAn = () => {
       <Header />
 
       {/* Position Indicator */}
-      {showPositionIndicator && (
-        <div className="fixed top-32 right-6 z-50 bg-black/80 backdrop-blur-md text-white rounded-xl p-4 shadow-2xl border border-white/20 animate-in slide-in-from-right duration-300">
-          <div className="text-center space-y-2">
-            <div className="flex items-center justify-between">
-              <div className="text-lg font-semibold">Position</div>
-              <button
-                onClick={() => setShowPositionIndicator(false)}
-                className="text-gray-400 hover:text-white transition-colors"
-                title="Hide (Press P to toggle)"
-              >
-                ✕
-              </button>
-            </div>
-          <div className="space-y-1">
-            <div className="text-sm text-gray-300">
-              Section: <span className="text-white font-mono">{currentSection + 1}</span>/{sections.length}
-            </div>
-            <div className="text-sm text-gray-300">
-              Name: <span className="text-white capitalize">{sections[currentSection]?.replace('-', ' ')}</span>
-            </div>
-            <div className="text-sm text-gray-300">
-              Exact: <span className="text-white font-mono">{(exactPosition + 1).toFixed(2)}</span>
-            </div>
-            <div className="text-sm text-gray-300">
-              Progress: <span className="text-white font-mono">{scrollProgress.toFixed(1)}%</span>
-            </div>
-            <div className="text-xs text-gray-400 mt-1">
-              Boundaries: <span className="text-white font-mono">{Math.floor(exactPosition)}.0 - {Math.floor(exactPosition) + 1}.0</span>
-            </div>
-          </div>
-          
-          {/* Mini Progress Bar */}
-          <div className="w-full bg-gray-700 rounded-full h-2 mt-3">
-            <div 
-              className="bg-gradient-to-r from-red-500 to-red-400 h-2 rounded-full transition-all duration-300"
-              style={{ width: `${scrollProgress}%` }}
-            />
-          </div>
-          
-          {/* Section Indicators */}
-          <div className="flex justify-between mt-3 space-x-1">
-            {sections.map((section, index) => {
-              const sectionCenter = index + 0.5;
-              const distanceFromCenter = Math.abs(exactPosition - sectionCenter);
-              const isNear = distanceFromCenter <= 0.5; // Near = within 0.5 units
-              
-              return (
-                <div
-                  key={index}
-                  className={`w-2 h-6 rounded-full transition-all duration-300 relative ${
-                    Math.floor(exactPosition) === index
-                      ? 'bg-red-400' // Current section
-                      : isNear
-                      ? 'bg-green-400' // Near - animation active
-                      : 'bg-gray-600' // Far - hidden
-                  }`}
-                  title={`${section.charAt(0).toUpperCase()}${section.slice(1).replace('-', ' ')} ${
-                    isNear ? '(NEAR - Animating)' : '(FAR - Hidden)'
-                  }`}
-                >
-                  {isNear && (
-                    <div className="absolute inset-0 bg-green-400 rounded-full animate-pulse" />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-          
-          {/* Legend */}
-          <div className="text-xs text-gray-400 mt-2 space-y-1">
-            <div className="flex items-center justify-between">
-              <span>🔴 Current</span>
-              <span>� Animating</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span>� Transition</span>
-              <span>⚫ Hidden</span>
-            </div>
-            <div className="text-center mt-1 text-xs">
-              <span>✨ Pulse = Active Animation</span>
-            </div>
-          </div>
-          
-          {/* Section Map */}
-          <details className="mt-3">
-            <summary className="text-xs text-gray-400 cursor-pointer hover:text-white">Near/Far Ranges</summary>
-            <div className="mt-2 space-y-1 text-xs text-gray-400">
-              {sections.map((section, index) => {
-                const sectionCenter = index + 0.5;
-                const distanceFromCenter = Math.abs(exactPosition - sectionCenter);
-                const isNear = distanceFromCenter <= 0.5;
-                const nearStart = index; // Start of section
-                const nearEnd = index + 1; // End of section
-                
-                return (
-                  <div key={index} className={`flex justify-between ${
-                    isNear ? 'text-green-400' : 
-                    Math.floor(exactPosition) === index ? 'text-red-400' : ''
-                  }`}>
-                    <span className="capitalize">{section.replace('-', ' ')}</span>
-                    <span className="font-mono">
-                      {nearStart.toFixed(1)} → {nearEnd.toFixed(1)}
-                      {isNear ? ' 🟢' : ' ⚫'}
-                    </span>
-                  </div>
-                );
-              })}
-              <div className="mt-2 pt-2 border-t border-gray-600 text-xs text-gray-500">
-                Current: {exactPosition.toFixed(2)} | 
-                Near Range: ±0.5 from center
-              </div>
-            </div>
-          </details>
-        </div>
-      </div>
-      )}
-
-      {/* Show Position Indicator Button (when hidden) */}
-      {!showPositionIndicator && (
-        <button
-          onClick={() => setShowPositionIndicator(true)}
-          className="fixed top-32 right-6 z-50 w-12 h-12 bg-black/80 backdrop-blur-md text-white rounded-full shadow-2xl border border-white/20 hover:bg-black/90 transition-all duration-300 flex items-center justify-center"
-          title="Show Position (Press P)"
-        >
-          📍
-        </button>
-      )}
+      
+      
 
       {/* Horizontal Scrolling Container */}
       <div
@@ -410,10 +285,10 @@ const VeDuAn = () => {
                     <div>
                       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9f0e4] mb-6 leading-tight"
                           style={{ fontFamily: '"Times New Roman", serif' }}>
-                        Dự Án Nghiên Cứu
+                       Sản Phẩm Sáng Tạo
                       </h1>
                       <h2 className="text-2xl md:text-3xl font-semibold text-[#f9f0e4]/90 mb-8 leading-relaxed">
-                        "Phát triển Nền tảng Giáo dục Tương tác về Tư tưởng Hồ Chí Minh"
+                        Phát triển Website Tương tác về Tư tưởng Hồ Chí Minh
                       </h2>
                     </div>
 
@@ -666,7 +541,8 @@ const VeDuAn = () => {
                         </div>
                         <h4 className="text-lg font-bold text-gray-800 mb-1">{teamMembers[0].name}</h4>
                         <p className="text-sm font-semibold text-red-600 mb-2">{teamMembers[0].role}</p>
-                        <p className="text-xs italic text-gray-600">"{teamMembers[0].quote}"</p>
+                        <p className="text-sm font-semibold text-red-600 mb-2">{teamMembers[0].quote}</p>
+
                       </div>
                     </div>
                   </div>
@@ -686,121 +562,11 @@ const VeDuAn = () => {
                           
                           <h4 className="text-sm font-bold text-gray-800 mb-1 leading-tight">{member.name}</h4>
                           <p className="text-xs font-semibold text-gray-600 mb-1">{member.role}</p>
-                          <p className="text-xs text-gray-500 mb-2">{member.specialty}</p>
+                          <p className="text-xs text-gray-500 mb-2">{member.quote}</p>
                           
-                          <div className="bg-gray-50 rounded-lg p-2">
-                            <p className="text-xs italic text-gray-700 leading-tight">"{member.quote}"</p>
-                          </div>
                         </div>
                       </div>
                     ))}
-                  </div>
-                </div>
-              </Trail>
-            </div>
-          </section>
-
-          {/* Section 6: Conclusion and Future Work */}
-          <section className="w-screen h-full flex items-center justify-center px-8">
-            <div className={`max-w-6xl w-full transition-all duration-1000 ease-out ${
-              sectionsVisible[5] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}>
-              <Trail open={sectionsVisible[5]}>
-                <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-3xl p-12 shadow-2xl">
-                  <div className="text-center mb-12">
-                    <h2 className="text-5xl font-bold mb-6">Conclusion and Future Work</h2>
-                    <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                      Synthesizing research outcomes and establishing pathways for continued advancement 
-                      in digital education for Ho Chi Minh ideology
-                    </p>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-8 mb-12">
-                    <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
-                      <h3 className="text-2xl font-bold mb-6 text-center">Research Contributions</h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start">
-                          <span className="w-3 h-3 bg-blue-400 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                          <p className="text-gray-200">
-                            <strong>Digital Pedagogy Innovation:</strong> Demonstrated effective integration of 
-                            modern web technologies with traditional educational content
-                          </p>
-                        </div>
-                        <div className="flex items-start">
-                          <span className="w-3 h-3 bg-green-400 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                          <p className="text-gray-200">
-                            <strong>Accessibility Framework:</strong> Established inclusive design principles 
-                            for Vietnamese historical education platforms
-                          </p>
-                        </div>
-                        <div className="flex items-start">
-                          <span className="w-3 h-3 bg-purple-400 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                          <p className="text-gray-200">
-                            <strong>Interactive Learning Model:</strong> Validated multimedia approach to 
-                            enhance student engagement with ideological concepts
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
-                      <h3 className="text-2xl font-bold mb-6 text-center">Future Research Directions</h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start">
-                          <span className="w-3 h-3 bg-orange-400 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                          <p className="text-gray-200">
-                            <strong>AI-Enhanced Learning:</strong> Integration of adaptive learning algorithms 
-                            for personalized educational pathways
-                          </p>
-                        </div>
-                        <div className="flex items-start">
-                          <span className="w-3 h-3 bg-red-400 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                          <p className="text-gray-200">
-                            <strong>Virtual Reality Implementation:</strong> Immersive historical environments 
-                            for experiential learning of independence movements
-                          </p>
-                        </div>
-                        <div className="flex items-start">
-                          <span className="w-3 h-3 bg-yellow-400 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                          <p className="text-gray-200">
-                            <strong>Cross-Cultural Studies:</strong> Comparative analysis with other national 
-                            liberation ideologies and educational approaches
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-white/5 rounded-xl p-8 backdrop-blur-sm">
-                    <h3 className="text-2xl font-bold mb-6 text-center">Academic Impact & Acknowledgments</h3>
-                    <div className="grid md:grid-cols-3 gap-8">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                          🎓
-                        </div>
-                        <h4 className="text-lg font-semibold mb-2">Academic Institution</h4>
-                        <p className="text-gray-300">FPT University</p>
-                        <p className="text-sm text-gray-400">Ho Chi Minh Thought Course</p>
-                      </div>
-
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                          📚
-                        </div>
-                        <h4 className="text-lg font-semibold mb-2">Research Classification</h4>
-                        <p className="text-gray-300">Educational Technology</p>
-                        <p className="text-sm text-gray-400">Digital Humanities Project</p>
-                      </div>
-
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
-                          🌟
-                        </div>
-                        <h4 className="text-lg font-semibold mb-2">Long-term Vision</h4>
-                        <p className="text-gray-300">Educational Innovation</p>
-                        <p className="text-sm text-gray-400">Bridging Heritage & Technology</p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </Trail>
