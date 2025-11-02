@@ -40,6 +40,15 @@
   }
 }
 
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* Floating animation for principles badges */
 .animate-float {
   animation: float 3s ease-in-out infinite;
@@ -87,6 +96,11 @@
 /* Interactive hover effects */
 .hover-lift {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shimmer effect animation */
+.animate-shimmer {
+  animation: shimmer 3s infinite linear;
 }
 
 .hover-lift:hover {
