@@ -197,23 +197,8 @@ const VeDuAn = () => {
       avatar: "⚙️",
       specialty: "Server & Database",
       quote: "SE182477"
-    },
-    { 
-      name: "Nguyễn Nhật Nam", 
-      role: "UI/UX Designer", 
-      color: "from-pink-500 to-pink-600", 
-      avatar: "🎨",
-      specialty: "Design & Prototyping",
-      quote: "SE182539"
-    },
-    { 
-      name: "Thái Tiểu Bảo", 
-      role: "Research & Analysis", 
-      color: "from-indigo-500 to-indigo-600", 
-      avatar: "📊",
-      specialty: "Data & Insights",
-      quote: "SE183015"
     }
+
   ];
 
   const stats = [
@@ -288,16 +273,16 @@ const VeDuAn = () => {
                        Sản Phẩm Sáng Tạo
                       </h1>
                       <h2 className="text-2xl md:text-3xl font-semibold text-[#f9f0e4]/90 mb-8 leading-relaxed">
-                        Phát triển Website Tương tác về Tư tưởng Hồ Chí Minh
+                        Phát triển Website Tương tác về lịch sử đảng cộng sản Việt Nam
                       </h2>
                     </div>
 
                     {/* Academic Details */}
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                    <div className="bg-gradient-to-r from-red-900/30 to-transparent rounded-lg p-6 border-l-4 border-red-400">
                       <div className="space-y-3 text-white">
                         <div className="flex justify-between">
                           <span className="font-semibold">Môn học:</span>
-                          <span>Tư tưởng Hồ Chí Minh (HCM202)</span>
+                          <span>Lịch sử Đảng Cộng sản Việt Nam (VNR202)</span>
                         </div>
                         <div className="flex justify-between">
                           <span className="font-semibold">Học kỳ:</span>
@@ -305,7 +290,7 @@ const VeDuAn = () => {
                         </div>
                         <div className="flex justify-between">
                           <span className="font-semibold">Nhóm thực hiện:</span>
-                          <span>7 thành viên</span>
+                          <span>5 thành viên</span>
                         </div>
                         <div className="flex justify-between">
                           <span className="font-semibold">Công nghệ:</span>
@@ -319,7 +304,7 @@ const VeDuAn = () => {
                       <h3 className="text-xl font-semibold text-[#f9f0e4] mb-3">Mục tiêu Dự án</h3>
                       <p className="text-white leading-relaxed">
                         Ứng dụng kĩ năng chuyên ngành để tạo ra một website học tập tương tác, 
-                        giúp sinh viên và người học tiếp cận tư tưởng Hồ Chí Minh một cách 
+                        giúp sinh viên và người học tiếp cận lịch sử đảng cộng sản Việt Nam một cách 
                         sinh động và hiệu quả.
                       </p>
                     </div>
@@ -332,15 +317,14 @@ const VeDuAn = () => {
                       {/* Option 1: Ho Chi Minh Portrait */}
                       <div className="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl">
                         <div className="aspect-[4/5] bg-gradient-to-b from-gray-100 to-gray-200 rounded-lg flex items-center justify-center mb-3">
-                          <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Ho_Chi_Minh_-_1946_Portrait.jpg" alt="Chủ tịch Hồ Chí Minh"  className="object-cover rounded-lg" />
+                          <img src="https://tttctt.1cdn.vn/thumbs/720x480/2021/02/03/657693bea8fd41a318ec.jpg" alt="Đảng cộng sản Việt Nam"  className="object-cover rounded-lg" />
                           {/* <div className="text-center text-gray-500">
                             <div className="text-2xl mb-1">🖼️</div>
                             <div className="text-xs">Portrait of<br/>President Ho Chi Minh</div>
                           </div> */}
                         </div>
                         <div className="text-center text-gray-700">
-                          <div className="font-semibold text-sm">Chủ tịch Hồ Chí Minh</div>
-                          <div className="text-xs text-gray-500">(1890-1969)</div>
+                          <div className="font-semibold text-sm">Đảng Cộng Sản Việt Nam</div>
                         </div>
                       </div>
                     </div>
@@ -369,8 +353,8 @@ const VeDuAn = () => {
                       <div>
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Tóm tắt dự án</h3>
                         <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                          Dự án "Tư tưởng Hồ Chí Minh" là một nền tảng giáo dục tương tác được phát triển 
-                          nhằm giúp người học hiểu sâu sắc về tư tưởng của Chủ tịch Hồ Chí Minh.
+                          Dự án "VNR-Interactive" là một nền tảng giáo dục tương tác được phát triển 
+                          nhằm giúp người học hiểu sâu sắc về lịch sử Đảng Cộng sản Việt Nam.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
                           Thông qua giao diện hiện đại và trải nghiệm người dùng trực quan, 
@@ -384,7 +368,7 @@ const VeDuAn = () => {
                         <ul className="space-y-3">
                           <li className="flex items-start">
                             <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-gray-700">Nghiên cứu tài liệu lý thuyết về tư tưởng Hồ Chí Minh</span>
+                            <span className="text-gray-700">Nghiên cứu tài liệu lý thuyết về lịch sử Đảng Cộng sản Việt Nam</span>
                           </li>
                           <li className="flex items-start">
                             <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
