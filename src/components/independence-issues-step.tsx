@@ -9,10 +9,10 @@ import IssueCard from "./issue-card";
 
 const issues = [
   {
-    title: "Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội",
-    desc: "Chủ nghĩa xã hội là mục tiêu lịch sử, phát triển công bằng, dân chủ, văn minh, và toàn diện.",
-    img: "/images/cnxh.jpg",
-    href: "/tu-tuong-hcm-ve-chu-nghia-xa-hoi",
+  title: "Xây dựng chủ nghĩa xã hội và bảo vệ Tổ quốc 1975-1981",
+  desc: "Sau năm 1975 là đất nước đã hòa bình, độc lập, thống nhất cả nước quá độ lên chủ nghĩa xã hội.",
+  img: "/images/sau-1975/sau1975.jpg",
+  href: "/tu-tuong-hcm-ve-chu-nghia-xa-hoi",
   },
   {
     title: "Tư tưởng HCM về xây dựng chủ nghĩa xã hội ở Việt Nam",

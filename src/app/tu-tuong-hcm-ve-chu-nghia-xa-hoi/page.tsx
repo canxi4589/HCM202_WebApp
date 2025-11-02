@@ -17,10 +17,7 @@ import FilterChips from './components/filter-chips';
 export default function SocialismPage() {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  // Filter features based on selected category
-  const filteredFeatures = socialismContent.sections[2].features?.filter(feature => 
-    activeFilter === 'all' || feature.category === activeFilter
-  ) || [];
+
 
   const getCategoryLabel = (category: string) => {
     const labels = {
@@ -106,7 +103,7 @@ export default function SocialismPage() {
                     borderRadius: '12px'
                   }}
                 >
-                  Quan niệm
+                  Sau 1975
                 </a>
                 <a 
                   href="#b-tat-yeu"
@@ -119,10 +116,10 @@ export default function SocialismPage() {
                     borderRadius: '12px'
                   }}
                 >
-                  Tất yếu
+                  1975-1976
                 </a>
                 <a 
-                  href="#c-dac-trung"
+                  href="#c-boi-canh"
                   className="px-6 py-3 border border-white/30 text-white/90 rounded-lg hover:bg-white/10 transition-colors duration-200"
                   style={{ 
                     minHeight: '44px',
@@ -132,7 +129,46 @@ export default function SocialismPage() {
                     borderRadius: '12px'
                   }}
                 >
-                  Đặc trưng
+                  12-1976
+                </a>
+                <a 
+                  href="#d-dac-diem"
+                  className="px-6 py-3 border border-white/30 text-white/90 rounded-lg hover:bg-white/10 transition-colors duration-200"
+                  style={{ 
+                    minHeight: '44px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    textDecoration: 'none',
+                    borderRadius: '12px'
+                  }}
+                >
+                  1979-1981
+                </a>
+                 <a 
+                  href="#e-dai-hoi-4"
+                  className="px-6 py-3 border border-white/30 text-white/90 rounded-lg hover:bg-white/10 transition-colors duration-200"
+                  style={{ 
+                    minHeight: '44px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    textDecoration: 'none',
+                    borderRadius: '12px'
+                  }}
+                >
+                  1978–1979
+                </a>
+                 <a 
+                  href="#f-y-nghia-han-che"
+                  className="px-6 py-3 border border-white/30 text-white/90 rounded-lg hover:bg-white/10 transition-colors duration-200"
+                  style={{ 
+                    minHeight: '44px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    textDecoration: 'none',
+                    borderRadius: '12px'
+                  }}
+                >
+                  Đến năm 1981
                 </a>
               </div>
             </div>
@@ -215,7 +251,6 @@ export default function SocialismPage() {
 
                       <LocalSummaryBox 
                         points={socialismContent.sections[0].summary.points}
-                        annotations={socialismContent.sections[0].annotations}
                         variant="blue"
                       />
                     </div>
@@ -332,261 +367,447 @@ export default function SocialismPage() {
 
                       <LocalSummaryBox 
                         points={socialismContent.sections[1].summary.points}
-                        annotations={socialismContent.sections[1].annotations}
                         variant="green"
                       />
                     </div>
                   </div>
                 </section>
 
-                {/* Section C: Đặc trưng */}
+                {/* Section C: Bối cảnh lịch sử */}
                 <section 
-                  id="c-dac-trung" 
-                  className="mb-16" 
-                  style={{ 
-                    scrollMarginTop: '96px',
-                    paddingBottom: '64px'
-                  }}
-                  aria-labelledby="heading-c"
-                >
-                  <header className="mb-8">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div 
-                        className="w-12 h-12 bg-purple-600 text-white rounded-lg flex items-center justify-center font-bold text-lg"
-                        style={{ borderRadius: '12px' }}
-                      >
-                        C
-                      </div>
-                      <div>
-                        <h2 
-                          id="heading-c"
-                          className="text-purple-600 mb-2"
-                          style={{ 
-                            fontSize: 'clamp(2rem, 4vw, 2.5rem)',
-                            lineHeight: '1.2',
-                            fontWeight: '600'
-                          }}
-                        >
-                          {socialismContent.sections[2].title}
-                        </h2>
-                        <p className="text-gray-600">
-                          {socialismContent.sections[2].subtitle}
-                        </p>
-                      </div>
-                    </div>
-                  </header>
+  id="c-boi-canh" 
+  className="mb-16" 
+  style={{ 
+    scrollMarginTop: '96px',
+    paddingBottom: '64px'
+  }}
+  aria-labelledby="heading-c"
+>
+  <header className="mb-8">
+    <div className="flex items-center gap-4 mb-4">
+      <div 
+        className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-lg"
+        style={{ borderRadius: '12px' }}
+      >
+        C
+      </div>
+      <div>
+        <h2 
+          id="heading-c"
+          className="text-blue-600 mb-2"
+          style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)',
+            lineHeight: '1.2',
+            fontWeight: '600'
+          }}
+        >
+          {socialismContent.sections[2].title}
+        </h2>
+        <p className="text-gray-600">
+          {socialismContent.sections[2].subtitle}
+        </p>
+      </div>
+    </div>
+  </header>
 
-                  <div className="space-y-8">
-                    <LocalQuoteCard 
-                      quote={socialismContent.sections[2].quote}
-                      variant="purple"
-                    />
+  <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+    <div className="lg:col-span-1 lg:order-2">
+      <div className="sticky top-24">
+        <LocalCard className="overflow-hidden">
+          <Image
+            src={socialismContent.sections[2].image}
+            alt="Bối cảnh lịch sử sau 1975"
+            width={960}
+            height={540}
+            className="w-full object-cover"
+            style={{ aspectRatio: '16/9' }}
+            sizes="(max-width: 1024px) 100vw, 33vw"
+          />
+          <div className="p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">
+              {socialismContent.sections[2].title}
+            </h3>
+            <p className="text-sm text-gray-600">
+              Hoàn cảnh lịch sử của thời kỳ sau năm 1975 với nhiều thuận lợi và thách thức.
+            </p>
+          </div>
+        </LocalCard>
+      </div>
+    </div>
 
-                    <div>
-                      {socialismContent.sections[2].content.map((paragraph, index) => (
-                        <p 
-                          key={index} 
-                          className="text-gray-700 mb-6"
-                          style={{ 
-                            fontSize: 'clamp(1rem, 2vw, 1.25rem)',
-                            lineHeight: '1.6',
-                            maxWidth: '72ch'
-                          }}
-                        >
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
+    <div className="lg:col-span-2 lg:order-1 space-y-8">
+      <LocalQuoteCard 
+        quote={socialismContent.sections[2].quote}
+        variant="blue"
+      />
 
-                    {/* Features Section */}
-                    <div>
-                      <h3 
-                        className="text-gray-900 mb-6"
-                        style={{ 
-                          fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',
-                          lineHeight: '1.3',
-                          fontWeight: '600'
-                        }}
-                      >
-                        Một số đặc trưng cơ bản:
-                      </h3>
+      <div className="space-y-6">
+        {socialismContent.sections[2].content.map((paragraph, index) => {
+          // Tách text trước và sau dấu ":"
+          const parts = paragraph.split(':');
+          if (parts.length > 1) {
+            return (
+              <p 
+                key={index} 
+                className="text-gray-700"
+                style={{ 
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                  lineHeight: '1.6',
+                  maxWidth: '72ch'
+                }}
+              >
+                <strong>{parts[0]}:</strong> {parts.slice(1).join(':')}
+              </p>
+            );
+          }
+          return (
+            <p 
+              key={index} 
+              className="text-gray-700"
+              style={{ 
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                lineHeight: '1.6',
+                maxWidth: '72ch'
+              }}
+            >
+              {paragraph}
+            </p>
+          );
+        })}
+      </div>
 
-                      {/* Filter Chips */}
-                      <FilterChips onFilterChange={setActiveFilter} />
+      <LocalSummaryBox 
+        points={socialismContent.sections[2].summary.points}
+        variant="blue"
+      />
+    </div>
+  </div>
+                </section>
+                {/* Section D*/}
+                <section 
+  id="d-dac-diem" 
+  className="mb-16" 
+  style={{ 
+    scrollMarginTop: '96px',
+    paddingBottom: '64px'
+  }}
+  aria-labelledby="heading-d"
+>
+  <header className="mb-8">
+    <div className="flex items-center gap-4 mb-4">
+      <div 
+        className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-lg"
+        style={{ borderRadius: '12px' }}
+      >
+        D
+      </div>
+      <div>
+        <h2 
+          id="heading-d"
+          className="text-blue-600 mb-2"
+          style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)',
+            lineHeight: '1.2',
+            fontWeight: '600'
+          }}
+        >
+          {socialismContent.sections[3].title}
+        </h2>
+        <p className="text-gray-600">
+          {socialismContent.sections[3].subtitle}
+        </p>
+      </div>
+    </div>
+  </header>
 
-                      {/* Category Summary */}
-                      <div 
-                        className="mb-6 p-4 bg-purple-50 border border-purple-200 rounded-lg"
-                        style={{ borderRadius: '12px' }}
-                      >
-                        <p 
-                          className="text-purple-800 leading-relaxed"
-                          style={{ fontSize: '1rem', fontStyle: 'italic' }}
-                        >
-                          <strong>📌 Khái quát:</strong> {getCategorySummary(activeFilter)}
-                        </p>
-                      </div>
+  <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+    <div className="lg:col-span-1 lg:order-2">
+      <div className="sticky top-24">
+        <LocalCard className="overflow-hidden">
+          <Image
+            src={socialismContent.sections[3].image}
+            alt="Ba đặc điểm lớn của cách mạng"
+            width={960}
+            height={540}
+            className="w-full object-cover"
+            style={{ aspectRatio: '16/9' }}
+            sizes="(max-width: 1024px) 100vw, 33vw"
+          />
+          <div className="p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">
+              {socialismContent.sections[3].title}
+            </h3>
+            <p className="text-sm text-gray-600">
+              Hoàn cảnh lịch sử của thời kỳ sau năm 1975 với nhiều thuận lợi và thách thức.
+            </p>
+          </div>
+        </LocalCard>
+      </div>
+    </div>
 
-                      {/* Features Grid */}
-                      <LocalCardGrid columns={2} gap="md">
-                        {filteredFeatures.map((feature, index) => (
-                          <LocalFeatureCard
-                            key={index}
-                            title={feature.title}
-                            description={feature.description}
-                            icon={<span style={{ fontSize: '24px' }}>{feature.icon}</span>}
-                            variant="purple"
-                            category={getCategoryLabel(feature.category)}
-                          />
-                        ))}
-                      </LocalCardGrid>
-                    </div>
+    <div className="lg:col-span-2 lg:order-1 space-y-8">
+      <LocalQuoteCard 
+        quote={socialismContent.sections[3].quote}
+      />
 
-                    <div className="grid lg:grid-cols-3 gap-8">
-                      <div className="lg:col-span-2">
-                        <LocalSummaryBox 
-                          points={socialismContent.sections[2].summary.points}
-                          variant="purple"
-                        />
-                      </div>
-                    </div>
-                  </div>
+      <div className="space-y-6">
+        {socialismContent.sections[3].content.map((paragraph, index) => {
+          const parts = paragraph.split(':');
+          if (parts.length > 1) {
+            return (
+              <p 
+                key={index} 
+                className="text-gray-700"
+                style={{ 
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                  lineHeight: '1.6',
+                  maxWidth: '72ch'
+                }}
+              >
+                <strong>{parts[0]}:</strong> {parts.slice(1).join(':')}
+              </p>
+            );
+          }
+          return (
+            <p 
+              key={index} 
+              className="text-gray-700"
+              style={{ 
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                lineHeight: '1.6',
+                maxWidth: '72ch'
+              }}
+            >
+              {paragraph}
+            </p>
+          );
+        })}
+      </div>
+
+      <LocalSummaryBox 
+        points={socialismContent.sections[3].summary.points}
+      />
+    </div>
+  </div>
                 </section>
 
-                {/* Conclusion Section */}
+                {/* Section E*/}
                 <section 
-                  id="y-nghia" 
-                  className="mb-16" 
-                  style={{ 
-                    scrollMarginTop: '96px',
-                    paddingBottom: '64px'
-                  }}
-                  aria-labelledby="heading-conclusion"
-                >
-                  <div 
-                    className="text-white p-8 lg:p-12"
-                    style={{
-                      background: 'linear-gradient(to bottom right, #dc2626 0%, #b91c1c 85%, #991b1b 100%)',
-                      borderRadius: '18px'
-                    }}
-                  >
-                    <header className="text-center mb-12">
-                      <div className="flex items-center justify-center gap-4 mb-6">
-                        <div 
-                          className="w-12 h-12 flex items-center justify-center"
-                          style={{ 
-                            background: 'rgba(255, 255, 255, 0.2)',
-                            backdropFilter: 'blur(4px)',
-                            borderRadius: '12px'
-                          }}
-                        >
-                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                          </svg>
-                        </div>
-                      </div>
-                      <h2 
-                        id="heading-conclusion"
-                        className="text-white mb-4"
-                        style={{ 
-                          fontSize: 'clamp(2rem, 4vw, 2.5rem)',
-                          lineHeight: '1.2',
-                          fontWeight: '600'
-                        }}
-                      >
-                        Ý nghĩa và giá trị thời đại
-                      </h2>
-                      <p 
-                        className="mx-auto"
-                        style={{ 
-                          fontSize: 'clamp(1.25rem, 2vw, 1.5rem)',
-                          color: 'rgba(255, 255, 255, 0.9)',
-                          maxWidth: '672px'
-                        }}
-                      >
-                        Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội không chỉ có ý nghĩa đối với Việt Nam 
-                        mà còn đóng góp quan trọng vào kho tàng lý luận xã hội chủ nghĩa của nhân loại.
-                      </p>
-                    </header>
+  id="e-dai-hoi-4" 
+  className="mb-16" 
+  style={{ 
+    scrollMarginTop: '96px',
+    paddingBottom: '64px'
+  }}
+  aria-labelledby="heading-e"
+>
+  <header className="mb-8">
+    <div className="flex items-center gap-4 mb-4">
+      <div 
+        className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-lg"
+        style={{ borderRadius: '12px' }}
+      >
+        E
+      </div>
+      <div>
+        <h2 
+          id="heading-e"
+          className="text-blue-600 mb-2"
+          style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)',
+            lineHeight: '1.2',
+            fontWeight: '600'
+          }}
+        >
+          {socialismContent.sections[4].title}
+        </h2>
+        <p className="text-gray-600">
+          {socialismContent.sections[4].subtitle}
+        </p>
+      </div>
+    </div>
+  </header>
 
-                    <LocalCardGrid columns={2} gap="md" className="mb-12">
-                      {[
-                        {
-                          icon: (
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
-                          ),
-                          title: 'Sáng tạo lý luận',
-                          description: 'Bổ sung và phát triển chủ nghĩa Mác-Lênin phù hợp với điều kiện Việt Nam'
-                        },
-                        {
-                          icon: (
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                          ),
-                          title: 'Con đường phù hợp',
-                          description: 'Xác định con đường xây dựng XHCN phù hợp với điều kiện cụ thể của Việt Nam'
-                        },
-                        {
-                          icon: (
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                          ),
-                          title: 'Con người trung tâm',
-                          description: 'Đặt con người làm trung tâm, mục tiêu và động lực của sự phát triển'
-                        },
-                        {
-                          icon: (
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                          ),
-                          title: 'Giá trị toàn cầu',
-                          description: 'Định hướng xây dựng xã hội công bằng, dân chủ, văn minh cho nhân loại'
-                        }
-                      ].map((item, index) => (
-                        <LocalCard 
-                          key={index}
-                          className="p-6 text-white"
-                          style={{ 
-                            background: 'rgba(255, 255, 255, 0.1)',
-                            backdropFilter: 'blur(4px)',
-                            border: '1px solid rgba(255, 255, 255, 0.2)',
-                            borderRadius: '14px'
-                          }}
-                          hover={false}
-                        >
-                          <div className="mb-4">
-                            {item.icon}
-                          </div>
-                          <h3 
-                            className="font-semibold text-white mb-3"
-                            style={{ fontSize: '1.125rem' }}
-                          >
-                            {item.title}
-                          </h3>
-                          <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                            {item.description}
-                          </p>
-                        </LocalCard>
-                      ))}
-                    </LocalCardGrid>
+  <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+    <div className="lg:col-span-1 lg:order-2">
+      <div className="sticky top-24">
+        <LocalCard className="overflow-hidden">
+          <Image
+            src={socialismContent.sections[4].image}
+            alt="Đại hội IV của Đảng"
+            width={960}
+            height={540}
+            className="w-full object-cover"
+            style={{ aspectRatio: '16/9' }}
+            sizes="(max-width: 1024px) 100vw, 33vw"
+          />
+          <div className="p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">
+              {socialismContent.sections[4].title}
+            </h3>
+            <p className="text-sm text-gray-600">
+              Hoàn cảnh lịch sử của thời kỳ sau năm 1975 với nhiều thuận lợi và thách thức.
+            </p>
+          </div>
+        </LocalCard>
+      </div>
+    </div>
 
-                    <LocalQuoteCard
-                      quote="Chủ nghĩa xã hội là xã hội của nhân dân, do nhân dân và vì nhân dân. Đó là xã hội mà mọi người được sống trong hạnh phúc, tự do và tiến bộ."
-                      variant="brand"
-                      className="text-white"
-                      style={{
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        backdropFilter: 'blur(4px)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)'
-                      }}
-                    />
-                  </div>
+    <div className="lg:col-span-2 lg:order-1 space-y-8">
+      <LocalQuoteCard 
+        quote={socialismContent.sections[4].quote}
+      />
+
+      <div className="space-y-6">
+        {socialismContent.sections[4].content.map((paragraph, index) => {
+          const parts = paragraph.split(':');
+          if (parts.length > 1) {
+            return (
+              <p 
+                key={index} 
+                className="text-gray-700"
+                style={{ 
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                  lineHeight: '1.6',
+                  maxWidth: '72ch'
+                }}
+              >
+                <strong>{parts[0]}:</strong> {parts.slice(1).join(':')}
+              </p>
+            );
+          }
+          return (
+            <p 
+              key={index} 
+              className="text-gray-700"
+              style={{ 
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                lineHeight: '1.6',
+                maxWidth: '72ch'
+              }}
+            >
+              {paragraph}
+            </p>
+          );
+        })}
+      </div>
+
+      <LocalSummaryBox 
+        points={socialismContent.sections[4].summary.points}
+      />
+    </div>
+  </div>
                 </section>
+
+                {/* Section F*/}
+                <section 
+  id="f-y-nghia-han-che" 
+  className="mb-16" 
+  style={{ 
+    scrollMarginTop: '96px',
+    paddingBottom: '64px'
+  }}
+  aria-labelledby="heading-f"
+>
+  <header className="mb-8">
+    <div className="flex items-center gap-4 mb-4">
+      <div 
+        className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-lg"
+        style={{ borderRadius: '12px' }}
+      >
+        F
+      </div>
+      <div>
+        <h2 
+          id="heading-f"
+          className="text-blue-600 mb-2"
+          style={{ 
+            fontSize: 'clamp(2rem, 4vw, 2.5rem)',
+            lineHeight: '1.2',
+            fontWeight: '600'
+          }}
+        >
+          {socialismContent.sections[5].title}
+        </h2>
+        <p className="text-gray-600">
+          {socialismContent.sections[5].subtitle}
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+    <div className="lg:col-span-1 lg:order-2">
+      <div className="sticky top-24">
+        <LocalCard className="overflow-hidden">
+          <Image
+            src={socialismContent.sections[5].image}
+            alt="Ý nghĩa và hạn chế Đại hội IV"
+            width={960}
+            height={540}
+            className="w-full object-cover"
+            style={{ aspectRatio: '16/9' }}
+            sizes="(max-width: 1024px) 100vw, 33vw"
+          />
+          <div className="p-4">
+            <h3 className="font-semibold text-gray-900 mb-2">
+              {socialismContent.sections[5].title}
+            </h3>
+            <p className="text-sm text-gray-600">
+              Hoàn cảnh lịch sử của thời kỳ sau năm 1975 với nhiều thuận lợi và thách thức.
+            </p>
+          </div>
+        </LocalCard>
+      </div>
+    </div>
+
+    <div className="lg:col-span-2 lg:order-1 space-y-8">
+      <LocalQuoteCard 
+        quote={socialismContent.sections[5].quote}
+      />
+
+      <div className="space-y-6">
+        {socialismContent.sections[5].content.map((paragraph, index) => {
+          const parts = paragraph.split(':');
+          if (parts.length > 1) {
+            return (
+              <p 
+                key={index} 
+                className="text-gray-700"
+                style={{ 
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                  lineHeight: '1.6',
+                  maxWidth: '72ch'
+                }}
+              >
+                <strong>{parts[0]}:</strong> {parts.slice(1).join(':')}
+              </p>
+            );
+          }
+          return (
+            <p 
+              key={index} 
+              className="text-gray-700"
+              style={{ 
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                lineHeight: '1.6',
+                maxWidth: '72ch'
+              }}
+            >
+              {paragraph}
+            </p>
+          );
+        })}
+      </div>
+
+      <LocalSummaryBox 
+        points={socialismContent.sections[5].summary.points}
+      />
+    </div>
+  </div>
+                </section>
+
+
               </div>
 
               {/* Desktop TOC */}
