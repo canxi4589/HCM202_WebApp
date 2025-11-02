@@ -117,7 +117,7 @@ export default function LocalTOC({ variant = 'desktop', className = '' }: LocalT
         }}
       >
         <h3 className="text-sm font-semibold text-gray-900 mb-4">
-          Nội dung
+          Nội dung 
         </h3>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           {items.map((item) => (

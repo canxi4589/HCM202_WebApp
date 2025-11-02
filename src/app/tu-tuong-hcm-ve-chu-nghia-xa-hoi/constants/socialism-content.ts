@@ -1,5 +1,5 @@
 export const socialismContent = {
-  title: "Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội",
+  title: "Xây dựng chủ nghĩa xã hội và bảo vệ Tổ quốc 1975-1981",
   subtitle: "Ba nội dung cơ bản định hình tư tưởng xã hội chủ nghĩa Việt Nam",
   
   sections: [

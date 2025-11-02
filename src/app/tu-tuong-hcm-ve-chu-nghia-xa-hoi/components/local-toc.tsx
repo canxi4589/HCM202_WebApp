@@ -3,10 +3,13 @@
 import { useEffect, useState } from 'react';
 
 const items = [
-  { id: 'a-quan-niem', label: 'Quan niệm' },
-  { id: 'b-tat-yeu', label: 'Tất yếu' },
-  { id: 'c-dac-trung', label: 'Đặc trưng' },
-  { id: 'y-nghia', label: 'Ý nghĩa' },
+  { id: 'a-quan-niem', label: 'Sau 1975' },
+  { id: 'b-tat-yeu', label: '1975-1976' },
+  { id: 'c-boi-canh', label: '12-1976' },
+  { id: 'd-dac-diem', label: '1979–1981' },
+  { id: 'e-dai-hoi-4', label: '1978–1979' },
+  { id: 'f-y-nghia-han-che', label: 'Đến năm 1981' },
+
 ];
 
 interface LocalTOCProps {
