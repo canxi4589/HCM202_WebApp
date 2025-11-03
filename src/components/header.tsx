@@ -93,7 +93,7 @@ export default function Header() {
             className="rounded"
           />
           <span className="font-bold text-white text-lg hidden md:block">
-            HCM-Interactive
+            VNR-Interactive
           </span>
         </Link>
 

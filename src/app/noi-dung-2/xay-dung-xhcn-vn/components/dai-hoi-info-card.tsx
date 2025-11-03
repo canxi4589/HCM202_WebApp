@@ -48,7 +48,7 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column - Key Facts */}
         <div className="lg:col-span-2 space-y-6">
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl shadow-lg p-8 border-2 border-red-200">
+          <div className="bg-red-50 rounded-xl shadow-lg p-8 border-2 border-red-200">
             <h4 className="text-2xl font-bold text-red-800 mb-6 flex items-center gap-3">
               <span className="text-3xl">📊</span>
               Thông tin chính
@@ -57,7 +57,7 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-red-500">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">⏰</span>
+                  <span className="text-2xl"></span>
                   <div>
                     <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Thời gian</p>
                     <p className="font-bold text-gray-800">{data.thoiGian}</p>
@@ -67,7 +67,7 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
               
               <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-500">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">📍</span>
+                  <span className="text-2xl"></span>
                   <div>
                     <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Địa điểm</p>
                     <p className="font-bold text-gray-800">{data.diaDiem}</p>
@@ -77,7 +77,7 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
               
               <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-green-500">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">👥</span>
+                  <span className="text-2xl"></span>
                   <div>
                     <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Số đại biểu</p>
                     <p className="font-bold text-gray-800">{data.soLuongDaiBieu}</p>
@@ -87,7 +87,7 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
               
               <div className="bg-white rounded-lg p-5 shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-purple-500">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">🎯</span>
+                  <span className="text-2xl"></span>
                   <div>
                     <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Đại diện</p>
                     <p className="font-bold text-gray-800">{data.daiDien}</p>
@@ -98,9 +98,9 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
           </div>
 
           {/* Mission Card */}
-          <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl shadow-lg p-8 border-2 border-yellow-300">
+          <div className="bg-yellow-50 rounded-xl shadow-lg p-8 border-2 border-yellow-300">
             <h4 className="text-xl font-bold text-orange-800 mb-4 flex items-center gap-3">
-              <span className="text-3xl">📋</span>
+              <span className="text-3xl"></span>
               Nhiệm vụ quan trọng
             </h4>
             <div className="bg-white rounded-lg p-6 shadow-md">
@@ -111,10 +111,17 @@ export default function DaiHoiInfoCard({ data }: InfoCardProps) {
 
         {/* Right Column - Leader Info */}
         <div className="lg:col-span-1">
-          <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-xl shadow-2xl p-6 text-white sticky top-4">
+          <div className="bg-red-800 rounded-xl shadow-2xl p-6 text-white sticky top-4">
             <div className="text-center mb-6">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border-4 border-white/30">
-                <span className="text-6xl">🏛️</span>
+              {/* Lê Duẩn Portrait */}
+              <div className="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-400 shadow-xl">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Le_duan.png"
+                  alt="Tổng Bí thư Lê Duẩn"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
               <h4 className="text-xl font-bold mb-2">Lãnh đạo Đảng</h4>
               <div className="w-16 h-1 bg-yellow-400 mx-auto"></div>

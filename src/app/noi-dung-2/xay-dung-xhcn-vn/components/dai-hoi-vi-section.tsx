@@ -117,7 +117,7 @@ export default function DaiHoiVISection({ data }: DaiHoiVISectionProps) {
 
             <div className="flex items-start gap-6">
               <div className="w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold shadow-md relative z-10">
-                1984-85
+                84-85
               </div>
               <div className="flex-1 bg-yellow-50 rounded-lg p-4">
                 <p className="text-gray-700">Hội nghị TW 6, 8 - Cải cách bộ phận</p>

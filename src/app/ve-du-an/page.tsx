@@ -162,7 +162,7 @@ const VeDuAn = () => {
       name: "Nguyễn Cao Trí", 
       role: "Project Manager & Developer", 
       color: "from-red-500 to-red-600", 
-      avatar: "🚀",
+      avatar: "",
       specialty: "Leadership & Architecture",
       quote: "SE182497"
     },
@@ -170,33 +170,33 @@ const VeDuAn = () => {
       name: "Nguyễn Đức Nguyên", 
       role: "FullStack Developer", 
       color: "from-blue-500 to-blue-600", 
-      avatar: "💻",
+      avatar: "",
       specialty: "NodeJs, Asp.net core, React",
       quote: "SE182830"
     },
     { 
-      name: "Lê Đặng Minh Trí", 
+      name: "Trần	Nguyễn Hoàng Anh", 
       role: "Content Writer", 
       color: "from-green-500 to-green-600", 
-      avatar: "✍️",
+      avatar: "",
       specialty: "Content Strategy",
-      quote: "SE183122"
+      quote: "SE173276"
     },
     { 
-      name: "Nguyễn Quỳnh Như", 
-      role: "Developer & QA", 
+      name: "Văn Thành Tiến", 
+      role: "Content Writer", 
       color: "from-purple-500 to-purple-600", 
-      avatar: "🎯",
+      avatar: "",
       specialty: "Quality Assurance",
-      quote: "SE183230"
+      quote: "SS171176"
     },
     { 
-      name: "Nguyễn Quang Giáp", 
-      role: "Backend Developer", 
+      name: "Trương Nguyễn Hoàng My", 
+      role: "Content Writer", 
       color: "from-orange-500 to-orange-600", 
-      avatar: "⚙️",
+      avatar: "",
       specialty: "Server & Database",
-      quote: "SE182477"
+      quote: "SS170084"
     }
 
   ];
