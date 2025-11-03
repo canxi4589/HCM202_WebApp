@@ -15,22 +15,16 @@ const issues = [
   href: "/tu-tuong-hcm-ve-chu-nghia-xa-hoi",
   },
   {
-    title: "Tư tưởng HCM về xây dựng chủ nghĩa xã hội ở Việt Nam",
-    desc: "Độc lập phải gắn với đời sống thiết thực của nhân dân.",
+    title: "Đại hội V của Đảng và quá trình thực hiện Nghị quyết",
+    desc: "Diễn ra trong bối cảnh lịch sử và tình hình quốc tế hết sức phức tạp",
     img: "/images/con-nguoi-xhcn.jpg",
     href: "/noi-dung-2/xay-dung-xhcn-vn",
   },
   {
-    title: "Tư tưởng Hồ Chí Minh về thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam",
-    desc: "Không bị áp bức chính trị, bóc lột kinh tế, nô dịch văn hóa.",
-    img: "/images/independence-3.jpg",
-    href: "/noi-dung-2/thoi-ki-qua-do",
-  },
-  {
     title: "Ôn tập kiến thức",
-    desc: "Củng cố kiến thức nắm bắt tư tưởng",
+    desc: "Timeline - Dòng thời gian Lịch sử Đảng Cộng sản Việt Nam",
     img: "/images/lenin.jpg",
-    href: "/on-tap",
+    href: "/noi-dung-2/thoi-ki-qua-do",
   },
 ];
 
