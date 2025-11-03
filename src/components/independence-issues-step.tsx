@@ -28,9 +28,9 @@ const issues = [
   },
   {
     title: "Ôn tập kiến thức",
-    desc: "Củng cố kiến thức nắm bắt tư tưởng",
+    desc: "Timeline - Dòng thời gian Lịch sử Đảng Cộng sản Việt Nam",
     img: "/images/lenin.jpg",
-    href: "/on-tap",
+    href: "/noi-dung-2/thoi-ki-qua-do",
   },
 ];
 
