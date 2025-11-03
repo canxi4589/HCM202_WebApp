@@ -27,10 +27,10 @@ const issues = [
     href: "/noi-dung-2/thoi-ki-qua-do",
   },
   {
-    title: "Ôn tập kiến thức",
-    desc: "Timeline - Dòng thời gian Lịch sử Đảng Cộng sản Việt Nam",
+    title: "Hỏi Đáp",
+    desc: "Hỏi đáp các câu hỏi liên quan đến nội dung đã học.",
     img: "/images/lenin.jpg",
-    href: "/noi-dung-2/thoi-ki-qua-do",
+    href: "/on-tap",
   },
 ];
 
