@@ -15,10 +15,16 @@ const issues = [
   href: "/tu-tuong-hcm-ve-chu-nghia-xa-hoi",
   },
   {
-    title: "Đại hội V của Đảng và quá trình thực hiện Nghị quyết",
-    desc: "Diễn ra trong bối cảnh lịch sử và tình hình quốc tế hết sức phức tạp",
-    img: "/images/con-nguoi-xhcn.jpg",
+    title: "Đại hội đại biểu toàn quốc lần thứ V của Đảng",
+    desc: "Các bước đột phá tiếp tục đổi mới kinh tế 1982-1986.",
+    img: "https://img.baobacninhtv.vn/Medias/582/2025/02/17/3-%20131_2020-dh-v.png?w=800&h=354&quality=100",
     href: "/noi-dung-2/xay-dung-xhcn-vn",
+  },
+  {
+    title: "Tổng hợp kiến thức",
+    desc: "Dùng timeline để ghi nhớ các dòng thời gian.",
+    img: "/images/independence-3.jpg",
+    href: "/noi-dung-2/thoi-ki-qua-do",
   },
   {
     title: "Ôn tập kiến thức",
